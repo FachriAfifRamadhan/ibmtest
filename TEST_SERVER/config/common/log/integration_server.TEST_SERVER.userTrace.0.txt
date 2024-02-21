@@ -1,0 +1,250 @@
+
+====== Starting plaintext trace (process ID 23851 - integration_server.TEST_SERVER) ======
+=== Build ib1100-L230926.934 (S1100-L230925.22624) - IBM App Connect Enterprise 11.0.0.23 ===
+=== Platform Linux / x86_64 / 6.5.0-17-generic ===
+=== Timestamps are formatted in local time, 420 minutes past GMT. ===
+=== Time now 2024-02-20 21:33:54.858028 ===
+
+2024-02-20 21:53:04.628866    23888  UserTrace   BIP2380I: ACE message flow statistics.   ProcessID='23851',   Key='0',   Type='SnapShot',   Reason='Shutdown',   integrationNodeLabel='integration_server',   integrationNodeUUID='',   integrationServerName='TEST_SERVER',   integrationServerUUID='00000000-0000-0000-0000-000000000000',   MessageFlowName='gen.CRUD_REST_TRAINING',   StartDate='2024-02-20',   StartTime='21:52:47.921432',   GMTStartTime='2024-02-20T14:52:47.921+00:00',   EndDate='2024-02-20',   GMTEndTime='2024-02-20T14:53:02.922+00:00',   EndTime='21:53:02.922438',   TotalElapsedTime='0',   MaximumElapsedTime='0',   MinimumElapsedTime='0',   TotalCPUTime='0',   MaximumCPUTime='0',   MinimumCPUTime='0',   CPUTimeWaitingForInputMessage='347',   ElapsedTimeWaitingForInputMessage='15000699',   TotalInputMessages='0',   TotalSizeOfInputMessages='0',   MaximumSizeOfInputMessages='0',   MinimumSizeOfInputMessages='0',   NumberOfThreadsInPool='4',   TimesMaximumNumberOfThreadsReached='0',   TotalNumberOfMQErrors='0',   TotalNumberOfMessagesWithErrors='0',   TotalNumberOfErrorsProcessingMessages='0',   TotalNumberOfTimeOuts='0',   TotalNumberOfCommits='0',   TotalNumberOfBackouts='0',   AccountingOrigin='Anonymous'. 
+Statistical information for message flow 'gen.CRUD_REST_TRAINING' in integration node 'integration_server'. 
+This is an information message produced by ACE statistics. 
+2024-02-20 21:53:04.629213    23888  UserTrace   BIP2382I: ACE node statistics.   ProcessID='23851',   Key='0',   Label='HTTP Input',   Type='WSInputNode',   TotalElapsedTime='0',   MaximumElapsedTime='0',   MinimumElapsedTime='0',   TotalCPUTime='0',   MaximumCPUTime='0',   MinimumCPUTime='0',   CountOfInvocations='0',   NumberOfInputTerminals='0',   NumberOfOutputTerminals='4'.   
+Statistical information for node 'HTTP Input'. 
+This is an information message produced by ACE statistics. 
+2024-02-20 21:53:04.629329    23888  UserTrace   BIP2382I: ACE node statistics.   ProcessID='23851',   Key='0',   Label='HTTP Reply',   Type='WSReplyNode',   TotalElapsedTime='0',   MaximumElapsedTime='0',   MinimumElapsedTime='0',   TotalCPUTime='0',   MaximumCPUTime='0',   MinimumCPUTime='0',   CountOfInvocations='0',   NumberOfInputTerminals='1',   NumberOfOutputTerminals='2'.   
+Statistical information for node 'HTTP Reply'. 
+This is an information message produced by ACE statistics. 
+2024-02-20 21:53:04.629526    23888  UserTrace   BIP2382I: ACE node statistics.   ProcessID='23851',   Key='0',   Label='Route To Label',   Type='RouteToLabelNode',   TotalElapsedTime='0',   MaximumElapsedTime='0',   MinimumElapsedTime='0',   TotalCPUTime='0',   MaximumCPUTime='0',   MinimumCPUTime='0',   CountOfInvocations='0',   NumberOfInputTerminals='1',   NumberOfOutputTerminals='1'.   
+Statistical information for node 'Route To Label'. 
+This is an information message produced by ACE statistics. 
+2024-02-20 21:53:04.629632    23888  UserTrace   BIP2382I: ACE node statistics.   ProcessID='23851',   Key='0',   Label='deleteDelete (Implementation).Mapping',   Type='MSLMappingNode',   TotalElapsedTime='0',   MaximumElapsedTime='0',   MinimumElapsedTime='0',   TotalCPUTime='0',   MaximumCPUTime='0',   MinimumCPUTime='0',   CountOfInvocations='0',   NumberOfInputTerminals='1',   NumberOfOutputTerminals='2'.   
+Statistical information for node 'deleteDelete (Implementation).Mapping'. 
+This is an information message produced by ACE statistics. 
+2024-02-20 21:53:04.629723    23888  UserTrace   BIP2382I: ACE node statistics.   ProcessID='23851',   Key='0',   Label='deleteDelete (Implementation).deleteDelete#InTerminal.Input_1',   Type='InputNode',   TotalElapsedTime='0',   MaximumElapsedTime='0',   MinimumElapsedTime='0',   TotalCPUTime='0',   MaximumCPUTime='0',   MinimumCPUTime='0',   CountOfInvocations='0',   NumberOfInputTerminals='1',   NumberOfOutputTerminals='1'.   
+Statistical information for node 'deleteDelete (Implementation).deleteDelete#InTerminal.Input_1'. 
+This is an information message produced by ACE statistics. 
+2024-02-20 21:53:04.629855    23888  UserTrace   BIP2382I: ACE node statistics.   ProcessID='23851',   Key='0',   Label='deleteDelete (Implementation).deleteDelete#OutTerminal.Output_1',   Type='OutputNode',   TotalElapsedTime='0',   MaximumElapsedTime='0',   MinimumElapsedTime='0',   TotalCPUTime='0',   MaximumCPUTime='0',   MinimumCPUTime='0',   CountOfInvocations='0',   NumberOfInputTerminals='1',   NumberOfOutputTerminals='1'.   
+Statistical information for node 'deleteDelete (Implementation).deleteDelete#OutTerminal.Output_1'. 
+This is an information message produced by ACE statistics. 
+2024-02-20 21:53:04.629949    23888  UserTrace   BIP2382I: ACE node statistics.   ProcessID='23851',   Key='0',   Label='deleteDelete (Label)',   Type='LabelNode',   TotalElapsedTime='0',   MaximumElapsedTime='0',   MinimumElapsedTime='0',   TotalCPUTime='0',   MaximumCPUTime='0',   MinimumCPUTime='0',   CountOfInvocations='0',   NumberOfInputTerminals='0',   NumberOfOutputTerminals='1'.   
+Statistical information for node 'deleteDelete (Label)'. 
+This is an information message produced by ACE statistics. 
+2024-02-20 21:53:04.630037    23888  UserTrace   BIP2382I: ACE node statistics.   ProcessID='23851',   Key='0',   Label='getRead (Implementation).Mapping',   Type='MSLMappingNode',   TotalElapsedTime='0',   MaximumElapsedTime='0',   MinimumElapsedTime='0',   TotalCPUTime='0',   MaximumCPUTime='0',   MinimumCPUTime='0',   CountOfInvocations='0',   NumberOfInputTerminals='1',   NumberOfOutputTerminals='2'.   
+Statistical information for node 'getRead (Implementation).Mapping'. 
+This is an information message produced by ACE statistics. 
+2024-02-20 21:53:04.630124    23888  UserTrace   BIP2382I: ACE node statistics.   ProcessID='23851',   Key='0',   Label='getRead (Implementation).getRead#InTerminal.Input_1',   Type='InputNode',   TotalElapsedTime='0',   MaximumElapsedTime='0',   MinimumElapsedTime='0',   TotalCPUTime='0',   MaximumCPUTime='0',   MinimumCPUTime='0',   CountOfInvocations='0',   NumberOfInputTerminals='1',   NumberOfOutputTerminals='1'.   
+Statistical information for node 'getRead (Implementation).getRead#InTerminal.Input_1'. 
+This is an information message produced by ACE statistics. 
+2024-02-20 21:53:04.630210    23888  UserTrace   BIP2382I: ACE node statistics.   ProcessID='23851',   Key='0',   Label='getRead (Implementation).getRead#OutTerminal.Output_1',   Type='OutputNode',   TotalElapsedTime='0',   MaximumElapsedTime='0',   MinimumElapsedTime='0',   TotalCPUTime='0',   MaximumCPUTime='0',   MinimumCPUTime='0',   CountOfInvocations='0',   NumberOfInputTerminals='1',   NumberOfOutputTerminals='1'.   
+Statistical information for node 'getRead (Implementation).getRead#OutTerminal.Output_1'. 
+This is an information message produced by ACE statistics. 
+2024-02-20 21:53:04.630297    23888  UserTrace   BIP2382I: ACE node statistics.   ProcessID='23851',   Key='0',   Label='getRead (Label)',   Type='LabelNode',   TotalElapsedTime='0',   MaximumElapsedTime='0',   MinimumElapsedTime='0',   TotalCPUTime='0',   MaximumCPUTime='0',   MinimumCPUTime='0',   CountOfInvocations='0',   NumberOfInputTerminals='0',   NumberOfOutputTerminals='1'.   
+Statistical information for node 'getRead (Label)'. 
+This is an information message produced by ACE statistics. 
+2024-02-20 21:53:04.630384    23888  UserTrace   BIP2382I: ACE node statistics.   ProcessID='23851',   Key='0',   Label='postCreate (Implementation).Mapping',   Type='MSLMappingNode',   TotalElapsedTime='0',   MaximumElapsedTime='0',   MinimumElapsedTime='0',   TotalCPUTime='0',   MaximumCPUTime='0',   MinimumCPUTime='0',   CountOfInvocations='0',   NumberOfInputTerminals='1',   NumberOfOutputTerminals='2'.   
+Statistical information for node 'postCreate (Implementation).Mapping'. 
+This is an information message produced by ACE statistics. 
+2024-02-20 21:53:04.630489    23888  UserTrace   BIP2382I: ACE node statistics.   ProcessID='23851',   Key='0',   Label='postCreate (Implementation).postCreate#InTerminal.Input_1',   Type='InputNode',   TotalElapsedTime='0',   MaximumElapsedTime='0',   MinimumElapsedTime='0',   TotalCPUTime='0',   MaximumCPUTime='0',   MinimumCPUTime='0',   CountOfInvocations='0',   NumberOfInputTerminals='1',   NumberOfOutputTerminals='1'.   
+Statistical information for node 'postCreate (Implementation).postCreate#InTerminal.Input_1'. 
+This is an information message produced by ACE statistics. 
+2024-02-20 21:53:04.630581    23888  UserTrace   BIP2382I: ACE node statistics.   ProcessID='23851',   Key='0',   Label='postCreate (Implementation).postCreate#OutTerminal.Output_1',   Type='OutputNode',   TotalElapsedTime='0',   MaximumElapsedTime='0',   MinimumElapsedTime='0',   TotalCPUTime='0',   MaximumCPUTime='0',   MinimumCPUTime='0',   CountOfInvocations='0',   NumberOfInputTerminals='1',   NumberOfOutputTerminals='1'.   
+Statistical information for node 'postCreate (Implementation).postCreate#OutTerminal.Output_1'. 
+This is an information message produced by ACE statistics. 
+2024-02-20 21:53:04.630669    23888  UserTrace   BIP2382I: ACE node statistics.   ProcessID='23851',   Key='0',   Label='postCreate (Label)',   Type='LabelNode',   TotalElapsedTime='0',   MaximumElapsedTime='0',   MinimumElapsedTime='0',   TotalCPUTime='0',   MaximumCPUTime='0',   MinimumCPUTime='0',   CountOfInvocations='0',   NumberOfInputTerminals='0',   NumberOfOutputTerminals='1'.   
+Statistical information for node 'postCreate (Label)'. 
+This is an information message produced by ACE statistics. 
+2024-02-20 21:53:04.630756    23888  UserTrace   BIP2382I: ACE node statistics.   ProcessID='23851',   Key='0',   Label='putUpdate (Implementation).Mapping',   Type='MSLMappingNode',   TotalElapsedTime='0',   MaximumElapsedTime='0',   MinimumElapsedTime='0',   TotalCPUTime='0',   MaximumCPUTime='0',   MinimumCPUTime='0',   CountOfInvocations='0',   NumberOfInputTerminals='1',   NumberOfOutputTerminals='2'.   
+Statistical information for node 'putUpdate (Implementation).Mapping'. 
+This is an information message produced by ACE statistics. 
+2024-02-20 21:53:04.630842    23888  UserTrace   BIP2382I: ACE node statistics.   ProcessID='23851',   Key='0',   Label='putUpdate (Implementation).putUpdate#InTerminal.Input_1',   Type='InputNode',   TotalElapsedTime='0',   MaximumElapsedTime='0',   MinimumElapsedTime='0',   TotalCPUTime='0',   MaximumCPUTime='0',   MinimumCPUTime='0',   CountOfInvocations='0',   NumberOfInputTerminals='1',   NumberOfOutputTerminals='1'.   
+Statistical information for node 'putUpdate (Implementation).putUpdate#InTerminal.Input_1'. 
+This is an information message produced by ACE statistics. 
+2024-02-20 21:53:04.630929    23888  UserTrace   BIP2382I: ACE node statistics.   ProcessID='23851',   Key='0',   Label='putUpdate (Implementation).putUpdate#OutTerminal.Output_1',   Type='OutputNode',   TotalElapsedTime='0',   MaximumElapsedTime='0',   MinimumElapsedTime='0',   TotalCPUTime='0',   MaximumCPUTime='0',   MinimumCPUTime='0',   CountOfInvocations='0',   NumberOfInputTerminals='1',   NumberOfOutputTerminals='1'.   
+Statistical information for node 'putUpdate (Implementation).putUpdate#OutTerminal.Output_1'. 
+This is an information message produced by ACE statistics. 
+2024-02-20 21:53:04.631015    23888  UserTrace   BIP2382I: ACE node statistics.   ProcessID='23851',   Key='0',   Label='putUpdate (Label)',   Type='LabelNode',   TotalElapsedTime='0',   MaximumElapsedTime='0',   MinimumElapsedTime='0',   TotalCPUTime='0',   MaximumCPUTime='0',   MinimumCPUTime='0',   CountOfInvocations='0',   NumberOfInputTerminals='0',   NumberOfOutputTerminals='1'.   
+Statistical information for node 'putUpdate (Label)'. 
+This is an information message produced by ACE statistics. 
+
+====== Starting plaintext trace (process ID 27582 - integration_server.TEST_SERVER) ======
+=== Build ib1100-L230926.934 (S1100-L230925.22624) - IBM App Connect Enterprise 11.0.0.23 ===
+=== Platform Linux / x86_64 / 6.5.0-17-generic ===
+=== Timestamps are formatted in local time, 420 minutes past GMT. ===
+=== Time now 2024-02-20 22:02:48.167496 ===
+
+
+====== Starting plaintext trace (process ID 33184 - integration_server.TEST_SERVER) ======
+=== Build ib1100-L230926.934 (S1100-L230925.22624) - IBM App Connect Enterprise 11.0.0.23 ===
+=== Platform Linux / x86_64 / 6.5.0-17-generic ===
+=== Timestamps are formatted in local time, 420 minutes past GMT. ===
+=== Time now 2024-02-20 22:41:02.773676 ===
+
+2024-02-20 23:03:02.273745    33221  UserTrace   BIP2380I: ACE message flow statistics.   ProcessID='33184',   Key='0',   Type='SnapShot',   Reason='Shutdown',   integrationNodeLabel='integration_server',   integrationNodeUUID='',   integrationServerName='TEST_SERVER',   integrationServerUUID='00000000-0000-0000-0000-000000000000',   MessageFlowName='gen.CRUD_REST_TRAINING',   StartDate='2024-02-20',   StartTime='23:02:45.678140',   GMTStartTime='2024-02-20T16:02:45.678+00:00',   EndDate='2024-02-20',   GMTEndTime='2024-02-20T16:03:00.679+00:00',   EndTime='23:03:00.679025',   TotalElapsedTime='0',   MaximumElapsedTime='0',   MinimumElapsedTime='0',   TotalCPUTime='0',   MaximumCPUTime='0',   MinimumCPUTime='0',   CPUTimeWaitingForInputMessage='361',   ElapsedTimeWaitingForInputMessage='15000548',   TotalInputMessages='0',   TotalSizeOfInputMessages='0',   MaximumSizeOfInputMessages='0',   MinimumSizeOfInputMessages='0',   NumberOfThreadsInPool='4',   TimesMaximumNumberOfThreadsReached='0',   TotalNumberOfMQErrors='0',   TotalNumberOfMessagesWithErrors='0',   TotalNumberOfErrorsProcessingMessages='0',   TotalNumberOfTimeOuts='0',   TotalNumberOfCommits='0',   TotalNumberOfBackouts='0',   AccountingOrigin='Anonymous'. 
+Statistical information for message flow 'gen.CRUD_REST_TRAINING' in integration node 'integration_server'. 
+This is an information message produced by ACE statistics. 
+2024-02-20 23:03:02.274045    33221  UserTrace   BIP2382I: ACE node statistics.   ProcessID='33184',   Key='0',   Label='HTTP Input',   Type='WSInputNode',   TotalElapsedTime='0',   MaximumElapsedTime='0',   MinimumElapsedTime='0',   TotalCPUTime='0',   MaximumCPUTime='0',   MinimumCPUTime='0',   CountOfInvocations='0',   NumberOfInputTerminals='0',   NumberOfOutputTerminals='4'.   
+Statistical information for node 'HTTP Input'. 
+This is an information message produced by ACE statistics. 
+2024-02-20 23:03:02.274149    33221  UserTrace   BIP2382I: ACE node statistics.   ProcessID='33184',   Key='0',   Label='HTTP Reply',   Type='WSReplyNode',   TotalElapsedTime='0',   MaximumElapsedTime='0',   MinimumElapsedTime='0',   TotalCPUTime='0',   MaximumCPUTime='0',   MinimumCPUTime='0',   CountOfInvocations='0',   NumberOfInputTerminals='1',   NumberOfOutputTerminals='2'.   
+Statistical information for node 'HTTP Reply'. 
+This is an information message produced by ACE statistics. 
+2024-02-20 23:03:02.274235    33221  UserTrace   BIP2382I: ACE node statistics.   ProcessID='33184',   Key='0',   Label='Route To Label',   Type='RouteToLabelNode',   TotalElapsedTime='0',   MaximumElapsedTime='0',   MinimumElapsedTime='0',   TotalCPUTime='0',   MaximumCPUTime='0',   MinimumCPUTime='0',   CountOfInvocations='0',   NumberOfInputTerminals='1',   NumberOfOutputTerminals='1'.   
+Statistical information for node 'Route To Label'. 
+This is an information message produced by ACE statistics. 
+2024-02-20 23:03:02.274314    33221  UserTrace   BIP2382I: ACE node statistics.   ProcessID='33184',   Key='0',   Label='deleteDelete (Implementation).Mapping',   Type='MSLMappingNode',   TotalElapsedTime='0',   MaximumElapsedTime='0',   MinimumElapsedTime='0',   TotalCPUTime='0',   MaximumCPUTime='0',   MinimumCPUTime='0',   CountOfInvocations='0',   NumberOfInputTerminals='1',   NumberOfOutputTerminals='2'.   
+Statistical information for node 'deleteDelete (Implementation).Mapping'. 
+This is an information message produced by ACE statistics. 
+2024-02-20 23:03:02.274393    33221  UserTrace   BIP2382I: ACE node statistics.   ProcessID='33184',   Key='0',   Label='deleteDelete (Implementation).deleteDelete#InTerminal.Input_1',   Type='InputNode',   TotalElapsedTime='0',   MaximumElapsedTime='0',   MinimumElapsedTime='0',   TotalCPUTime='0',   MaximumCPUTime='0',   MinimumCPUTime='0',   CountOfInvocations='0',   NumberOfInputTerminals='1',   NumberOfOutputTerminals='1'.   
+Statistical information for node 'deleteDelete (Implementation).deleteDelete#InTerminal.Input_1'. 
+This is an information message produced by ACE statistics. 
+2024-02-20 23:03:02.274511    33221  UserTrace   BIP2382I: ACE node statistics.   ProcessID='33184',   Key='0',   Label='deleteDelete (Implementation).deleteDelete#OutTerminal.Output_1',   Type='OutputNode',   TotalElapsedTime='0',   MaximumElapsedTime='0',   MinimumElapsedTime='0',   TotalCPUTime='0',   MaximumCPUTime='0',   MinimumCPUTime='0',   CountOfInvocations='0',   NumberOfInputTerminals='1',   NumberOfOutputTerminals='1'.   
+Statistical information for node 'deleteDelete (Implementation).deleteDelete#OutTerminal.Output_1'. 
+This is an information message produced by ACE statistics. 
+2024-02-20 23:03:02.274594    33221  UserTrace   BIP2382I: ACE node statistics.   ProcessID='33184',   Key='0',   Label='deleteDelete (Label)',   Type='LabelNode',   TotalElapsedTime='0',   MaximumElapsedTime='0',   MinimumElapsedTime='0',   TotalCPUTime='0',   MaximumCPUTime='0',   MinimumCPUTime='0',   CountOfInvocations='0',   NumberOfInputTerminals='0',   NumberOfOutputTerminals='1'.   
+Statistical information for node 'deleteDelete (Label)'. 
+This is an information message produced by ACE statistics. 
+2024-02-20 23:03:02.274670    33221  UserTrace   BIP2382I: ACE node statistics.   ProcessID='33184',   Key='0',   Label='getRead (Implementation).Mapping',   Type='MSLMappingNode',   TotalElapsedTime='0',   MaximumElapsedTime='0',   MinimumElapsedTime='0',   TotalCPUTime='0',   MaximumCPUTime='0',   MinimumCPUTime='0',   CountOfInvocations='0',   NumberOfInputTerminals='1',   NumberOfOutputTerminals='2'.   
+Statistical information for node 'getRead (Implementation).Mapping'. 
+This is an information message produced by ACE statistics. 
+2024-02-20 23:03:02.274745    33221  UserTrace   BIP2382I: ACE node statistics.   ProcessID='33184',   Key='0',   Label='getRead (Implementation).getRead#InTerminal.Input_1',   Type='InputNode',   TotalElapsedTime='0',   MaximumElapsedTime='0',   MinimumElapsedTime='0',   TotalCPUTime='0',   MaximumCPUTime='0',   MinimumCPUTime='0',   CountOfInvocations='0',   NumberOfInputTerminals='1',   NumberOfOutputTerminals='1'.   
+Statistical information for node 'getRead (Implementation).getRead#InTerminal.Input_1'. 
+This is an information message produced by ACE statistics. 
+2024-02-20 23:03:02.274824    33221  UserTrace   BIP2382I: ACE node statistics.   ProcessID='33184',   Key='0',   Label='getRead (Implementation).getRead#OutTerminal.Output_1',   Type='OutputNode',   TotalElapsedTime='0',   MaximumElapsedTime='0',   MinimumElapsedTime='0',   TotalCPUTime='0',   MaximumCPUTime='0',   MinimumCPUTime='0',   CountOfInvocations='0',   NumberOfInputTerminals='1',   NumberOfOutputTerminals='1'.   
+Statistical information for node 'getRead (Implementation).getRead#OutTerminal.Output_1'. 
+This is an information message produced by ACE statistics. 
+2024-02-20 23:03:02.274902    33221  UserTrace   BIP2382I: ACE node statistics.   ProcessID='33184',   Key='0',   Label='getRead (Label)',   Type='LabelNode',   TotalElapsedTime='0',   MaximumElapsedTime='0',   MinimumElapsedTime='0',   TotalCPUTime='0',   MaximumCPUTime='0',   MinimumCPUTime='0',   CountOfInvocations='0',   NumberOfInputTerminals='0',   NumberOfOutputTerminals='1'.   
+Statistical information for node 'getRead (Label)'. 
+This is an information message produced by ACE statistics. 
+2024-02-20 23:03:02.274979    33221  UserTrace   BIP2382I: ACE node statistics.   ProcessID='33184',   Key='0',   Label='postCreate (Implementation).Mapping',   Type='MSLMappingNode',   TotalElapsedTime='0',   MaximumElapsedTime='0',   MinimumElapsedTime='0',   TotalCPUTime='0',   MaximumCPUTime='0',   MinimumCPUTime='0',   CountOfInvocations='0',   NumberOfInputTerminals='1',   NumberOfOutputTerminals='2'.   
+Statistical information for node 'postCreate (Implementation).Mapping'. 
+This is an information message produced by ACE statistics. 
+2024-02-20 23:03:02.275115    33221  UserTrace   BIP2382I: ACE node statistics.   ProcessID='33184',   Key='0',   Label='postCreate (Implementation).postCreate#InTerminal.Input_1',   Type='InputNode',   TotalElapsedTime='0',   MaximumElapsedTime='0',   MinimumElapsedTime='0',   TotalCPUTime='0',   MaximumCPUTime='0',   MinimumCPUTime='0',   CountOfInvocations='0',   NumberOfInputTerminals='1',   NumberOfOutputTerminals='1'.   
+Statistical information for node 'postCreate (Implementation).postCreate#InTerminal.Input_1'. 
+This is an information message produced by ACE statistics. 
+2024-02-20 23:03:02.275232    33221  UserTrace   BIP2382I: ACE node statistics.   ProcessID='33184',   Key='0',   Label='postCreate (Implementation).postCreate#OutTerminal.Output_1',   Type='OutputNode',   TotalElapsedTime='0',   MaximumElapsedTime='0',   MinimumElapsedTime='0',   TotalCPUTime='0',   MaximumCPUTime='0',   MinimumCPUTime='0',   CountOfInvocations='0',   NumberOfInputTerminals='1',   NumberOfOutputTerminals='1'.   
+Statistical information for node 'postCreate (Implementation).postCreate#OutTerminal.Output_1'. 
+This is an information message produced by ACE statistics. 
+2024-02-20 23:03:02.275313    33221  UserTrace   BIP2382I: ACE node statistics.   ProcessID='33184',   Key='0',   Label='postCreate (Label)',   Type='LabelNode',   TotalElapsedTime='0',   MaximumElapsedTime='0',   MinimumElapsedTime='0',   TotalCPUTime='0',   MaximumCPUTime='0',   MinimumCPUTime='0',   CountOfInvocations='0',   NumberOfInputTerminals='0',   NumberOfOutputTerminals='1'.   
+Statistical information for node 'postCreate (Label)'. 
+This is an information message produced by ACE statistics. 
+2024-02-20 23:03:02.275390    33221  UserTrace   BIP2382I: ACE node statistics.   ProcessID='33184',   Key='0',   Label='putUpdate (Implementation).Mapping',   Type='MSLMappingNode',   TotalElapsedTime='0',   MaximumElapsedTime='0',   MinimumElapsedTime='0',   TotalCPUTime='0',   MaximumCPUTime='0',   MinimumCPUTime='0',   CountOfInvocations='0',   NumberOfInputTerminals='1',   NumberOfOutputTerminals='2'.   
+Statistical information for node 'putUpdate (Implementation).Mapping'. 
+This is an information message produced by ACE statistics. 
+2024-02-20 23:03:02.275468    33221  UserTrace   BIP2382I: ACE node statistics.   ProcessID='33184',   Key='0',   Label='putUpdate (Implementation).putUpdate#InTerminal.Input_1',   Type='InputNode',   TotalElapsedTime='0',   MaximumElapsedTime='0',   MinimumElapsedTime='0',   TotalCPUTime='0',   MaximumCPUTime='0',   MinimumCPUTime='0',   CountOfInvocations='0',   NumberOfInputTerminals='1',   NumberOfOutputTerminals='1'.   
+Statistical information for node 'putUpdate (Implementation).putUpdate#InTerminal.Input_1'. 
+This is an information message produced by ACE statistics. 
+2024-02-20 23:03:02.275545    33221  UserTrace   BIP2382I: ACE node statistics.   ProcessID='33184',   Key='0',   Label='putUpdate (Implementation).putUpdate#OutTerminal.Output_1',   Type='OutputNode',   TotalElapsedTime='0',   MaximumElapsedTime='0',   MinimumElapsedTime='0',   TotalCPUTime='0',   MaximumCPUTime='0',   MinimumCPUTime='0',   CountOfInvocations='0',   NumberOfInputTerminals='1',   NumberOfOutputTerminals='1'.   
+Statistical information for node 'putUpdate (Implementation).putUpdate#OutTerminal.Output_1'. 
+This is an information message produced by ACE statistics. 
+2024-02-20 23:03:02.275621    33221  UserTrace   BIP2382I: ACE node statistics.   ProcessID='33184',   Key='0',   Label='putUpdate (Label)',   Type='LabelNode',   TotalElapsedTime='0',   MaximumElapsedTime='0',   MinimumElapsedTime='0',   TotalCPUTime='0',   MaximumCPUTime='0',   MinimumCPUTime='0',   CountOfInvocations='0',   NumberOfInputTerminals='0',   NumberOfOutputTerminals='1'.   
+Statistical information for node 'putUpdate (Label)'. 
+This is an information message produced by ACE statistics. 
+
+====== Starting plaintext trace (process ID 6676 - integration_server.TEST_SERVER) ======
+=== Build ib1100-L230926.934 (S1100-L230925.22624) - IBM App Connect Enterprise 11.0.0.23 ===
+=== Platform Linux / x86_64 / 6.5.0-17-generic ===
+=== Timestamps are formatted in local time, 420 minutes past GMT. ===
+=== Time now 2024-02-20 23:30:05.212176 ===
+
+
+====== Starting plaintext trace (process ID 14510 - integration_server.TEST_SERVER) ======
+=== Build ib1100-L230926.934 (S1100-L230925.22624) - IBM App Connect Enterprise 11.0.0.23 ===
+=== Platform Linux / x86_64 / 6.5.0-17-generic ===
+=== Timestamps are formatted in local time, 420 minutes past GMT. ===
+=== Time now 2024-02-21 00:29:51.260696 ===
+
+
+====== Starting plaintext trace (process ID 17487 - integration_server.TEST_SERVER) ======
+=== Build ib1100-L230926.934 (S1100-L230925.22624) - IBM App Connect Enterprise 11.0.0.23 ===
+=== Platform Linux / x86_64 / 6.5.0-17-generic ===
+=== Timestamps are formatted in local time, 420 minutes past GMT. ===
+=== Time now 2024-02-21 00:47:45.244536 ===
+
+2024-02-21 13:40:48.381728    17523  UserTrace   BIP2380I: ACE message flow statistics.   ProcessID='17487',   Key='0',   Type='SnapShot',   Reason='Shutdown',   integrationNodeLabel='integration_server',   integrationNodeUUID='',   integrationServerName='TEST_SERVER',   integrationServerUUID='00000000-0000-0000-0000-000000000000',   MessageFlowName='gen.CRUD_REST_TRAINING',   StartDate='2024-02-21',   StartTime='13:40:31.753285',   GMTStartTime='2024-02-21T06:40:31.753+00:00',   EndDate='2024-02-21',   GMTEndTime='2024-02-21T06:40:46.754+00:00',   EndTime='13:40:46.754323',   TotalElapsedTime='0',   MaximumElapsedTime='0',   MinimumElapsedTime='0',   TotalCPUTime='0',   MaximumCPUTime='0',   MinimumCPUTime='0',   CPUTimeWaitingForInputMessage='456',   ElapsedTimeWaitingForInputMessage='15000604',   TotalInputMessages='0',   TotalSizeOfInputMessages='0',   MaximumSizeOfInputMessages='0',   MinimumSizeOfInputMessages='0',   NumberOfThreadsInPool='4',   TimesMaximumNumberOfThreadsReached='0',   TotalNumberOfMQErrors='0',   TotalNumberOfMessagesWithErrors='0',   TotalNumberOfErrorsProcessingMessages='0',   TotalNumberOfTimeOuts='0',   TotalNumberOfCommits='0',   TotalNumberOfBackouts='0',   AccountingOrigin='Anonymous'. 
+Statistical information for message flow 'gen.CRUD_REST_TRAINING' in integration node 'integration_server'. 
+This is an information message produced by ACE statistics. 
+2024-02-21 13:40:48.381908    17523  UserTrace   BIP2382I: ACE node statistics.   ProcessID='17487',   Key='0',   Label='HTTP Input',   Type='WSInputNode',   TotalElapsedTime='0',   MaximumElapsedTime='0',   MinimumElapsedTime='0',   TotalCPUTime='0',   MaximumCPUTime='0',   MinimumCPUTime='0',   CountOfInvocations='0',   NumberOfInputTerminals='0',   NumberOfOutputTerminals='4'.   
+Statistical information for node 'HTTP Input'. 
+This is an information message produced by ACE statistics. 
+2024-02-21 13:40:48.381960    17523  UserTrace   BIP2382I: ACE node statistics.   ProcessID='17487',   Key='0',   Label='HTTP Reply',   Type='WSReplyNode',   TotalElapsedTime='0',   MaximumElapsedTime='0',   MinimumElapsedTime='0',   TotalCPUTime='0',   MaximumCPUTime='0',   MinimumCPUTime='0',   CountOfInvocations='0',   NumberOfInputTerminals='1',   NumberOfOutputTerminals='2'.   
+Statistical information for node 'HTTP Reply'. 
+This is an information message produced by ACE statistics. 
+2024-02-21 13:40:48.381996    17523  UserTrace   BIP2382I: ACE node statistics.   ProcessID='17487',   Key='0',   Label='Route To Label',   Type='RouteToLabelNode',   TotalElapsedTime='0',   MaximumElapsedTime='0',   MinimumElapsedTime='0',   TotalCPUTime='0',   MaximumCPUTime='0',   MinimumCPUTime='0',   CountOfInvocations='0',   NumberOfInputTerminals='1',   NumberOfOutputTerminals='1'.   
+Statistical information for node 'Route To Label'. 
+This is an information message produced by ACE statistics. 
+2024-02-21 13:40:48.382040    17523  UserTrace   BIP2382I: ACE node statistics.   ProcessID='17487',   Key='0',   Label='deleteDelete (Implementation).Mapping',   Type='MSLMappingNode',   TotalElapsedTime='0',   MaximumElapsedTime='0',   MinimumElapsedTime='0',   TotalCPUTime='0',   MaximumCPUTime='0',   MinimumCPUTime='0',   CountOfInvocations='0',   NumberOfInputTerminals='1',   NumberOfOutputTerminals='2'.   
+Statistical information for node 'deleteDelete (Implementation).Mapping'. 
+This is an information message produced by ACE statistics. 
+2024-02-21 13:40:48.382104    17523  UserTrace   BIP2382I: ACE node statistics.   ProcessID='17487',   Key='0',   Label='deleteDelete (Implementation).deleteDelete#InTerminal.Input_1',   Type='InputNode',   TotalElapsedTime='0',   MaximumElapsedTime='0',   MinimumElapsedTime='0',   TotalCPUTime='0',   MaximumCPUTime='0',   MinimumCPUTime='0',   CountOfInvocations='0',   NumberOfInputTerminals='1',   NumberOfOutputTerminals='1'.   
+Statistical information for node 'deleteDelete (Implementation).deleteDelete#InTerminal.Input_1'. 
+This is an information message produced by ACE statistics. 
+2024-02-21 13:40:48.382148    17523  UserTrace   BIP2382I: ACE node statistics.   ProcessID='17487',   Key='0',   Label='deleteDelete (Implementation).deleteDelete#OutTerminal.Output_1',   Type='OutputNode',   TotalElapsedTime='0',   MaximumElapsedTime='0',   MinimumElapsedTime='0',   TotalCPUTime='0',   MaximumCPUTime='0',   MinimumCPUTime='0',   CountOfInvocations='0',   NumberOfInputTerminals='1',   NumberOfOutputTerminals='1'.   
+Statistical information for node 'deleteDelete (Implementation).deleteDelete#OutTerminal.Output_1'. 
+This is an information message produced by ACE statistics. 
+2024-02-21 13:40:48.382188    17523  UserTrace   BIP2382I: ACE node statistics.   ProcessID='17487',   Key='0',   Label='deleteDelete (Label)',   Type='LabelNode',   TotalElapsedTime='0',   MaximumElapsedTime='0',   MinimumElapsedTime='0',   TotalCPUTime='0',   MaximumCPUTime='0',   MinimumCPUTime='0',   CountOfInvocations='0',   NumberOfInputTerminals='0',   NumberOfOutputTerminals='1'.   
+Statistical information for node 'deleteDelete (Label)'. 
+This is an information message produced by ACE statistics. 
+2024-02-21 13:40:48.382228    17523  UserTrace   BIP2382I: ACE node statistics.   ProcessID='17487',   Key='0',   Label='getRead (Implementation).Mapping',   Type='MSLMappingNode',   TotalElapsedTime='0',   MaximumElapsedTime='0',   MinimumElapsedTime='0',   TotalCPUTime='0',   MaximumCPUTime='0',   MinimumCPUTime='0',   CountOfInvocations='0',   NumberOfInputTerminals='1',   NumberOfOutputTerminals='2'.   
+Statistical information for node 'getRead (Implementation).Mapping'. 
+This is an information message produced by ACE statistics. 
+2024-02-21 13:40:48.382268    17523  UserTrace   BIP2382I: ACE node statistics.   ProcessID='17487',   Key='0',   Label='getRead (Implementation).getRead#InTerminal.Input_1',   Type='InputNode',   TotalElapsedTime='0',   MaximumElapsedTime='0',   MinimumElapsedTime='0',   TotalCPUTime='0',   MaximumCPUTime='0',   MinimumCPUTime='0',   CountOfInvocations='0',   NumberOfInputTerminals='1',   NumberOfOutputTerminals='1'.   
+Statistical information for node 'getRead (Implementation).getRead#InTerminal.Input_1'. 
+This is an information message produced by ACE statistics. 
+2024-02-21 13:40:48.382308    17523  UserTrace   BIP2382I: ACE node statistics.   ProcessID='17487',   Key='0',   Label='getRead (Implementation).getRead#OutTerminal.Output_1',   Type='OutputNode',   TotalElapsedTime='0',   MaximumElapsedTime='0',   MinimumElapsedTime='0',   TotalCPUTime='0',   MaximumCPUTime='0',   MinimumCPUTime='0',   CountOfInvocations='0',   NumberOfInputTerminals='1',   NumberOfOutputTerminals='1'.   
+Statistical information for node 'getRead (Implementation).getRead#OutTerminal.Output_1'. 
+This is an information message produced by ACE statistics. 
+2024-02-21 13:40:48.382360    17523  UserTrace   BIP2382I: ACE node statistics.   ProcessID='17487',   Key='0',   Label='getRead (Label)',   Type='LabelNode',   TotalElapsedTime='0',   MaximumElapsedTime='0',   MinimumElapsedTime='0',   TotalCPUTime='0',   MaximumCPUTime='0',   MinimumCPUTime='0',   CountOfInvocations='0',   NumberOfInputTerminals='0',   NumberOfOutputTerminals='1'.   
+Statistical information for node 'getRead (Label)'. 
+This is an information message produced by ACE statistics. 
+2024-02-21 13:40:48.382420    17523  UserTrace   BIP2382I: ACE node statistics.   ProcessID='17487',   Key='0',   Label='postCreate (Implementation).Mapping',   Type='MSLMappingNode',   TotalElapsedTime='0',   MaximumElapsedTime='0',   MinimumElapsedTime='0',   TotalCPUTime='0',   MaximumCPUTime='0',   MinimumCPUTime='0',   CountOfInvocations='0',   NumberOfInputTerminals='1',   NumberOfOutputTerminals='2'.   
+Statistical information for node 'postCreate (Implementation).Mapping'. 
+This is an information message produced by ACE statistics. 
+2024-02-21 13:40:48.382484    17523  UserTrace   BIP2382I: ACE node statistics.   ProcessID='17487',   Key='0',   Label='postCreate (Implementation).postCreate#InTerminal.Input_1',   Type='InputNode',   TotalElapsedTime='0',   MaximumElapsedTime='0',   MinimumElapsedTime='0',   TotalCPUTime='0',   MaximumCPUTime='0',   MinimumCPUTime='0',   CountOfInvocations='0',   NumberOfInputTerminals='1',   NumberOfOutputTerminals='1'.   
+Statistical information for node 'postCreate (Implementation).postCreate#InTerminal.Input_1'. 
+This is an information message produced by ACE statistics. 
+2024-02-21 13:40:48.382544    17523  UserTrace   BIP2382I: ACE node statistics.   ProcessID='17487',   Key='0',   Label='postCreate (Implementation).postCreate#OutTerminal.Output_1',   Type='OutputNode',   TotalElapsedTime='0',   MaximumElapsedTime='0',   MinimumElapsedTime='0',   TotalCPUTime='0',   MaximumCPUTime='0',   MinimumCPUTime='0',   CountOfInvocations='0',   NumberOfInputTerminals='1',   NumberOfOutputTerminals='1'.   
+Statistical information for node 'postCreate (Implementation).postCreate#OutTerminal.Output_1'. 
+This is an information message produced by ACE statistics. 
+2024-02-21 13:40:48.382600    17523  UserTrace   BIP2382I: ACE node statistics.   ProcessID='17487',   Key='0',   Label='postCreate (Label)',   Type='LabelNode',   TotalElapsedTime='0',   MaximumElapsedTime='0',   MinimumElapsedTime='0',   TotalCPUTime='0',   MaximumCPUTime='0',   MinimumCPUTime='0',   CountOfInvocations='0',   NumberOfInputTerminals='0',   NumberOfOutputTerminals='1'.   
+Statistical information for node 'postCreate (Label)'. 
+This is an information message produced by ACE statistics. 
+2024-02-21 13:40:48.382628    17523  UserTrace   BIP2382I: ACE node statistics.   ProcessID='17487',   Key='0',   Label='putUpdate (Implementation).Mapping',   Type='MSLMappingNode',   TotalElapsedTime='0',   MaximumElapsedTime='0',   MinimumElapsedTime='0',   TotalCPUTime='0',   MaximumCPUTime='0',   MinimumCPUTime='0',   CountOfInvocations='0',   NumberOfInputTerminals='1',   NumberOfOutputTerminals='2'.   
+Statistical information for node 'putUpdate (Implementation).Mapping'. 
+This is an information message produced by ACE statistics. 
+2024-02-21 13:40:48.382652    17523  UserTrace   BIP2382I: ACE node statistics.   ProcessID='17487',   Key='0',   Label='putUpdate (Implementation).putUpdate#InTerminal.Input_1',   Type='InputNode',   TotalElapsedTime='0',   MaximumElapsedTime='0',   MinimumElapsedTime='0',   TotalCPUTime='0',   MaximumCPUTime='0',   MinimumCPUTime='0',   CountOfInvocations='0',   NumberOfInputTerminals='1',   NumberOfOutputTerminals='1'.   
+Statistical information for node 'putUpdate (Implementation).putUpdate#InTerminal.Input_1'. 
+This is an information message produced by ACE statistics. 
+2024-02-21 13:40:48.382676    17523  UserTrace   BIP2382I: ACE node statistics.   ProcessID='17487',   Key='0',   Label='putUpdate (Implementation).putUpdate#OutTerminal.Output_1',   Type='OutputNode',   TotalElapsedTime='0',   MaximumElapsedTime='0',   MinimumElapsedTime='0',   TotalCPUTime='0',   MaximumCPUTime='0',   MinimumCPUTime='0',   CountOfInvocations='0',   NumberOfInputTerminals='1',   NumberOfOutputTerminals='1'.   
+Statistical information for node 'putUpdate (Implementation).putUpdate#OutTerminal.Output_1'. 
+This is an information message produced by ACE statistics. 
+2024-02-21 13:40:48.382712    17523  UserTrace   BIP2382I: ACE node statistics.   ProcessID='17487',   Key='0',   Label='putUpdate (Label)',   Type='LabelNode',   TotalElapsedTime='0',   MaximumElapsedTime='0',   MinimumElapsedTime='0',   TotalCPUTime='0',   MaximumCPUTime='0',   MinimumCPUTime='0',   CountOfInvocations='0',   NumberOfInputTerminals='0',   NumberOfOutputTerminals='1'.   
+Statistical information for node 'putUpdate (Label)'. 
+This is an information message produced by ACE statistics. 
+
+====== Starting plaintext trace (process ID 46462 - integration_server.TEST_SERVER) ======
+=== Build ib1100-L230926.934 (S1100-L230925.22624) - IBM App Connect Enterprise 11.0.0.23 ===
+=== Platform Linux / x86_64 / 6.5.0-17-generic ===
+=== Timestamps are formatted in local time, 420 minutes past GMT. ===
+=== Time now 2024-02-21 13:41:08.037399 ===
+
+
+====== Starting plaintext trace (process ID 47959 - integration_server.TEST_SERVER) ======
+=== Build ib1100-L230926.934 (S1100-L230925.22624) - IBM App Connect Enterprise 11.0.0.23 ===
+=== Platform Linux / x86_64 / 6.5.0-17-generic ===
+=== Timestamps are formatted in local time, 420 minutes past GMT. ===
+=== Time now 2024-02-21 13:49:27.408460 ===
+
+
+====== Starting plaintext trace (process ID 49056 - integration_server.TEST_SERVER) ======
+=== Build ib1100-L230926.934 (S1100-L230925.22624) - IBM App Connect Enterprise 11.0.0.23 ===
+=== Platform Linux / x86_64 / 6.5.0-17-generic ===
+=== Timestamps are formatted in local time, 420 minutes past GMT. ===
+=== Time now 2024-02-21 13:57:39.416340 ===
+
+
+====== Starting plaintext trace (process ID 51182 - integration_server.TEST_SERVER) ======
+=== Build ib1100-L230926.934 (S1100-L230925.22624) - IBM App Connect Enterprise 11.0.0.23 ===
+=== Platform Linux / x86_64 / 6.5.0-17-generic ===
+=== Timestamps are formatted in local time, 420 minutes past GMT. ===
+=== Time now 2024-02-21 14:15:43.166864 ===
+

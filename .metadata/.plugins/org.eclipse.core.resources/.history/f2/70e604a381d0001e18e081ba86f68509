@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://CrudService" xmlns:ibmSchExtn="http://www.ibm.com/schema/extensions" xmlns:tns="http://CrudService">
+    <xsd:element ibmSchExtn:docRoot="true" name="createData">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="ID" nillable="true" type="xsd:int"/>
+                <xsd:element name="NAMA" nillable="true" type="xsd:string"/>
+                <xsd:element name="TEMPAT_LAHIR" nillable="true" type="xsd:string"/>
+                <xsd:element name="TANGGAL_LAHIR" nillable="true" type="xsd:string"/>
+                <xsd:element name="JENIS_KELAMIN" nillable="true" type="xsd:string"/>
+                <xsd:element name="TEMPAT_TINGGAL" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element ibmSchExtn:docRoot="true" name="createDataResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+                <xsd:element name="STATUS" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    <xsd:element ibmSchExtn:docRoot="true" name="readData">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="TEMPAT_TINGGAL" nillable="true" type="xsd:string"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+    <xsd:element ibmSchExtn:docRoot="true" name="readDataResponse">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="DATA" nillable="true" type="tns:listData"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+    <xsd:complexType name="listData">
+    <xsd:sequence>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="listData" type="tns:listDataType"/>
+    </xsd:sequence>
+  </xsd:complexType>
+    <xsd:complexType name="listDataType">
+    <xsd:sequence>
+      <xsd:element name="ID" type="xsd:int"/>
+      <xsd:element name="NAMA" type="xsd:string"/>
+      <xsd:element name="TEMPAT_LAHIR" type="xsd:string"/>
+      <xsd:element name="TANGGAL_LAHIR" type="xsd:string"/>
+      <xsd:element name="JENIS_KELAMIN" type="xsd:string"/>
+      <xsd:element name="TEMPAT_TINGGAL" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+    <xsd:element ibmSchExtn:docRoot="true" name="updateData">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="ID" nillable="true" type="xsd:int"/>
+        <xsd:element name="NAMA" nillable="true" type="xsd:string"/>
+        <xsd:element name="TEMPAT_LAHIR" nillable="true" type="xsd:string"/>
+        <xsd:element name="TANGGAL_LAHIR" nillable="true" type="xsd:string"/>
+        <xsd:element name="JENIS_KELAMIN" nillable="true" type="xsd:string"/>
+        <xsd:element name="TEMPAT_TINGGAL" nillable="true" type="xsd:string"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+    <xsd:element ibmSchExtn:docRoot="true" name="updateDataResponse">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="STATUS" nillable="true" type="xsd:string"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+    <xsd:element ibmSchExtn:docRoot="true" name="deleteData">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="ID" nillable="true" type="xsd:int"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+    <xsd:element ibmSchExtn:docRoot="true" name="deleteDataResponse">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="STATUS" nillable="true" type="xsd:string"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

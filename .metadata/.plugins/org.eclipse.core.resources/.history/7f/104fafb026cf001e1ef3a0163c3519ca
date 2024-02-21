@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><mappingRoot xmlns="http://www.ibm.com/2008/ccl/Mapping" domainID="com.ibm.msl.mapping.xml" domainIDExtension="mb" mainMap="true" targetNamespace="default" version="8.0.5.0" xmlns:map="default">
+    <inlinedXMLSchema><![CDATA[<?xml version="1.0" encoding="UTF-8"?><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <xsd:element name="id" type="xsd:integer"/>
+</xsd:schema>]]></inlinedXMLSchema>
+    <input path="jar:file://!com/ibm/etools/mft/map/xsds/predefined/BlobMessage.xsd" var="var"/>
+    <input inlinedXMLSchema="true" path="../schema_0.xsd" var="var1"/>
+    <input path="db:database(/crud.dbm,crud,db:schema-tables(crud,users))" var="crud"/>
+    <input path="jar:file://!com/ibm/msl/mapping/rdb/xsds/dbexception.xsd" var="var6"/>
+    <output path="jar:file://!com/ibm/etools/mft/map/xsds/predefined/JsonDomainMsg.xsd" var="var4"/>
+    <output derivedFrom="MB:JSON_schema_in_swagger_document" path="/swagger.json" var="var5"/>
+    <namespaces>
+        <namespace kind="supplement" prefix="out" uri="http://www.ibm.com/iib/msl/json"/>
+    </namespaces>
+    <generation engine="xquery"/>
+    <mappingDeclaration name="getRead_Mapping">
+        <input derivedFrom="MB:JSON_operation_name:getRead" path="$var/mb:msg(BLOB,assembly,BLOB,Properties,LocalEnvironment)" var="ComIbmMessageAssembly_BLOB">
+            <cast derivedFrom="MB:JSON_path_query_parm:id" path="$ComIbmMessageAssembly_BLOB/LocalEnvironment/REST/Input/Parameters/any" qualifier="id" ref="var1"/>
+            <cast castType="userDefined" path="$ComIbmMessageAssembly_BLOB/LocalEnvironment/HTTP/Input/QueryString/any" qualifier="id" ref="var1"/>
+        </input>
+        <input path="$crud/db:select(fn:false(),ResultSet(crud/users/nama,crud/users/tempat_lahir,crud/users/jenis_kelamin,crud/users/tempat_tinggal,crud/users/tanggal_lahir),db:where('crud.users.id =  ?','?'=$ComIbmMessageAssembly_BLOB/LocalEnvironment/HTTP/Input/QueryString//id))" var="dbselect"/>
+        <output namespace="http://www.ibm.com/iib/msl/json" path="$var4/mb:msg(JSON,assembly,JSON,Properties)" var="MessageAssembly">
+            <cast derivedFrom="MB:JSON_operation_response" path="$MessageAssembly/JSON/Data/type('anyType')" qualifier="{http://www.ibm.com/iib/msl/json}dataAndStatus" ref="var5"/>
+        </output>
+        <move>
+            <input path="$ComIbmMessageAssembly_BLOB/Properties"/>
+            <output path="$MessageAssembly/Properties"/>
+        </move>
+        <transaction>
+            <select ref="dbselect">
+                <input path="$dbselect/ResultSet"/>
+                <output path="$MessageAssembly/JSON/spath('Data',2)"/>
+                <condition>
+                    <if>
+                        <input path="." var="ResultSet"/>
+                        <output path="."/>
+                        <test lang="xpath">fncount($ResultSet3)&gt;0</test>
+                        <foreach>
+                            <input path="$ResultSet/."/>
+                            <output path="."/>
+                        </foreach>
+                        <move>
+                            <input path="$ResultSet/crud/users/nama" var="nama"/>
+                            <output path="data/Item/nama"/>
+                        </move>
+                        <move>
+                            <input path="$ResultSet/crud/users/tempat_lahir" var="tempatlahir"/>
+                            <output path="data/Item/tempat_lahir"/>
+                        </move>
+                        <move>
+                            <input path="$ResultSet/crud/users/jenis_kelamin" var="jeniskelamin"/>
+                            <output path="data/Item/jenis_kelamin"/>
+                        </move>
+                        <move>
+                            <input path="$ResultSet/crud/users/tempat_tinggal" var="tempattinggal"/>
+                            <output path="data/Item/tempat_tinggal"/>
+                        </move>
+                        <move>
+                            <input path="$ResultSet/crud/users/tanggal_lahir" var="tanggallahir"/>
+                            <output path="data/Item/tanggal_lahir"/>
+                        </move>
+                    </if>
+                    <else>
+                        <output path="."/>
+                        <assign value="500">
+                            <output path="status/code"/>
+                        </assign>
+                        <assign value="Fail to read data.">
+                            <output path="status/message"/>
+                        </assign>
+                    </else>
+                </condition>
+                <assign value="0">
+                    <output path="status/code"/>
+                </assign>
+                <assign>
+                    <output path="status/message"/>
+                </assign>
+            </select>
+            <failure>
+                <input path="$var6/DBExceptions"/>
+                <output path="$MessageAssembly/JSON/spath('Data',2)"/>
+                <move>
+                    <input path="DBException/ErrorCode"/>
+                    <output path="status/code"/>
+                </move>
+                <move>
+                    <input path="DBException/Message"/>
+                    <output path="status/message"/>
+                </move>
+            </failure>
+        </transaction>
+    </mappingDeclaration>
+</mappingRoot>

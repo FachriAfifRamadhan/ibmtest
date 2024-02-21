@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><MessageBroker name="crud">
+  <XSDCollection href="platform:/resource/crud/TestData.xsd" prefix="" targetNamespace="">
+    <import name="IBMdefined/CommaSeparatedFormat.xsd" targetNamespace="http://www.ibm.com/dfdl/CommaSeparatedFormat"/>
+    <element href="platform:/resource/crud/TestData.xsd#//TestData;XSDElementDeclaration" name="TestData"/>
+  </XSDCollection>
+  <XSDCollection href="platform:/resource/crud/IBMdefined/CommaSeparatedFormat.xsd" prefix="tns" targetNamespace="http://www.ibm.com/dfdl/CommaSeparatedFormat"/>
+</MessageBroker>

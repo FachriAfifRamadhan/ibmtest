@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?><mappingRoot xmlns="http://www.ibm.com/2008/ccl/Mapping" domainID="com.ibm.msl.mapping.xml" domainIDExtension="mb" mainMap="true" targetNamespace="gen" version="8.0.5.0" xmlns:map="gen">
+    <generation engine="xquery"/>
+    <mappingDeclaration name="createData_Request_Response_Create"/>
+</mappingRoot>

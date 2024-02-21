@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?><wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" name="CrudService" targetNamespace="http://CrudService" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://CrudService" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <wsdl:documentation>
+    <wsdl:appinfo source="WMQI_APPINFO">
+      <MRWSDLAppInfo imported="true">
+        <binding hasEncoding="false" imported="true" name="CrudServiceHttpBinding" originalBindingStyle="document"/>
+        <generatedXSD location="CrudService_InlineSchema1.xsd"/>
+      </MRWSDLAppInfo>
+    </wsdl:appinfo>
+  </wsdl:documentation>
+  
+  <wsdl:types>
+    
+        <xsd:schema targetNamespace="http://CrudService">
+      <xsd:include schemaLocation="CrudService_InlineSchema1.xsd"/>
+    </xsd:schema>
+    </wsdl:types>
+  <wsdl:message name="createDataRequestMsg">
+    <wsdl:part element="tns:createData" name="createDataParameters"/>
+  </wsdl:message>
+  <wsdl:message name="createDataResponseMsg">
+    <wsdl:part element="tns:createDataResponse" name="createDataResult"/>
+  </wsdl:message>
+    <wsdl:message name="readDataRequestMsg">
+    <wsdl:part element="tns:readData" name="readDataParameters"/>
+  </wsdl:message>
+    <wsdl:message name="readDataResponseMsg">
+    <wsdl:part element="tns:readDataResponse" name="readDataResult"/>
+  </wsdl:message>
+    <wsdl:message name="updateDataRequestMsg">
+    <wsdl:part element="tns:updateData" name="updateDataParameters"/>
+  </wsdl:message>
+    <wsdl:message name="updateDataResponseMsg">
+    <wsdl:part element="tns:updateDataResponse" name="updateDataResult"/>
+  </wsdl:message>
+    <wsdl:message name="deleteDataRequestMsg">
+    <wsdl:part element="tns:deleteData" name="deleteDataParameters"/>
+  </wsdl:message>
+    <wsdl:message name="deleteDataResponseMsg">
+    <wsdl:part element="tns:deleteDataResponse" name="deleteDataResult"/>
+  </wsdl:message>
+    <wsdl:portType name="CrudService">
+    <wsdl:operation name="createData">
+            <wsdl:input message="tns:createDataRequestMsg" name="createDataRequest"/>
+            <wsdl:output message="tns:createDataResponseMsg" name="createDataResponse"/>
+    </wsdl:operation>
+        <wsdl:operation name="readData">
+      <wsdl:input message="tns:readDataRequestMsg" name="readDataRequest"/>
+      <wsdl:output message="tns:readDataResponseMsg" name="readDataResponse"/>
+    </wsdl:operation>
+        <wsdl:operation name="updateData">
+      <wsdl:input message="tns:updateDataRequestMsg" name="updateDataRequest"/>
+      <wsdl:output message="tns:updateDataResponseMsg" name="updateDataResponse"/>
+    </wsdl:operation>
+        <wsdl:operation name="deleteData">
+      <wsdl:input message="tns:deleteDataRequestMsg" name="deleteDataRequest"/>
+      <wsdl:output message="tns:deleteDataResponseMsg" name="deleteDataResponse"/>
+    </wsdl:operation>
+    </wsdl:portType>
+  <wsdl:binding name="CrudServiceHttpBinding" type="tns:CrudService">
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="createData">
+      <soap:operation soapAction="http://CrudService/createData"/>
+      <wsdl:input name="createDataRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="createDataResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+        <wsdl:operation name="readData">
+      <soap:operation soapAction="http://CrudService/readData"/>
+      <wsdl:input name="readDataRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="readDataResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+        <wsdl:operation name="updateData">
+      <soap:operation soapAction="http://CrudService/updateData"/>
+      <wsdl:input name="updateDataRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="updateDataResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+        <wsdl:operation name="deleteData">
+      <soap:operation soapAction="http://CrudService/deleteData"/>
+      <wsdl:input name="deleteDataRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="deleteDataResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    </wsdl:binding>
+  <wsdl:service name="CrudServiceHttpService">
+    <wsdl:port binding="tns:CrudServiceHttpBinding" name="CrudServiceHttpPort">
+      <soap:address location="http://localhost:7800/CrudService"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

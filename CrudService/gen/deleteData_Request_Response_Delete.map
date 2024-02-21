@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><mappingRoot xmlns="http://www.ibm.com/2008/ccl/Mapping" domainID="com.ibm.msl.mapping.xml" domainIDExtension="mb" mainMap="true" targetNamespace="gen" version="8.0.5.0" xmlns:map="gen">
+    <input path="/CrudService_InlineSchema1.xsd" var="var"/>
+    <input path="jar:file://!com/ibm/msl/mapping/rdb/xsds/dbreturn.xsd" var="var1"/>
+    <input path="jar:file://!com/ibm/msl/mapping/rdb/xsds/dbexception.xsd" var="var2"/>
+    <output path="/CrudService_InlineSchema1.xsd" var="var3"/>
+    <output path="db:table(/crud.dbm,crud,crud,users)" var="users1"/>
+    <namespaces>
+        <namespace kind="extension" prefix="fn" uri="http://www.w3.org/2005/xpath-functions"/>
+    </namespaces>
+    <generation engine="xquery"/>
+    <mappingDeclaration name="deleteData_Request_Response_Delete">
+        <input namespace="http://CrudService" path="$var/mb:msg(deleteData,assembly,XMLNSC,Properties)" var="MessageAssembly"/>
+        <output namespace="http://CrudService" path="$var3/mb:msg(deleteDataResponse,assembly,XMLNSC,Properties)" var="MessageAssembly1"/>
+        <output path="$users1/db:delete(fn:false(),db:where('crud.users.id =  ?','?'=$MessageAssembly/deleteData/ID))" var="dbdelete1"/>
+        <transaction>
+            <delete ref="dbdelete1">
+                <input path="$MessageAssembly/deleteData/ID" var="ID"/>
+                <output path="$dbdelete1/."/>
+            </delete>
+            <return>
+                <input path="$var1/DBDeleteReturn"/>
+            </return>
+        </transaction>
+        <function ref="fn:concat">
+            <input path="$MessageAssembly/deleteData/ID" var="ID1"/>
+            <output path="$MessageAssembly1/deleteDataResponse/STATUS"/>
+            <param name="string1" value="$ID1"/>
+            <param name="string2" value="'Deleted'"/>
+        </function>
+    </mappingDeclaration>
+</mappingRoot>

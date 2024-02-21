@@ -1,0 +1,7 @@
+
+====== Starting plaintext trace (process ID 51182 - integration_server.TEST_SERVER) ======
+=== Build ib1100-L230926.934 (S1100-L230925.22624) - IBM App Connect Enterprise 11.0.0.23 ===
+=== Platform Linux / x86_64 / 6.5.0-17-generic ===
+=== Timestamps are formatted in local time, 420 minutes past GMT. ===
+=== Time now 2024-02-21 14:15:43.166740 ===
+

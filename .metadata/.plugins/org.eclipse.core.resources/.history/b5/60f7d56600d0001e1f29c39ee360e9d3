@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><mappingRoot xmlns="http://www.ibm.com/2008/ccl/Mapping" domainID="com.ibm.msl.mapping.xml" domainIDExtension="mb" mainMap="true" targetNamespace="default" version="8.0.5.0" xmlns:map="default">
+    <inlinedXMLSchema><![CDATA[<?xml version="1.0" encoding="UTF-8"?><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <xsd:element name="id" type="xsd:integer"/>
+</xsd:schema>]]></inlinedXMLSchema>
+    <input path="jar:file://!com/ibm/etools/mft/map/xsds/predefined/BlobMessage.xsd" var="var"/>
+    <input inlinedXMLSchema="true" path="../schema_0.xsd" var="var1"/>
+    <input path="jar:file://!com/ibm/msl/mapping/rdb/xsds/dbreturn.xsd" var="var4"/>
+    <input path="jar:file://!com/ibm/msl/mapping/rdb/xsds/dbexception.xsd" var="var5"/>
+    <output path="jar:file://!com/ibm/etools/mft/map/xsds/predefined/JsonDomainMsg.xsd" var="var2"/>
+    <output derivedFrom="MB:JSON_schema_in_swagger_document" path="/swagger.json" var="var3"/>
+    <output path="db:table(/crud.dbm,crud,crud,users)" var="users"/>
+    <namespaces>
+        <namespace kind="supplement" prefix="out" uri="http://www.ibm.com/iib/msl/json"/>
+    </namespaces>
+    <generation engine="xquery"/>
+    <mappingDeclaration name="deleteDelete_Mapping">
+        <input derivedFrom="MB:JSON_operation_name:deleteDelete" path="$var/mb:msg(BLOB,assembly,BLOB,Properties,LocalEnvironment)" var="ComIbmMessageAssembly_BLOB">
+            <cast derivedFrom="MB:JSON_path_query_parm:id" path="$ComIbmMessageAssembly_BLOB/LocalEnvironment/REST/Input/Parameters/any" qualifier="id" ref="var1" var="any"/>
+            <cast castType="userDefined" path="$ComIbmMessageAssembly_BLOB/LocalEnvironment/HTTP/Input/QueryString/any" qualifier="id" ref="var1" var="any1"/>
+        </input>
+        <output namespace="http://www.ibm.com/iib/msl/json" path="$var2/mb:msg(JSON,assembly,JSON,Properties)" var="ComIbmMessageAssembly_JSON">
+            <cast derivedFrom="MB:JSON_operation_response" path="$ComIbmMessageAssembly_JSON/JSON/Data/type('anyType')" qualifier="{http://www.ibm.com/iib/msl/json}statusElement" ref="var3" var="anyType"/>
+        </output>
+        <output path="$users/db:delete(fn:false(),db:where('crud.users.id =  ?','?'=$ComIbmMessageAssembly_BLOB/LocalEnvironment/HTTP/Input/QueryString//id))" var="dbdelete"/>
+        <move>
+            <input path="$ComIbmMessageAssembly_BLOB/Properties"/>
+            <output path="$ComIbmMessageAssembly_JSON/Properties"/>
+        </move>
+        <task type="info">
+            <documentation description="The REST API input data of operation deleteDelete.">This Task is provided to show the location of the REST API input data of operation deleteDelete.
+The path and query parameters are provided under "Parameters".
+You may need to use these as inputs to your mappings.</documentation>
+            <input path="$ComIbmMessageAssembly_BLOB/LocalEnvironment/REST/Input"/>
+        </task>
+        <transaction>
+            <delete ref="dbdelete">
+                <input path="$ComIbmMessageAssembly_BLOB/LocalEnvironment" var="LocalEnvironment"/>
+                <output path="$dbdelete/."/>
+            </delete>
+            <return>
+                <input path="$var4/DBDeleteReturn" var="DBDeleteReturn"/>
+                <output path="$ComIbmMessageAssembly_JSON/JSON/spath('Data',2)"/>
+                <condition>
+                    <if>
+                        <input path="$DBDeleteReturn/NumberOfRowsDeleted" var="NumberOfRowsDeleted"/>
+                        <output path="."/>
+                        <test lang="xpath">fn:count($NumberOfRowsDeleted1) &gt; 0</test>
+                        <assign value="200">
+                            <output path="code"/>
+                        </assign>
+                        <assign value="Data successfully deleted.">
+                            <output path="message"/>
+                        </assign>
+                    </if>
+                    <else>
+                        <output path="."/>
+                        <assign value="500">
+                            <output path="code"/>
+                        </assign>
+                        <assign value="Data not deleted.">
+                            <output path="message"/>
+                        </assign>
+                    </else>
+                </condition>
+            </return>
+            <failure>
+                <input path="$var5/DBExceptions" var="DBExceptions"/>
+                <output path="$ComIbmMessageAssembly_JSON/JSON/spath('Data',2)"/>
+                <move>
+                    <input path="$DBExceptions/DBException/Message" var="Message"/>
+                    <output path="message"/>
+                </move>
+                <move>
+                    <input path="$DBExceptions/DBException/ErrorCode" var="ErrorCode"/>
+                    <output path="code"/>
+                </move>
+            </failure>
+        </transaction>
+    </mappingDeclaration>
+</mappingRoot>

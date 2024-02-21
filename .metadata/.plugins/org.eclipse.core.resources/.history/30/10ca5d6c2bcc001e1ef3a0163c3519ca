@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><mappingRoot xmlns="http://www.ibm.com/2008/ccl/Mapping" domainID="com.ibm.msl.mapping.xml" domainIDExtension="mb" mainMap="true" targetNamespace="gen" version="8.0.5.0" xmlns:map="gen">
+    <output path="/CrudService_InlineSchema1.xsd"/>
+    <generation engine="xquery"/>
+    <mappingDeclaration name="updateData_Request_Response_Update">
+        <output namespace="http://CrudService" path="mb:msg(updateDataResponse,assembly,XMLNSC,Properties)"/>
+    </mappingDeclaration>
+</mappingRoot>

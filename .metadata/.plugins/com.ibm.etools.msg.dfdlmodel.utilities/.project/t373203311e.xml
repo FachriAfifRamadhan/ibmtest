@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><MessageBroker name="CrudService">
+  <XSDCollection href="platform:/resource/CrudService/CrudService.xsd" prefix="" targetNamespace="http://CrudService">
+    <include name="/CrudService/CrudService_InlineSchema1.xsd" targetNamespace="http://CrudService"/>
+  </XSDCollection>
+  <XSDCollection href="platform:/resource/CrudService/CrudService_InlineSchema1.xsd" prefix="tns" targetNamespace="http://CrudService">
+    <element href="platform:/resource/CrudService/CrudService_InlineSchema1.xsd#//createData;XSDElementDeclaration" name="createData"/>
+    <element href="platform:/resource/CrudService/CrudService_InlineSchema1.xsd#//createDataResponse;XSDElementDeclaration=1" name="createDataResponse"/>
+    <element href="platform:/resource/CrudService/CrudService_InlineSchema1.xsd#//readData;XSDElementDeclaration=2" name="readData"/>
+    <element href="platform:/resource/CrudService/CrudService_InlineSchema1.xsd#//readDataResponse;XSDElementDeclaration=3" name="readDataResponse"/>
+    <element href="platform:/resource/CrudService/CrudService_InlineSchema1.xsd#//updateData;XSDElementDeclaration=4" name="updateData"/>
+    <element href="platform:/resource/CrudService/CrudService_InlineSchema1.xsd#//updateDataResponse;XSDElementDeclaration=5" name="updateDataResponse"/>
+    <element href="platform:/resource/CrudService/CrudService_InlineSchema1.xsd#//deleteData;XSDElementDeclaration=6" name="deleteData"/>
+    <element href="platform:/resource/CrudService/CrudService_InlineSchema1.xsd#//deleteDataResponse;XSDElementDeclaration=7" name="deleteDataResponse"/>
+    <complexType baseType="mlib://CrudService#/-/complexType{http://www.w3.org/2001/XMLSchema}anyType" href="platform:/resource/CrudService/CrudService_InlineSchema1.xsd#//listData;XSDComplexTypeDefinition" name="listData"/>
+    <complexType baseType="mlib://CrudService#/-/complexType{http://www.w3.org/2001/XMLSchema}anyType" href="platform:/resource/CrudService/CrudService_InlineSchema1.xsd#//listDataType;XSDComplexTypeDefinition=1" name="listDataType"/>
+  </XSDCollection>
+</MessageBroker>

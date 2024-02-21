@@ -1,0 +1,19 @@
+
+
+Importing file: /home/fachri/IBM/ACET11/workspace/CrudService/CrudService.wsdl
+
+The WSDL import will proceed with bindings CrudServiceHttpBinding.
+Creating wsdl schema document for platform:/resource/CrudService/CrudService.wsdl.
+Parsing wsdl binding {http://CrudService}CrudServiceHttpBinding.
+Parsing wsdl binding input createData.
+Parsing wsdl binding output createData.
+Parsing wsdl binding input readData.
+Parsing wsdl binding output readData.
+Parsing wsdl binding input updateData.
+Parsing wsdl binding output updateData.
+Parsing wsdl binding input deleteData.
+Parsing wsdl binding output deleteData.
+Processing doc style for operation createData.
+Processing doc style for operation readData.
+Processing doc style for operation updateData.
+Processing doc style for operation deleteData.

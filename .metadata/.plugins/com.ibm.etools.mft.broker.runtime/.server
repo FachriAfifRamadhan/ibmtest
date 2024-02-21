@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<IntegrationServerConnectionParameters Version="11.0.0" serverIpcSocket="/tmp/204fded6-a2d7-49b5-ba50-9d482b7bdac0.uds" serverName="TEST_SERVER" serverWorkDir="/home/fachri/IBM/ACET11/workspace/TEST_SERVER" xmlns="http://www.ibm.com/xmlns/prod/ace/11"/>

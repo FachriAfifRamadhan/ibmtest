@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><mappingRoot xmlns="http://www.ibm.com/2008/ccl/Mapping" domainID="com.ibm.msl.mapping.xml" domainIDExtension="mb" mainMap="true" targetNamespace="gen" version="8.0.5.0" xmlns:map="gen">
+    <input path="/CrudService_InlineSchema1.xsd" var="var"/>
+    <input path="db:database(/crud.dbm,crud,db:schema-tables(crud,users))" var="crud"/>
+    <output path="/CrudService_InlineSchema1.xsd"/>
+    <namespaces>
+        <namespace kind="supplement" prefix="io" uri="http://CrudService"/>
+    </namespaces>
+    <generation engine="xquery"/>
+    <mappingDeclaration name="readData_Request_Response_getData">
+        <input namespace="http://CrudService" path="$var/mb:msg(readData,assembly,XMLNSC,Properties)" var="ComIbmMessageAssembly_readData"/>
+        <input path="$crud/db:select(fn:false(),ResultSet(crud/users/id,crud/users/nama,crud/users/tempat_lahir,crud/users/jenis_kelamin,crud/users/tempat_tinggal,crud/users/tanggal_lahir),db:where('crud.users.tempat_tinggal'))" var="dbselect"/>
+        <output namespace="http://CrudService" path="mb:msg(readDataResponse,assembly,XMLNSC,Properties)" var="ComIbmMessageAssembly_readDataResponse"/>
+        <select ref="dbselect">
+            <input path="$dbselect/ResultSet"/>
+            <output path="$ComIbmMessageAssembly_readDataResponse/readDataResponse/DATA/listData"/>
+            <foreach>
+                <input path="."/>
+                <output path="."/>
+                <move>
+                    <input path="crud/users/id"/>
+                    <output path="ID"/>
+                </move>
+                <move>
+                    <input path="crud/users/nama"/>
+                    <output path="NAMA"/>
+                </move>
+                <move>
+                    <input path="crud/users/tempat_lahir"/>
+                    <output path="TEMPAT_LAHIR"/>
+                </move>
+                <move>
+                    <input path="crud/users/jenis_kelamin"/>
+                    <output path="JENIS_KELAMIN"/>
+                </move>
+                <move>
+                    <input path="crud/users/tempat_tinggal"/>
+                    <output path="TEMPAT_TINGGAL"/>
+                </move>
+                <move>
+                    <input path="crud/users/tanggal_lahir"/>
+                    <output path="TANGGAL_LAHIR"/>
+                </move>
+            </foreach>
+        </select>
+    </mappingDeclaration>
+</mappingRoot>

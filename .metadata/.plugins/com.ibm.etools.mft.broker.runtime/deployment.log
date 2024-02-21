@@ -1,0 +1,89 @@
+DefaultPolicies>>>>TEST_SERVER>>SUCCESS>>1707763725138
+BIP9332I<<PolicyProject 'DefaultPolicies' has been created successfully. <<1707763725138
+BIP9326I<<The source 'DefaultPoliciesproject.generated.bar' has been successfully deployed. <<1707763725138
+CRUD_REST_TRAINING>>>>TEST_SERVER>>SUCCESS>>1708435414569
+BIP9332I<<RestAPI 'CRUD_REST_TRAINING' has been created successfully. <<1708435414569
+BIP9326I<<The source 'CRUD_REST_TRAININGproject.generated.bar' has been successfully deployed. <<1708435414569
+CRUD_REST_TRAINING>>>>TEST_SERVER>>SUCCESS>>1708435435012
+BIP9332I<<RestAPI 'CRUD_REST_TRAINING' has been changed successfully. <<1708435435012
+BIP9326I<<The source 'CRUD_REST_TRAININGproject.generated.bar' has been successfully deployed. <<1708435435012
+CRUD_REST_TRAINING1.bar>>>>TEST_SERVER>>SUCCESS>>1708438093930
+BIP9332I<<RestAPI 'CRUD_REST_TRAINING' has been created successfully. <<1708438093930
+BIP9326I<<The source 'CRUD_REST_TRAINING1.bar' has been successfully deployed. <<1708438093930
+CRUD_REST_TRAINING2.bar>>>>TEST_SERVER>>SUCCESS>>1708439774704
+BIP9332I<<RestAPI 'CRUD_REST_TRAINING' has been changed successfully. <<1708439774704
+BIP9326I<<The source 'CRUD_REST_TRAINING2.bar' has been successfully deployed. <<1708439774704
+CRUD_REST_TRAINING3.bar>>>>TEST_SERVER>>SUCCESS>>1708441406488
+BIP9332I<<RestAPI 'CRUD_REST_TRAINING' has been changed successfully. <<1708441406488
+BIP9326I<<The source 'CRUD_REST_TRAINING3.bar' has been successfully deployed. <<1708441406488
+DefaultPolicies>>>>TEST_SERVER>>ERROR>>1708442944672
+BIP9328E<<The policy project 'DefaultPolicies' cannot be redeployed as the non-dynamic policy 'crud' differs or has been deleted from the policy project being deployed. <<1708442944672
+BIP9325E<<The source '/home/fachri/IBM/ACET11/workspace/GeneratedBarFiles/DefaultPoliciesproject.generated.bar' could not be deployed as it contains errors. No changes have been made to the integration server. <<1708442944672
+BIP2113E<<IBM App Connect Enterprise internal error: diagnostic information 'ImbBaseHelper has been passed a ImbConfigObject with an invalid type: expected/actual ', 'Policy', 'Resource'. <<1708442944672
+DefaultPolicies>>>>TEST_SERVER>>ERROR>>1708442966508
+BIP9328E<<The policy project 'DefaultPolicies' cannot be redeployed as the non-dynamic policy 'crud' differs or has been deleted from the policy project being deployed. <<1708442966508
+BIP9325E<<The source '/home/fachri/IBM/ACET11/workspace/GeneratedBarFiles/DefaultPoliciesproject.generated.bar' could not be deployed as it contains errors. No changes have been made to the integration server. <<1708442966508
+BIP2113E<<IBM App Connect Enterprise internal error: diagnostic information 'ImbBaseHelper has been passed a ImbConfigObject with an invalid type: expected/actual ', 'Policy', 'Resource'. <<1708442966508
+DefaultPolicies>>>>TEST_SERVER>>SUCCESS>>1708443097192
+BIP9332I<<PolicyProject 'DefaultPolicies' has been created successfully. <<1708443097192
+BIP9326I<<The source 'DefaultPoliciesproject.generated.bar' has been successfully deployed. <<1708443097192
+CRUD_REST_TRAINING3.bar>>>>TEST_SERVER>>SUCCESS>>1708443106068
+BIP9332I<<RestAPI 'CRUD_REST_TRAINING' has been created successfully. <<1708443106068
+BIP9326I<<The source 'CRUD_REST_TRAINING3.bar' has been successfully deployed. <<1708443106068
+DefaultPolicies>>>>TEST_SERVER>>SUCCESS>>1708443675191
+BIP9332I<<PolicyProject 'DefaultPolicies' has been created successfully. <<1708443675191
+BIP9326I<<The source 'DefaultPoliciesproject.generated.bar' has been successfully deployed. <<1708443675191
+CRUD_REST_TRAINING3.bar>>>>TEST_SERVER>>SUCCESS>>1708443696948
+BIP9332I<<RestAPI 'CRUD_REST_TRAINING' has been created successfully. <<1708443696948
+BIP9326I<<The source 'CRUD_REST_TRAINING3.bar' has been successfully deployed. <<1708443696948
+DefaultPolicies>>>>TEST_SERVER>>SUCCESS>>1708450225339
+BIP9332I<<PolicyProject 'DefaultPolicies' has been created successfully. <<1708450225339
+BIP9326I<<The source 'DefaultPoliciesproject.generated.bar' has been successfully deployed. <<1708450225339
+CRUD_REST_TRAINING3.bar>>>>TEST_SERVER>>SUCCESS>>1708450238541
+BIP9332I<<RestAPI 'CRUD_REST_TRAINING' has been created successfully. <<1708450238541
+BIP9326I<<The source 'CRUD_REST_TRAINING3.bar' has been successfully deployed. <<1708450238541
+DefaultPolicies>>>>TEST_SERVER>>SUCCESS>>1708450597336
+BIP9332I<<PolicyProject 'DefaultPolicies' has been created successfully. <<1708450597336
+BIP9326I<<The source 'DefaultPoliciesproject.generated.bar' has been successfully deployed. <<1708450597336
+CRUD_REST_TRAINING3.bar>>>>TEST_SERVER>>SUCCESS>>1708450608452
+BIP9332I<<RestAPI 'CRUD_REST_TRAINING' has been created successfully. <<1708450608452
+BIP9326I<<The source 'CRUD_REST_TRAINING3.bar' has been successfully deployed. <<1708450608452
+DefaultPolicies>>>>TEST_SERVER>>SUCCESS>>1708450869091
+BIP9332I<<PolicyProject 'DefaultPolicies' has been created successfully. <<1708450869091
+BIP9326I<<The source 'DefaultPoliciesproject.generated.bar' has been successfully deployed. <<1708450869091
+CRUD_REST_TRAINING3.bar>>>>TEST_SERVER>>SUCCESS>>1708450875334
+BIP9332I<<RestAPI 'CRUD_REST_TRAINING' has been created successfully. <<1708450875334
+BIP9326I<<The source 'CRUD_REST_TRAINING3.bar' has been successfully deployed. <<1708450875334
+DefaultPolicies>>>>TEST_SERVER>>SUCCESS>>1708451031892
+BIP9339W<<The values defined in the policy(s) 'crud' in policy project 'DefaultPolicies' match the values of the existing policy(s). Any deployed resources using the policy(s) will not be affected by the redeploy of the policy project. <<1708451031892
+BIP9326I<<The source 'DefaultPoliciesproject.generated.bar' has been successfully deployed. <<1708451031892
+DefaultPolicies>>>>TEST_SERVER>>SUCCESS>>1708451283509
+BIP9332I<<PolicyProject 'DefaultPolicies' has been created successfully. <<1708451283509
+BIP9326I<<The source 'DefaultPoliciesproject.generated.bar' has been successfully deployed. <<1708451283509
+CRUD_REST_TRAINING3.bar>>>>TEST_SERVER>>SUCCESS>>1708451288448
+BIP9332I<<RestAPI 'CRUD_REST_TRAINING' has been created successfully. <<1708451288448
+BIP9326I<<The source 'CRUD_REST_TRAINING3.bar' has been successfully deployed. <<1708451288448
+DefaultPolicies>>>>TEST_SERVER>>SUCCESS>>1708451584415
+BIP9332I<<PolicyProject 'DefaultPolicies' has been created successfully. <<1708451584415
+BIP9326I<<The source 'DefaultPoliciesproject.generated.bar' has been successfully deployed. <<1708451584415
+CRUD_REST_TRAINING3.bar>>>>TEST_SERVER>>SUCCESS>>1708451593003
+BIP9332I<<RestAPI 'CRUD_REST_TRAINING' has been created successfully. <<1708451593003
+BIP9326I<<The source 'CRUD_REST_TRAINING3.bar' has been successfully deployed. <<1708451593003
+DefaultPolicies>>>>TEST_SERVER>>SUCCESS>>1708452451391
+BIP9332I<<PolicyProject 'DefaultPolicies' has been created successfully. <<1708452451391
+BIP9326I<<The source 'DefaultPoliciesproject.generated.bar' has been successfully deployed. <<1708452451391
+CRUD_REST_TRAINING3.bar>>>>TEST_SERVER>>SUCCESS>>1708452456350
+BIP9332I<<RestAPI 'CRUD_REST_TRAINING' has been created successfully. <<1708452456350
+BIP9326I<<The source 'CRUD_REST_TRAINING3.bar' has been successfully deployed. <<1708452456350
+DefaultPolicies>>>>TEST_SERVER>>SUCCESS>>1708452727572
+BIP9332I<<PolicyProject 'DefaultPolicies' has been created successfully. <<1708452727572
+BIP9326I<<The source 'DefaultPoliciesproject.generated.bar' has been successfully deployed. <<1708452727572
+CRUD_REST_TRAINING3.bar>>>>TEST_SERVER>>SUCCESS>>1708452732294
+BIP9332I<<RestAPI 'CRUD_REST_TRAINING' has been created successfully. <<1708452732294
+BIP9326I<<The source 'CRUD_REST_TRAINING3.bar' has been successfully deployed. <<1708452732294
+DefaultPolicies>>>>TEST_SERVER>>SUCCESS>>1708458846217
+BIP9332I<<PolicyProject 'DefaultPolicies' has been created successfully. <<1708458846217
+BIP9326I<<The source 'DefaultPoliciesproject.generated.bar' has been successfully deployed. <<1708458846217
+CRUD_REST_TRAINING3.bar>>>>TEST_SERVER>>SUCCESS>>1708458858121
+BIP9332I<<RestAPI 'CRUD_REST_TRAINING' has been created successfully. <<1708458858121
+BIP9326I<<The source 'CRUD_REST_TRAINING3.bar' has been successfully deployed. <<1708458858121
