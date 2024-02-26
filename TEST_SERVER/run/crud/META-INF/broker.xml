@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Broker deployBarfile="/home/fachri/IBM/ACET11/workspace/TestModeBarFiles/crudproject.TestMode.bar" deployTimestamp="2024-02-26 17:25:47">
+  <CompiledApplication>
+    <ConfigurableProperty uri="startMode">
+    </ConfigurableProperty>
+  </CompiledApplication>
+  <CompiledMessageFlow name="kafkaconsum" deployBarfile="/home/fachri/IBM/ACET11/workspace/TestModeBarFiles/crudproject.TestMode.bar" deployTimestamp="2024-02-26 17:25:47">
+    <ConfigurableProperty uri="kafkaconsum#File Output.customDelimiter">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafkaconsum#File Output.fileFtp">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafkaconsum#File Output.fileFtpDirectory">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafkaconsum#File Output.fileFtpServer">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafkaconsum#File Output.fileFtpUser">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafkaconsum#File Output.outputDirectory" override="/home/fachri/ibm/11.0.0.23-ACE-LINUX64-DEVELOPER/ace-11.0.0.23/kafkaoutput">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafkaconsum#File Output.outputFilename" override="output.txt">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafkaconsum#File Output.recordDelimiter">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafkaconsum#File Output.remoteTransferType">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafkaconsum#File Output.requestDirectoryLocation">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafkaconsum#File Output.requestNameLocation">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafkaconsum#File Output.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafkaconsum#KafkaConsumer.additionalInstances" override="0">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafkaconsum#KafkaConsumer.bootstrapServers" override="appmft1:9092">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafkaconsum#KafkaConsumer.clientId" override="1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafkaconsum#KafkaConsumer.componentLevel" override="flow">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafkaconsum#KafkaConsumer.connectionTimeout" override="15">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafkaconsum#KafkaConsumer.enableAutoCommit" override="true">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafkaconsum#KafkaConsumer.groupId" override="1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafkaconsum#KafkaConsumer.initialOffset" override="latest">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafkaconsum#KafkaConsumer.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafkaconsum#KafkaConsumer.propertiesFilePath">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafkaconsum#KafkaConsumer.receiveBatchSize" override="1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafkaconsum#KafkaConsumer.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafkaconsum#KafkaConsumer.securityProtocol" override="PLAINTEXT">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafkaconsum#KafkaConsumer.sessionTimeout" override="10">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafkaconsum#KafkaConsumer.sslProtocol" override="TLSv1.2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafkaconsum#KafkaConsumer.topicName" override="testingACE">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafkaconsum#KafkaConsumer.useClientIdSuffix" override="true">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafkaconsum#KafkaConsumer.useSyncCommit" override="true">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafkaconsum#KafkaConsumer.validateMaster" override="none">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafkaconsum#additionalInstances">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafkaconsum#commitCount">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafkaconsum#commitInterval">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafkaconsum#consumerPolicySet">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafkaconsum#consumerPolicySetBindings">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafkaconsum#coordinatedTransaction">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafkaconsum#maximumRateMsgsPerSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafkaconsum#monitoringProfile">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafkaconsum#notificationThresholdMsgsPerSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafkaconsum#processingTimeoutAction">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafkaconsum#processingTimeoutSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafkaconsum#providerPolicySet">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafkaconsum#providerPolicySetBindings">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafkaconsum#securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafkaconsum#startInstancesWhenFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafkaconsum#startMode">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafkaconsum#wlmPolicy">
+    </ConfigurableProperty>
+  </CompiledMessageFlow>
+  <CompiledMessageFlow name="GetFileInsertData" deployBarfile="/home/fachri/IBM/ACET11/workspace/TestModeBarFiles/crudproject.TestMode.bar" deployTimestamp="2024-02-26 17:25:47">
+    <ConfigurableProperty uri="GetFileInsertData#File Input.additionalInstances">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="GetFileInsertData#File Input.componentLevel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="GetFileInsertData#File Input.customDelimiter">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="GetFileInsertData#File Input.excludePattern">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="GetFileInsertData#File Input.fileFtp">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="GetFileInsertData#File Input.fileFtpDirectory">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="GetFileInsertData#File Input.fileFtpServer">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="GetFileInsertData#File Input.fileFtpUser">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="GetFileInsertData#File Input.filenamePattern" override="*.txt">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="GetFileInsertData#File Input.inputDirectory" override="/home/fachri/ibm/11.0.0.23-ACE-LINUX64-DEVELOPER/ace-11.0.0.23/file">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="GetFileInsertData#File Input.longRetryInterval">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="GetFileInsertData#File Input.messageCodedCharSetIdProperty">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="GetFileInsertData#File Input.messageEncodingProperty">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="GetFileInsertData#File Input.recursiveDirectories">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="GetFileInsertData#File Input.remoteTransferType">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="GetFileInsertData#File Input.retryThreshold">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="GetFileInsertData#File Input.shortRetryInterval">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="GetFileInsertData#File Input.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="GetFileInsertData#File Input.waitInterval" override="10">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="GetFileInsertData#additionalInstances">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="GetFileInsertData#commitCount">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="GetFileInsertData#commitInterval">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="GetFileInsertData#consumerPolicySet">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="GetFileInsertData#consumerPolicySetBindings">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="GetFileInsertData#coordinatedTransaction">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="GetFileInsertData#maximumRateMsgsPerSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="GetFileInsertData#monitoringProfile">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="GetFileInsertData#notificationThresholdMsgsPerSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="GetFileInsertData#processingTimeoutAction">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="GetFileInsertData#processingTimeoutSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="GetFileInsertData#providerPolicySet">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="GetFileInsertData#providerPolicySetBindings">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="GetFileInsertData#securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="GetFileInsertData#startInstancesWhenFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="GetFileInsertData#startMode">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="GetFileInsertData#wlmPolicy">
+    </ConfigurableProperty>
+  </CompiledMessageFlow>
+  <CompiledMessageFlow name="kafka" deployBarfile="/home/fachri/IBM/ACET11/workspace/TestModeBarFiles/crudproject.TestMode.bar" deployTimestamp="2024-02-26 17:25:47">
+    <ConfigurableProperty uri="kafka#HTTP Input.URLSpecifier" override="/addkafka">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafka#HTTP Input.decompressInputMessage">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafka#HTTP Input.faultFormat">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafka#HTTP Input.securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafka#HTTP Input.timeoutForClient">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafka#HTTP Input.useHTTPS">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafka#HTTP Input.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafka#HTTP Reply.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafka#HTTP Reply1.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafka#KafkaProducer.acks" override="all">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafka#KafkaProducer.bootstrapServers" override="appmft1:9092">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafka#KafkaProducer.clientId" override="1">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafka#KafkaProducer.policyUrl">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafka#KafkaProducer.propertiesFilePath">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafka#KafkaProducer.securityIdentity">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafka#KafkaProducer.securityProtocol" override="PLAINTEXT">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafka#KafkaProducer.sslProtocol" override="TLSv1.2">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafka#KafkaProducer.timeout" override="60">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafka#KafkaProducer.topicName" override="testingACE">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafka#KafkaProducer.useClientIdSuffix" override="true">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafka#KafkaProducer.validateMaster" override="inherit">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafka#additionalInstances">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafka#commitCount">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafka#commitInterval">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafka#consumerPolicySet">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafka#consumerPolicySetBindings">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafka#coordinatedTransaction">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafka#maximumRateMsgsPerSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafka#monitoringProfile">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafka#notificationThresholdMsgsPerSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafka#processingTimeoutAction">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafka#processingTimeoutSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafka#providerPolicySet">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafka#providerPolicySetBindings">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafka#securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafka#startInstancesWhenFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafka#startMode">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="kafka#wlmPolicy">
+    </ConfigurableProperty>
+  </CompiledMessageFlow>
+  <CompiledMessageFlow name="TransferFiles" deployBarfile="/home/fachri/IBM/ACET11/workspace/TestModeBarFiles/crudproject.TestMode.bar" deployTimestamp="2024-02-26 17:25:47">
+    <ConfigurableProperty uri="TransferFiles#Compute.connectDatasourceBeforeFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TransferFiles#Compute.dataSource">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TransferFiles#Compute.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TransferFiles#File Input.additionalInstances">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TransferFiles#File Input.componentLevel">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TransferFiles#File Input.customDelimiter">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TransferFiles#File Input.excludePattern">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TransferFiles#File Input.fileFtp" override="yes">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TransferFiles#File Input.fileFtpDirectory">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TransferFiles#File Input.fileFtpServer" override="192.168.100.17:22">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TransferFiles#File Input.fileFtpUser">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TransferFiles#File Input.filenamePattern" override="*.txt">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TransferFiles#File Input.inputDirectory" override="/home/fachri/ibm/11.0.0.23-ACE-LINUX64-DEVELOPER/ace-11.0.0.23/Input">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TransferFiles#File Input.longRetryInterval">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TransferFiles#File Input.messageCodedCharSetIdProperty">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TransferFiles#File Input.messageEncodingProperty">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TransferFiles#File Input.recursiveDirectories">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TransferFiles#File Input.remoteTransferType" override="FTPS">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TransferFiles#File Input.retryThreshold">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TransferFiles#File Input.shortRetryInterval">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TransferFiles#File Input.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TransferFiles#File Input.waitInterval" override="10">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TransferFiles#File Output.customDelimiter">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TransferFiles#File Output.fileFtp" override="yes">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TransferFiles#File Output.fileFtpDirectory">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TransferFiles#File Output.fileFtpServer" override="192.168.100.17:22">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TransferFiles#File Output.fileFtpUser">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TransferFiles#File Output.outputDirectory" override="/home/fachri/ibm/11.0.0.23-ACE-LINUX64-DEVELOPER/ace-11.0.0.23/Output">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TransferFiles#File Output.outputFilename">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TransferFiles#File Output.recordDelimiter">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TransferFiles#File Output.remoteTransferType" override="SFTP">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TransferFiles#File Output.requestDirectoryLocation">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TransferFiles#File Output.requestNameLocation">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TransferFiles#File Output.validateMaster">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TransferFiles#additionalInstances">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TransferFiles#commitCount">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TransferFiles#commitInterval">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TransferFiles#consumerPolicySet">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TransferFiles#consumerPolicySetBindings">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TransferFiles#coordinatedTransaction">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TransferFiles#maximumRateMsgsPerSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TransferFiles#monitoringProfile">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TransferFiles#notificationThresholdMsgsPerSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TransferFiles#processingTimeoutAction">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TransferFiles#processingTimeoutSec">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TransferFiles#providerPolicySet">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TransferFiles#providerPolicySetBindings">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TransferFiles#securityProfileName">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TransferFiles#startInstancesWhenFlowStarts">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TransferFiles#startMode">
+    </ConfigurableProperty>
+    <ConfigurableProperty uri="TransferFiles#wlmPolicy">
+    </ConfigurableProperty>
+  </CompiledMessageFlow>
+</Broker>

@@ -74,12 +74,12 @@
             <failure>
                 <input path="$var8/DBExceptions"/>
                 <output path="$MessageAssembly1/JSON/spath('Data',2)"/>
-                <move>
-                    <input path="DBException/ErrorCode" var="ErrorCode"/>
+                <convert defaultValue="0">
+                    <input path="DBException[1]/ErrorCode" var="ErrorCode"/>
                     <output path="status/code"/>
-                </move>
+                </convert>
                 <move>
-                    <input path="DBException/Message" var="Message"/>
+                    <input path="DBException[1]/Message" var="Message"/>
                     <output path="status/message"/>
                 </move>
             </failure>

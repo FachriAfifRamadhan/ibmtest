@@ -1,15 +1,37 @@
-2024-02-20 16:30:05.306017Z: [Thread 6676] (Msg 1/1) BIP1990I: Integration server 'TEST_SERVER' starting initialization; version '11.0.0.23' (64-bit) 
-2024-02-20 16:30:12.680686Z: [Thread 6676] (Msg 1/1) BIP2155I: About to 'Initialize' the deployed resource 'CRUD_REST_TRAINING' of type 'RestAPI'. 
-2024-02-20 16:30:27.923406Z: [Thread 6676] (Msg 1/1) BIP2155I: About to 'Start' the deployed resource 'CRUD_REST_TRAINING' of type 'RestAPI'. 
-2024-02-20 16:30:27.946192Z: [Thread 6676] (Msg 1/1) BIP3132I: The HTTP Listener has started listening on port '7800' for 'http' connections. 
-2024-02-20 16:30:27.946290Z: [Thread 6676] (Msg 1/1) BIP1996I: Listening on HTTP URL '/crud_rest_training/v1*'. 
-2024-02-20 16:30:27.947004Z: [Thread 6676] (Msg 1/1) BIP2269I: Deployed resource 'gen.CRUD_REST_TRAINING' (uuid='gen.CRUD_REST_TRAINING',type='MessageFlow') started successfully. 
-2024-02-20 16:30:29.307728Z: [Thread 6767] (Msg 1/1) BIP2866I: IBM App Connect Enterprise administration security is inactive. 
-2024-02-20 16:30:29.344808Z: [Thread 6767] (Msg 1/1) BIP3132I: The HTTP Listener has started listening on port '7600' for 'RestAdmin http' connections. 
-2024-02-20 16:30:29.349464Z: [Thread 6676] (Msg 1/1) BIP1991I: Integration server has finished initialization. 
-2024-02-20 16:33:01.182929Z: [Thread 7169] (Msg 1/3) BIP3120E: Exception condition detected on input node 'gen.CRUD_REST_TRAINING.HTTP Input'. 
-2024-02-20 16:33:01.182994Z: [Thread 7169] (Msg 2/3) BIP2230E: Error detected whilst processing a message in node 'gen.CRUD_REST_TRAINING.postCreate (Implementation).Mapping'. 
-2024-02-20 16:33:01.183082Z: [Thread 7169] (Msg 3/3) BIP6231E: An error occurred in node: Broker 'integration_server'; Execution Group 'TEST_SERVER'; Message Flow 'gen.CRUD_REST_TRAINING'; Node 'postCreate (Implementation).Mapping'; Node Type 'Mapping Exception details:  message: com.mysql.jdbc.jdbc2.optional.MysqlXADataSource stack trace: [java.net.URLClassLoader.findClass(URLClassLoader.java:610)
+2024-02-22 20:58:50.714644Z: [Thread 5345] (Msg 1/1) BIP1990I: Integration server 'TEST_SERVER' starting initialization; version '11.0.0.23' (64-bit) 
+2024-02-22 20:58:55.943300Z: [Thread 5345] (Msg 1/1) BIP2155I: About to 'Initialize' the deployed resource 'CRUD_REST_TRAINING' of type 'RestAPI'. 
+2024-02-22 20:58:58.711680Z: [Thread 5345] (Msg 1/1) BIP2155I: About to 'Start' the deployed resource 'CRUD_REST_TRAINING' of type 'RestAPI'. 
+2024-02-22 20:58:58.725072Z: [Thread 5345] (Msg 1/1) BIP3132I: The HTTP Listener has started listening on port '7800' for 'http' connections. 
+2024-02-22 20:58:58.725184Z: [Thread 5345] (Msg 1/1) BIP1996I: Listening on HTTP URL '/crud_rest_training/v1*'. 
+2024-02-22 20:58:58.725924Z: [Thread 5345] (Msg 1/1) BIP2269I: Deployed resource 'gen.CRUD_REST_TRAINING' (uuid='gen.CRUD_REST_TRAINING',type='MessageFlow') started successfully. 
+2024-02-22 20:58:59.397560Z: [Thread 5421] (Msg 1/1) BIP2866I: IBM App Connect Enterprise administration security is inactive. 
+2024-02-22 20:58:59.416224Z: [Thread 5421] (Msg 1/1) BIP3132I: The HTTP Listener has started listening on port '7600' for 'RestAdmin http' connections. 
+2024-02-22 20:58:59.417340Z: [Thread 5345] (Msg 1/1) BIP1991I: Integration server has finished initialization. 
+2024-02-22 20:59:09.475006Z: [Thread 5352] (Msg 1/1) BIP2152I: Configuration message received. 
+2024-02-22 20:59:09.475095Z: [Thread 5352] (Msg 1/1) BIP2153I: About to 'deleteAll' an integration server. 
+2024-02-22 20:59:09.475404Z: [Thread 5352] (Msg 1/1) BIP2155I: About to 'Stop' the deployed resource 'CRUD_REST_TRAINING' of type 'RestAPI'. 
+2024-02-22 20:59:09.679839Z: [Thread 5352] (Msg 1/1) BIP2271I: Deployed resource 'gen.CRUD_REST_TRAINING' (uuid='gen.CRUD_REST_TRAINING',type='MessageFlow') successfully stopped. 
+2024-02-22 20:59:09.680292Z: [Thread 5352] (Msg 1/1) BIP2155I: About to 'TearDown' the deployed resource 'CRUD_REST_TRAINING' of type 'RestAPI'. 
+2024-02-22 20:59:09.681374Z: [Thread 5352] (Msg 1/1) BIP3133I: The HTTP Listener has stopped listening on port '7800' for 'http' connections. 
+2024-02-22 20:59:09.782792Z: [Thread 5352] (Msg 1/1) BIP9521I: RestAPI 'CRUD_REST_TRAINING' has been deleted. 
+2024-02-22 20:59:09.783179Z: [Thread 5352] (Msg 1/1) BIP9521I: PolicyProject 'DefaultPolicies' has been deleted. 
+2024-02-22 20:59:09.785658Z: [Thread 5352] (Msg 1/1) BIP2154I: Integration server finished with Configuration message. 
+2024-02-22 20:59:15.486209Z: [Thread 5350] (Msg 1/1) BIP2152I: Configuration message received. 
+2024-02-22 20:59:15.489206Z: [Thread 5350] (Msg 1/1) BIP9332I: PolicyProject 'DefaultPolicies' has been created successfully. 
+2024-02-22 20:59:15.489292Z: [Thread 5350] (Msg 1/1) BIP9326I: The source 'DefaultPoliciesproject.generated.bar' has been successfully deployed. 
+2024-02-22 20:59:15.489471Z: [Thread 5350] (Msg 1/1) BIP2154I: Integration server finished with Configuration message. 
+2024-02-22 20:59:21.565814Z: [Thread 5353] (Msg 1/1) BIP2152I: Configuration message received. 
+2024-02-22 20:59:21.581724Z: [Thread 5353] (Msg 1/1) BIP2155I: About to 'Initialize' the deployed resource 'CRUD_REST_TRAINING' of type 'RestAPI'. 
+2024-02-22 20:59:33.284180Z: [Thread 5353] (Msg 1/1) BIP2155I: About to 'Start' the deployed resource 'CRUD_REST_TRAINING' of type 'RestAPI'. 
+2024-02-22 20:59:33.295132Z: [Thread 5353] (Msg 1/1) BIP3132I: The HTTP Listener has started listening on port '7800' for 'http' connections. 
+2024-02-22 20:59:33.295196Z: [Thread 5353] (Msg 1/1) BIP1996I: Listening on HTTP URL '/crud_rest_training/v1*'. 
+2024-02-22 20:59:33.295514Z: [Thread 5353] (Msg 1/1) BIP2269I: Deployed resource 'gen.CRUD_REST_TRAINING' (uuid='gen.CRUD_REST_TRAINING',type='MessageFlow') started successfully. 
+2024-02-22 20:59:33.295586Z: [Thread 5353] (Msg 1/1) BIP9332I: RestAPI 'CRUD_REST_TRAINING' has been created successfully. 
+2024-02-22 20:59:33.295632Z: [Thread 5353] (Msg 1/1) BIP9326I: The source 'CRUD_REST_TRAINING3.bar' has been successfully deployed. 
+2024-02-22 20:59:33.295814Z: [Thread 5353] (Msg 1/1) BIP2154I: Integration server finished with Configuration message. 
+2024-02-22 21:01:05.399034Z: [Thread 6211] (Msg 1/3) BIP3120E: Exception condition detected on input node 'gen.CRUD_REST_TRAINING.HTTP Input'. 
+2024-02-22 21:01:05.399144Z: [Thread 6211] (Msg 2/3) BIP2230E: Error detected whilst processing a message in node 'gen.CRUD_REST_TRAINING.postCreate (Implementation).Mapping'. 
+2024-02-22 21:01:05.399970Z: [Thread 6211] (Msg 3/3) BIP6231E: An error occurred in node: Broker 'integration_server'; Execution Group 'TEST_SERVER'; Message Flow 'gen.CRUD_REST_TRAINING'; Node 'postCreate (Implementation).Mapping'; Node Type 'Mapping Exception details:  message: com.mysql.jdbc.jdbc2.optional.MysqlXADataSource stack trace: [java.net.URLClassLoader.findClass(URLClassLoader.java:610)
 com.ibm.broker.classloading.JavaResourceClassLoader.findClass(JavaResourceClassLoader.java:180)
 com.ibm.broker.classloading.SharedClassLoader.findClass(SharedClassLoader.java:209)
 java.lang.ClassLoader.loadClassHelper(ClassLoader.java:948)
@@ -42,17 +64,17 @@ sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.jav
 java.lang.reflect.Method.invoke(Method.java:508)
 com.ibm.xml.xci.exec.BasicMutableDynamicContext$JavaMethodExecutable.execute(BasicMutableDynamicContext.java:984)
 com.ibm.xml.xci.exec.BasicDynamicContext$ExternalFunction.execute(BasicDynamicContext.java:361)
-xmap_default__postCreate_Mapping14a96dfd52b02e3_0c__Common_Partition0.xslt2$24$getReturnAsXCICursor(com_ibm_xmlns_prod_xltxe_j_linetable)
-xmap_default__postCreate_Mapping14a96dfd52b02e3_0c__Common_Partition0.xmap_default__postCreate_Mapping14a96dfd52b02e3_0c_$24$$24$function$24$__xquery_result_fun__$2d$3(com_ibm_xmlns_prod_xltxe_j_linetable:28)
-xmap_default__postCreate_Mapping14a96dfd52b02e3_0c_.evaluate(xmap_default__postCreate_Mapping14a96dfd52b02e3_0c_.java)
+xmap_default__postCreate_Mapping14a96dfd52b02e3_10__Common_Partition0.xslt2$24$getReturnAsXCICursor(com_ibm_xmlns_prod_xltxe_j_linetable)
+xmap_default__postCreate_Mapping14a96dfd52b02e3_10__Common_Partition0.xmap_default__postCreate_Mapping14a96dfd52b02e3_10_$24$$24$function$24$__xquery_result_fun__$2d$3(com_ibm_xmlns_prod_xltxe_j_linetable:28)
+xmap_default__postCreate_Mapping14a96dfd52b02e3_10_.evaluate(xmap_default__postCreate_Mapping14a96dfd52b02e3_10_.java)
 com.ibm.xltxe.rnm1.xtq.xquery.drivers.XQueryExecutable.execute(XQueryExecutable.java:220)
 com.ibm.xltxe.rnm1.xtq.xquery.drivers.XQueryExecutable.execute(XQueryExecutable.java:97)
 com.ibm.broker.map.MbMapExecutable.execute(MbMapExecutable.java:462)
 com.ibm.broker.ct.mapping.MappingNode.evaluate(MappingNode.java:466)
 com.ibm.broker.plugin.MbNode.evaluate(MbNode.java:2138)] 
-2024-02-20 17:07:49.367780Z: [Thread 7169] (Msg 1/3) BIP3120E: Exception condition detected on input node 'gen.CRUD_REST_TRAINING.HTTP Input'. 
-2024-02-20 17:07:49.367836Z: [Thread 7169] (Msg 2/3) BIP2230E: Error detected whilst processing a message in node 'gen.CRUD_REST_TRAINING.postCreate (Implementation).Mapping'. 
-2024-02-20 17:07:49.367900Z: [Thread 7169] (Msg 3/3) BIP6231E: An error occurred in node: Broker 'integration_server'; Execution Group 'TEST_SERVER'; Message Flow 'gen.CRUD_REST_TRAINING'; Node 'postCreate (Implementation).Mapping'; Node Type 'Mapping Exception details:  message: com.mysql.jdbc.jdbc2.optional.MysqlXADataSource stack trace: [java.net.URLClassLoader.findClass(URLClassLoader.java:610)
+2024-02-22 21:02:40.990844Z: [Thread 5556] (Msg 1/3) BIP3120E: Exception condition detected on input node 'gen.CRUD_REST_TRAINING.HTTP Input'. 
+2024-02-22 21:02:40.990924Z: [Thread 5556] (Msg 2/3) BIP2230E: Error detected whilst processing a message in node 'gen.CRUD_REST_TRAINING.getRead (Implementation).Mapping'. 
+2024-02-22 21:02:40.991024Z: [Thread 5556] (Msg 3/3) BIP6231E: An error occurred in node: Broker 'integration_server'; Execution Group 'TEST_SERVER'; Message Flow 'gen.CRUD_REST_TRAINING'; Node 'postCreate (Implementation).Mapping'; Node Type 'Mapping Exception details:  message: com.mysql.jdbc.jdbc2.optional.MysqlXADataSource stack trace: [java.net.URLClassLoader.findClass(URLClassLoader.java:610)
 com.ibm.broker.classloading.JavaResourceClassLoader.findClass(JavaResourceClassLoader.java:180)
 com.ibm.broker.classloading.SharedClassLoader.findClass(SharedClassLoader.java:209)
 java.lang.ClassLoader.loadClassHelper(ClassLoader.java:948)
@@ -67,8 +89,116 @@ java.lang.ClassLoader.loadClass(ClassLoader.java:893)
 java.lang.ClassLoader.loadClass(ClassLoader.java:876)
 com.ibm.broker.classloading.JavaResourceClassLoader.loadClass(JavaResourceClassLoader.java:579)
 com.ibm.broker.jdbctype4.jdbcdbasemgr.JDBCType4Connection.createXAConnection(JDBCType4Connection.java:201)
-com.ibm.broker.jdbctype4.jdbcdbasemgr.JDBCType4Connection.getT4NodeConnection(JDBCType4Connection.java:1211)
-com.ibm.broker.jdbctype4.localtrxn.JDBCType4SinglePhaseTrxnHandler.getConnection(JDBCType4SinglePhaseTrxnHandler.java:279)
+com.ibm.broker.jdbctype4.jdbcdbasemgr.JDBCType4DatabaseManager.getThreadOwnedConnections(JDBCType4DatabaseManager.java:328)
+com.ibm.broker.jdbctype4.localtrxn.JDBCType4SinglePhaseTrxnHandler.getConnection(JDBCType4SinglePhaseTrxnHandler.java:260)
+com.ibm.broker.jdbctype4.localtrxn.JDBCType4SinglePhaseTrxnHandler.getConnection(JDBCType4SinglePhaseTrxnHandler.java:150)
+com.ibm.broker.jdbctype4.connfact.JDBCType4ConnectionFactory.getConnection(JDBCType4ConnectionFactory.java:157)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:90)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+java.lang.reflect.Method.invoke(Method.java:508)
+com.ibm.broker.plugin.MbNode.getJDBCType4Connection(MbNode.java:2245)
+com.ibm.broker.ct.mapping.MappingNode.getDBConnection(MappingNode.java:1863)
+com.ibm.broker.ct.mapping.JDBCWrapper.prepare(JDBCWrapper.java:2890)
+com.ibm.broker.ct.mapping.JDBCWrapper.select(JDBCWrapper.java:663)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:90)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+java.lang.reflect.Method.invoke(Method.java:508)
+com.ibm.xml.xci.exec.BasicMutableDynamicContext$JavaMethodExecutable.execute(BasicMutableDynamicContext.java:984)
+com.ibm.xml.xci.exec.BasicDynamicContext$ExternalFunction.execute(BasicDynamicContext.java:361)
+xmap_default__getRead_Mappingaa8cb8947ec11d54_0d__Common_Partition0.xslt2$24$getReturnAsXCICursor(com_ibm_xmlns_prod_xltxe_j_linetable)
+xmap_default__getRead_Mappingaa8cb8947ec11d54_0d__Common_Partition0.xmap_default__getRead_Mappingaa8cb8947ec11d54_0d_$24$$24$function$24$__xquery_result_fun__$2d$3(com_ibm_xmlns_prod_xltxe_j_linetable:16)
+xmap_default__getRead_Mappingaa8cb8947ec11d54_0d_.evaluate(xmap_default__getRead_Mappingaa8cb8947ec11d54_0d_.java)
+com.ibm.xltxe.rnm1.xtq.xquery.drivers.XQueryExecutable.execute(XQueryExecutable.java:220)
+com.ibm.xltxe.rnm1.xtq.xquery.drivers.XQueryExecutable.execute(XQueryExecutable.java:97)
+com.ibm.broker.map.MbMapExecutable.execute(MbMapExecutable.java:462)
+com.ibm.broker.ct.mapping.MappingNode.evaluate(MappingNode.java:466)
+com.ibm.broker.plugin.MbNode.evaluate(MbNode.java:2138)] 
+2024-02-22 21:12:06.054341Z: [Thread 5359] (Msg 1/1) BIP2152I: Configuration message received. 
+2024-02-22 21:12:06.054400Z: [Thread 5359] (Msg 1/1) BIP2153I: About to 'deleteAll' an integration server. 
+2024-02-22 21:12:06.054582Z: [Thread 5359] (Msg 1/1) BIP2155I: About to 'Stop' the deployed resource 'CRUD_REST_TRAINING' of type 'RestAPI'. 
+2024-02-22 21:12:11.043953Z: [Thread 5359] (Msg 1/1) BIP2271I: Deployed resource 'gen.CRUD_REST_TRAINING' (uuid='gen.CRUD_REST_TRAINING',type='MessageFlow') successfully stopped. 
+2024-02-22 21:12:11.044268Z: [Thread 5359] (Msg 1/1) BIP2155I: About to 'TearDown' the deployed resource 'CRUD_REST_TRAINING' of type 'RestAPI'. 
+2024-02-22 21:12:11.056072Z: [Thread 5359] (Msg 1/1) BIP3133I: The HTTP Listener has stopped listening on port '7800' for 'http' connections. 
+2024-02-22 21:12:11.091694Z: [Thread 5359] (Msg 1/1) BIP9521I: RestAPI 'CRUD_REST_TRAINING' has been deleted. 
+2024-02-22 21:12:11.091998Z: [Thread 5359] (Msg 1/1) BIP9521I: PolicyProject 'DefaultPolicies' has been deleted. 
+2024-02-22 21:12:11.092447Z: [Thread 5359] (Msg 1/1) BIP2154I: Integration server finished with Configuration message. 
+2024-02-22 21:12:30.162228Z: [Thread 5355] (Msg 1/1) BIP2152I: Configuration message received. 
+2024-02-22 21:12:30.164964Z: [Thread 5355] (Msg 1/1) BIP9332I: PolicyProject 'DefaultPolicies' has been created successfully. 
+2024-02-22 21:12:30.165032Z: [Thread 5355] (Msg 1/1) BIP9326I: The source 'DefaultPoliciesproject.generated.bar' has been successfully deployed. 
+2024-02-22 21:12:30.165152Z: [Thread 5355] (Msg 1/1) BIP2154I: Integration server finished with Configuration message. 
+2024-02-22 21:12:36.013328Z: [Thread 5352] (Msg 1/1) BIP2152I: Configuration message received. 
+2024-02-22 21:12:36.026096Z: [Thread 5352] (Msg 1/1) BIP2155I: About to 'Initialize' the deployed resource 'CRUD_REST_TRAINING' of type 'RestAPI'. 
+2024-02-22 21:12:42.275628Z: [Thread 5352] (Msg 1/1) BIP2155I: About to 'Start' the deployed resource 'CRUD_REST_TRAINING' of type 'RestAPI'. 
+2024-02-22 21:12:42.290612Z: [Thread 5352] (Msg 1/1) BIP3132I: The HTTP Listener has started listening on port '7800' for 'http' connections. 
+2024-02-22 21:12:42.290676Z: [Thread 5352] (Msg 1/1) BIP1996I: Listening on HTTP URL '/crud_rest_training/v1*'. 
+2024-02-22 21:12:42.290988Z: [Thread 5352] (Msg 1/1) BIP2269I: Deployed resource 'gen.CRUD_REST_TRAINING' (uuid='gen.CRUD_REST_TRAINING',type='MessageFlow') started successfully. 
+2024-02-22 21:12:42.296544Z: [Thread 5352] (Msg 1/1) BIP9332I: RestAPI 'CRUD_REST_TRAINING' has been created successfully. 
+2024-02-22 21:12:42.296596Z: [Thread 5352] (Msg 1/1) BIP9326I: The source 'CRUD_REST_TRAINING3.bar' has been successfully deployed. 
+2024-02-22 21:12:42.296796Z: [Thread 5352] (Msg 1/1) BIP2154I: Integration server finished with Configuration message. 
+2024-02-22 21:12:50.829148Z: [Thread 8232] (Msg 1/3) BIP3120E: Exception condition detected on input node 'gen.CRUD_REST_TRAINING.HTTP Input'. 
+2024-02-22 21:12:50.829228Z: [Thread 8232] (Msg 2/3) BIP2230E: Error detected whilst processing a message in node 'gen.CRUD_REST_TRAINING.getRead (Implementation).Mapping'. 
+2024-02-22 21:12:50.829288Z: [Thread 8232] (Msg 3/3) BIP6231E: An error occurred in node: Broker 'integration_server'; Execution Group 'TEST_SERVER'; Message Flow 'gen.CRUD_REST_TRAINING'; Node 'getRead (Implementation).Mapping'; Node Type 'Mapping Exception details:  message: com.mysql.jdbc.jdbc2.optional.MysqlXADataSource stack trace: [java.net.URLClassLoader.findClass(URLClassLoader.java:610)
+com.ibm.broker.classloading.JavaResourceClassLoader.findClass(JavaResourceClassLoader.java:180)
+com.ibm.broker.classloading.SharedClassLoader.findClass(SharedClassLoader.java:209)
+java.lang.ClassLoader.loadClassHelper(ClassLoader.java:948)
+java.lang.ClassLoader.loadClass(ClassLoader.java:893)
+java.lang.ClassLoader.loadClass(ClassLoader.java:876)
+com.ibm.broker.classloading.JavaResourceClassLoader.loadClass(JavaResourceClassLoader.java:579)
+com.ibm.broker.classloading.SharedClassLoader.loadClass(SharedClassLoader.java:217)
+com.ibm.broker.classloading.ReverseDelegationClassLoader.findClass(ReverseDelegationClassLoader.java:130)
+com.ibm.broker.classloading.JarsURLClassLoader.findClass(JarsURLClassLoader.java:92)
+java.lang.ClassLoader.loadClassHelper(ClassLoader.java:948)
+java.lang.ClassLoader.loadClass(ClassLoader.java:893)
+java.lang.ClassLoader.loadClass(ClassLoader.java:876)
+com.ibm.broker.classloading.JavaResourceClassLoader.loadClass(JavaResourceClassLoader.java:579)
+com.ibm.broker.jdbctype4.jdbcdbasemgr.JDBCType4Connection.createXAConnection(JDBCType4Connection.java:201)
+com.ibm.broker.jdbctype4.jdbcdbasemgr.JDBCType4DatabaseManager.getThreadOwnedConnections(JDBCType4DatabaseManager.java:328)
+com.ibm.broker.jdbctype4.localtrxn.JDBCType4SinglePhaseTrxnHandler.getConnection(JDBCType4SinglePhaseTrxnHandler.java:260)
+com.ibm.broker.jdbctype4.localtrxn.JDBCType4SinglePhaseTrxnHandler.getConnection(JDBCType4SinglePhaseTrxnHandler.java:150)
+com.ibm.broker.jdbctype4.connfact.JDBCType4ConnectionFactory.getConnection(JDBCType4ConnectionFactory.java:157)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:90)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+java.lang.reflect.Method.invoke(Method.java:508)
+com.ibm.broker.plugin.MbNode.getJDBCType4Connection(MbNode.java:2245)
+com.ibm.broker.ct.mapping.MappingNode.getDBConnection(MappingNode.java:1863)
+com.ibm.broker.ct.mapping.JDBCWrapper.prepare(JDBCWrapper.java:2890)
+com.ibm.broker.ct.mapping.JDBCWrapper.select(JDBCWrapper.java:663)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:90)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
+java.lang.reflect.Method.invoke(Method.java:508)
+com.ibm.xml.xci.exec.BasicMutableDynamicContext$JavaMethodExecutable.execute(BasicMutableDynamicContext.java:984)
+com.ibm.xml.xci.exec.BasicDynamicContext$ExternalFunction.execute(BasicDynamicContext.java:361)
+xmap_default__getRead_Mappingaa8cb8947ec11d54_1d__Common_Partition0.xslt2$24$getReturnAsXCICursor(com_ibm_xmlns_prod_xltxe_j_linetable)
+xmap_default__getRead_Mappingaa8cb8947ec11d54_1d__Common_Partition0.xmap_default__getRead_Mappingaa8cb8947ec11d54_1d_$24$$24$function$24$__xquery_result_fun__$2d$3(com_ibm_xmlns_prod_xltxe_j_linetable:16)
+xmap_default__getRead_Mappingaa8cb8947ec11d54_1d_.evaluate(xmap_default__getRead_Mappingaa8cb8947ec11d54_1d_.java)
+com.ibm.xltxe.rnm1.xtq.xquery.drivers.XQueryExecutable.execute(XQueryExecutable.java:220)
+com.ibm.xltxe.rnm1.xtq.xquery.drivers.XQueryExecutable.execute(XQueryExecutable.java:97)
+com.ibm.broker.map.MbMapExecutable.execute(MbMapExecutable.java:462)
+com.ibm.broker.ct.mapping.MappingNode.evaluate(MappingNode.java:466)
+com.ibm.broker.plugin.MbNode.evaluate(MbNode.java:2138)] 
+2024-02-22 21:12:55.173680Z: [Thread 8276] (Msg 1/3) BIP3120E: Exception condition detected on input node 'gen.CRUD_REST_TRAINING.HTTP Input'. 
+2024-02-22 21:12:55.173736Z: [Thread 8276] (Msg 2/3) BIP2230E: Error detected whilst processing a message in node 'gen.CRUD_REST_TRAINING.postCreate (Implementation).Mapping'. 
+2024-02-22 21:12:55.173792Z: [Thread 8276] (Msg 3/3) BIP6231E: An error occurred in node: Broker 'integration_server'; Execution Group 'TEST_SERVER'; Message Flow 'gen.CRUD_REST_TRAINING'; Node 'getRead (Implementation).Mapping'; Node Type 'Mapping Exception details:  message: com.mysql.jdbc.jdbc2.optional.MysqlXADataSource stack trace: [java.net.URLClassLoader.findClass(URLClassLoader.java:610)
+com.ibm.broker.classloading.JavaResourceClassLoader.findClass(JavaResourceClassLoader.java:180)
+com.ibm.broker.classloading.SharedClassLoader.findClass(SharedClassLoader.java:209)
+java.lang.ClassLoader.loadClassHelper(ClassLoader.java:948)
+java.lang.ClassLoader.loadClass(ClassLoader.java:893)
+java.lang.ClassLoader.loadClass(ClassLoader.java:876)
+com.ibm.broker.classloading.JavaResourceClassLoader.loadClass(JavaResourceClassLoader.java:579)
+com.ibm.broker.classloading.SharedClassLoader.loadClass(SharedClassLoader.java:217)
+com.ibm.broker.classloading.ReverseDelegationClassLoader.findClass(ReverseDelegationClassLoader.java:130)
+com.ibm.broker.classloading.JarsURLClassLoader.findClass(JarsURLClassLoader.java:92)
+java.lang.ClassLoader.loadClassHelper(ClassLoader.java:948)
+java.lang.ClassLoader.loadClass(ClassLoader.java:893)
+java.lang.ClassLoader.loadClass(ClassLoader.java:876)
+com.ibm.broker.classloading.JavaResourceClassLoader.loadClass(JavaResourceClassLoader.java:579)
+com.ibm.broker.jdbctype4.jdbcdbasemgr.JDBCType4Connection.createXAConnection(JDBCType4Connection.java:201)
+com.ibm.broker.jdbctype4.jdbcdbasemgr.JDBCType4DatabaseManager.getThreadOwnedConnections(JDBCType4DatabaseManager.java:328)
+com.ibm.broker.jdbctype4.localtrxn.JDBCType4SinglePhaseTrxnHandler.getConnection(JDBCType4SinglePhaseTrxnHandler.java:260)
 com.ibm.broker.jdbctype4.localtrxn.JDBCType4SinglePhaseTrxnHandler.getConnection(JDBCType4SinglePhaseTrxnHandler.java:150)
 com.ibm.broker.jdbctype4.connfact.JDBCType4ConnectionFactory.getConnection(JDBCType4ConnectionFactory.java:157)
 sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -85,17 +215,21 @@ sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.jav
 java.lang.reflect.Method.invoke(Method.java:508)
 com.ibm.xml.xci.exec.BasicMutableDynamicContext$JavaMethodExecutable.execute(BasicMutableDynamicContext.java:984)
 com.ibm.xml.xci.exec.BasicDynamicContext$ExternalFunction.execute(BasicDynamicContext.java:361)
-xmap_default__postCreate_Mapping14a96dfd52b02e3_0c__Common_Partition0.xslt2$24$getReturnAsXCICursor(com_ibm_xmlns_prod_xltxe_j_linetable)
-xmap_default__postCreate_Mapping14a96dfd52b02e3_0c__Common_Partition0.xmap_default__postCreate_Mapping14a96dfd52b02e3_0c_$24$$24$function$24$__xquery_result_fun__$2d$3(com_ibm_xmlns_prod_xltxe_j_linetable:28)
-xmap_default__postCreate_Mapping14a96dfd52b02e3_0c_.evaluate(xmap_default__postCreate_Mapping14a96dfd52b02e3_0c_.java)
+xmap_default__postCreate_Mappingacc3a79292485e7_20__Common_Partition0.xslt2$24$getReturnAsXCICursor(com_ibm_xmlns_prod_xltxe_j_linetable)
+xmap_default__postCreate_Mappingacc3a79292485e7_20__Common_Partition0.xmap_default__postCreate_Mappingacc3a79292485e7_20_$24$$24$function$24$__xquery_result_fun__$2d$3(com_ibm_xmlns_prod_xltxe_j_linetable:28)
+xmap_default__postCreate_Mappingacc3a79292485e7_20_.evaluate(xmap_default__postCreate_Mappingacc3a79292485e7_20_.java)
 com.ibm.xltxe.rnm1.xtq.xquery.drivers.XQueryExecutable.execute(XQueryExecutable.java:220)
 com.ibm.xltxe.rnm1.xtq.xquery.drivers.XQueryExecutable.execute(XQueryExecutable.java:97)
 com.ibm.broker.map.MbMapExecutable.execute(MbMapExecutable.java:462)
 com.ibm.broker.ct.mapping.MappingNode.evaluate(MappingNode.java:466)
 com.ibm.broker.plugin.MbNode.evaluate(MbNode.java:2138)] 
-2024-02-20 17:15:45.592548Z: [Thread 6676] (Msg 1/1) BIP1989I: Integration server is terminating due to a shutdown event. 
-2024-02-20 17:15:55.605832Z: [Thread 6676] (Msg 1/1) BIP2155I: About to 'Stop' the deployed resource 'CRUD_REST_TRAINING' of type 'RestAPI'. 
-2024-02-20 17:15:59.417356Z: [Thread 6676] (Msg 1/1) BIP2271I: Deployed resource 'gen.CRUD_REST_TRAINING' (uuid='gen.CRUD_REST_TRAINING',type='MessageFlow') successfully stopped. 
-2024-02-20 17:16:02.551704Z: [Thread 6676] (Msg 1/1) BIP2155I: About to 'TearDown' the deployed resource 'CRUD_REST_TRAINING' of type 'RestAPI'. 
-2024-02-20 17:16:02.571214Z: [Thread 6676] (Msg 1/1) BIP3133I: The HTTP Listener has stopped listening on port '7800' for 'http' connections. 
-2024-02-20 17:16:03.691730Z: [Thread 6676] (Msg 1/1) BIP1992I: Integration server 'TEST_SERVER' stopped. 
+2024-02-22 21:13:18.553638Z: [Thread 5350] (Msg 1/1) BIP2152I: Configuration message received. 
+2024-02-22 21:13:18.556184Z: [Thread 5350] (Msg 1/1) BIP9328E: The policy project 'DefaultPolicies' cannot be redeployed as the non-dynamic policy 'crud' differs or has been deleted from the policy project being deployed. 
+2024-02-22 21:13:18.556238Z: [Thread 5350] (Msg 1/1) BIP9325E: The source 'DefaultPoliciesproject.generated.bar' could not be deployed as it contains errors. No changes have been made to the integration server. 
+2024-02-22 21:13:18.556532Z: [Thread 5350] (Msg 1/1) BIP2154I: Integration server finished with Configuration message. 
+2024-02-23 04:33:44.433444Z: [Thread 5345] (Msg 1/1) BIP1989I: Integration server is terminating due to a shutdown event. 
+2024-02-23 04:33:54.448376Z: [Thread 5345] (Msg 1/1) BIP2155I: About to 'Stop' the deployed resource 'CRUD_REST_TRAINING' of type 'RestAPI'. 
+2024-02-23 04:33:56.895044Z: [Thread 5345] (Msg 1/1) BIP2271I: Deployed resource 'gen.CRUD_REST_TRAINING' (uuid='gen.CRUD_REST_TRAINING',type='MessageFlow') successfully stopped. 
+2024-02-23 04:34:00.050460Z: [Thread 5345] (Msg 1/1) BIP2155I: About to 'TearDown' the deployed resource 'CRUD_REST_TRAINING' of type 'RestAPI'. 
+2024-02-23 04:34:00.061358Z: [Thread 5345] (Msg 1/1) BIP3133I: The HTTP Listener has stopped listening on port '7800' for 'http' connections. 
+2024-02-23 04:34:00.790924Z: [Thread 5345] (Msg 1/1) BIP1992I: Integration server 'TEST_SERVER' stopped. 

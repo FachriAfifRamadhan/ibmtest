@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><mappingRoot xmlns="http://www.ibm.com/2008/ccl/Mapping" domainID="com.ibm.msl.mapping.xml" domainIDExtension="mb" mainMap="true" targetNamespace="default" version="8.0.5.0" xmlns:map="default">
+    <input path="/TestData.xsd" var="var"/>
+    <input path="jar:file://!com/ibm/msl/mapping/rdb/xsds/dbreturn.xsd" var="var1"/>
+    <output path="/TestData.xsd" var="var2"/>
+    <output path="db:table(/crud.dbm,crud,crud,testdata)" var="testdata"/>
+    <generation engine="xquery"/>
+    <mappingDeclaration name="GetFileInsertData_Mapping_and_insert_db">
+        <input path="$var/mb:msg(TestData,assembly,DFDL,Properties)" var="MessageAssembly"/>
+        <output path="$var2/mb:msg(TestData,assembly,DFDL,Properties)" var="MessageAssembly1"/>
+        <output path="$testdata/db:insert(fn:false(),id,name,type)" var="dbinsert"/>
+        <foreach>
+            <input path="$MessageAssembly/TestData/record" var="record1"/>
+            <output path="$MessageAssembly1/TestData" var="TestData"/>
+            <output path="$dbinsert/." var="dbinsert1"/>
+            <transaction>
+                <insert>
+                    <input path="$record1/."/>
+                    <output path="$dbinsert1/."/>
+                    <move>
+                        <input path="id"/>
+                        <output path="id"/>
+                    </move>
+                    <move>
+                        <input path="name"/>
+                        <output path="name"/>
+                    </move>
+                    <move>
+                        <input path="type"/>
+                        <output path="type"/>
+                    </move>
+                </insert>
+                <return>
+                    <input path="$var1/DBInsertReturn"/>
+                </return>
+            </transaction>
+            <move>
+                <input path="$record1/."/>
+                <output path="$TestData/record"/>
+            </move>
+        </foreach>
+    </mappingDeclaration>
+</mappingRoot>

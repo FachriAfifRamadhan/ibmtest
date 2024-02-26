@@ -1,101 +1,220 @@
-2024-02-21 06:41:08.115453Z: [Thread 46462] (Msg 1/1) BIP1990I: Integration server 'TEST_SERVER' starting initialization; version '11.0.0.23' (64-bit) 
-2024-02-21 06:41:17.670840Z: [Thread 46462] (Msg 1/1) BIP2155I: About to 'Initialize' the deployed resource 'CRUD_REST_TRAINING' of type 'RestAPI'. 
-2024-02-21 06:41:41.466756Z: [Thread 46462] (Msg 1/1) BIP2155I: About to 'Start' the deployed resource 'CRUD_REST_TRAINING' of type 'RestAPI'. 
-2024-02-21 06:41:41.482804Z: [Thread 46462] (Msg 1/1) BIP3132I: The HTTP Listener has started listening on port '7800' for 'http' connections. 
-2024-02-21 06:41:41.482884Z: [Thread 46462] (Msg 1/1) BIP1996I: Listening on HTTP URL '/crud_rest_training/v1*'. 
-2024-02-21 06:41:41.483176Z: [Thread 46462] (Msg 1/1) BIP2269I: Deployed resource 'gen.CRUD_REST_TRAINING' (uuid='gen.CRUD_REST_TRAINING',type='MessageFlow') started successfully. 
-2024-02-21 06:41:43.848460Z: [Thread 46548] (Msg 1/1) BIP2866I: IBM App Connect Enterprise administration security is inactive. 
-2024-02-21 06:41:43.948200Z: [Thread 46548] (Msg 1/1) BIP3132I: The HTTP Listener has started listening on port '7600' for 'RestAdmin http' connections. 
-2024-02-21 06:41:43.952060Z: [Thread 46462] (Msg 1/1) BIP1991I: Integration server has finished initialization. 
-2024-02-21 06:43:15.434122Z: [Thread 46648] (Msg 1/3) BIP3120E: Exception condition detected on input node 'gen.CRUD_REST_TRAINING.HTTP Input'. 
-2024-02-21 06:43:15.434238Z: [Thread 46648] (Msg 2/3) BIP2230E: Error detected whilst processing a message in node 'gen.CRUD_REST_TRAINING.postCreate (Implementation).Mapping'. 
-2024-02-21 06:43:15.434402Z: [Thread 46648] (Msg 3/3) BIP6231E: An error occurred in node: Broker 'integration_server'; Execution Group 'TEST_SERVER'; Message Flow 'gen.CRUD_REST_TRAINING'; Node 'postCreate (Implementation).Mapping'; Node Type 'Mapping Exception details:  message: com.mysql.jdbc.jdbc2.optional.MysqlXADataSource stack trace: [java.net.URLClassLoader.findClass(URLClassLoader.java:610)
-com.ibm.broker.classloading.JavaResourceClassLoader.findClass(JavaResourceClassLoader.java:180)
-com.ibm.broker.classloading.SharedClassLoader.findClass(SharedClassLoader.java:209)
-java.lang.ClassLoader.loadClassHelper(ClassLoader.java:948)
-java.lang.ClassLoader.loadClass(ClassLoader.java:893)
-java.lang.ClassLoader.loadClass(ClassLoader.java:876)
-com.ibm.broker.classloading.JavaResourceClassLoader.loadClass(JavaResourceClassLoader.java:579)
-com.ibm.broker.classloading.SharedClassLoader.loadClass(SharedClassLoader.java:217)
-com.ibm.broker.classloading.ReverseDelegationClassLoader.findClass(ReverseDelegationClassLoader.java:130)
-com.ibm.broker.classloading.JarsURLClassLoader.findClass(JarsURLClassLoader.java:92)
-java.lang.ClassLoader.loadClassHelper(ClassLoader.java:948)
-java.lang.ClassLoader.loadClass(ClassLoader.java:893)
-java.lang.ClassLoader.loadClass(ClassLoader.java:876)
-com.ibm.broker.classloading.JavaResourceClassLoader.loadClass(JavaResourceClassLoader.java:579)
-com.ibm.broker.jdbctype4.jdbcdbasemgr.JDBCType4Connection.createXAConnection(JDBCType4Connection.java:201)
-com.ibm.broker.jdbctype4.jdbcdbasemgr.JDBCType4DatabaseManager.getThreadOwnedConnections(JDBCType4DatabaseManager.java:328)
-com.ibm.broker.jdbctype4.localtrxn.JDBCType4SinglePhaseTrxnHandler.getConnection(JDBCType4SinglePhaseTrxnHandler.java:260)
-com.ibm.broker.jdbctype4.localtrxn.JDBCType4SinglePhaseTrxnHandler.getConnection(JDBCType4SinglePhaseTrxnHandler.java:150)
-com.ibm.broker.jdbctype4.connfact.JDBCType4ConnectionFactory.getConnection(JDBCType4ConnectionFactory.java:157)
-sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:90)
-sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
-java.lang.reflect.Method.invoke(Method.java:508)
-com.ibm.broker.plugin.MbNode.getJDBCType4Connection(MbNode.java:2245)
-com.ibm.broker.ct.mapping.MappingNode.getDBConnection(MappingNode.java:1863)
-com.ibm.broker.ct.mapping.JDBCWrapper.prepare(JDBCWrapper.java:2890)
-com.ibm.broker.ct.mapping.JDBCWrapper.insert(JDBCWrapper.java:818)
-sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:90)
-sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
-java.lang.reflect.Method.invoke(Method.java:508)
-com.ibm.xml.xci.exec.BasicMutableDynamicContext$JavaMethodExecutable.execute(BasicMutableDynamicContext.java:984)
-com.ibm.xml.xci.exec.BasicDynamicContext$ExternalFunction.execute(BasicDynamicContext.java:361)
-xmap_default__postCreate_Mapping14a96dfd52b02e3_0c__Common_Partition0.xslt2$24$getReturnAsXCICursor(com_ibm_xmlns_prod_xltxe_j_linetable)
-xmap_default__postCreate_Mapping14a96dfd52b02e3_0c__Common_Partition0.xmap_default__postCreate_Mapping14a96dfd52b02e3_0c_$24$$24$function$24$__xquery_result_fun__$2d$3(com_ibm_xmlns_prod_xltxe_j_linetable:28)
-xmap_default__postCreate_Mapping14a96dfd52b02e3_0c_.evaluate(xmap_default__postCreate_Mapping14a96dfd52b02e3_0c_.java)
-com.ibm.xltxe.rnm1.xtq.xquery.drivers.XQueryExecutable.execute(XQueryExecutable.java:220)
-com.ibm.xltxe.rnm1.xtq.xquery.drivers.XQueryExecutable.execute(XQueryExecutable.java:97)
-com.ibm.broker.map.MbMapExecutable.execute(MbMapExecutable.java:462)
-com.ibm.broker.ct.mapping.MappingNode.evaluate(MappingNode.java:466)
-com.ibm.broker.plugin.MbNode.evaluate(MbNode.java:2138)] 
-2024-02-21 06:47:48.897340Z: [Thread 46648] (Msg 1/3) BIP3120E: Exception condition detected on input node 'gen.CRUD_REST_TRAINING.HTTP Input'. 
-2024-02-21 06:47:48.897420Z: [Thread 46648] (Msg 2/3) BIP2230E: Error detected whilst processing a message in node 'gen.CRUD_REST_TRAINING.getRead (Implementation).Mapping'. 
-2024-02-21 06:47:48.897556Z: [Thread 46648] (Msg 3/3) BIP6231E: An error occurred in node: Broker 'integration_server'; Execution Group 'TEST_SERVER'; Message Flow 'gen.CRUD_REST_TRAINING'; Node 'postCreate (Implementation).Mapping'; Node Type 'Mapping Exception details:  message: com.mysql.jdbc.jdbc2.optional.MysqlXADataSource stack trace: [java.net.URLClassLoader.findClass(URLClassLoader.java:610)
-com.ibm.broker.classloading.JavaResourceClassLoader.findClass(JavaResourceClassLoader.java:180)
-com.ibm.broker.classloading.SharedClassLoader.findClass(SharedClassLoader.java:209)
-java.lang.ClassLoader.loadClassHelper(ClassLoader.java:948)
-java.lang.ClassLoader.loadClass(ClassLoader.java:893)
-java.lang.ClassLoader.loadClass(ClassLoader.java:876)
-com.ibm.broker.classloading.JavaResourceClassLoader.loadClass(JavaResourceClassLoader.java:579)
-com.ibm.broker.classloading.SharedClassLoader.loadClass(SharedClassLoader.java:217)
-com.ibm.broker.classloading.ReverseDelegationClassLoader.findClass(ReverseDelegationClassLoader.java:130)
-com.ibm.broker.classloading.JarsURLClassLoader.findClass(JarsURLClassLoader.java:92)
-java.lang.ClassLoader.loadClassHelper(ClassLoader.java:948)
-java.lang.ClassLoader.loadClass(ClassLoader.java:893)
-java.lang.ClassLoader.loadClass(ClassLoader.java:876)
-com.ibm.broker.classloading.JavaResourceClassLoader.loadClass(JavaResourceClassLoader.java:579)
-com.ibm.broker.jdbctype4.jdbcdbasemgr.JDBCType4Connection.createXAConnection(JDBCType4Connection.java:201)
-com.ibm.broker.jdbctype4.jdbcdbasemgr.JDBCType4Connection.getT4NodeConnection(JDBCType4Connection.java:1211)
-com.ibm.broker.jdbctype4.localtrxn.JDBCType4SinglePhaseTrxnHandler.getConnection(JDBCType4SinglePhaseTrxnHandler.java:279)
-com.ibm.broker.jdbctype4.localtrxn.JDBCType4SinglePhaseTrxnHandler.getConnection(JDBCType4SinglePhaseTrxnHandler.java:150)
-com.ibm.broker.jdbctype4.connfact.JDBCType4ConnectionFactory.getConnection(JDBCType4ConnectionFactory.java:157)
-sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:90)
-sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
-java.lang.reflect.Method.invoke(Method.java:508)
-com.ibm.broker.plugin.MbNode.getJDBCType4Connection(MbNode.java:2245)
-com.ibm.broker.ct.mapping.MappingNode.getDBConnection(MappingNode.java:1863)
-com.ibm.broker.ct.mapping.JDBCWrapper.prepare(JDBCWrapper.java:2890)
-com.ibm.broker.ct.mapping.JDBCWrapper.select(JDBCWrapper.java:663)
-sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:90)
-sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:55)
-java.lang.reflect.Method.invoke(Method.java:508)
-com.ibm.xml.xci.exec.BasicMutableDynamicContext$JavaMethodExecutable.execute(BasicMutableDynamicContext.java:984)
-com.ibm.xml.xci.exec.BasicDynamicContext$ExternalFunction.execute(BasicDynamicContext.java:361)
-xmap_default__getRead_Mappingaa8cb8947ec11d54_09__Common_Partition0.xslt2$24$getReturnAsXCICursor(com_ibm_xmlns_prod_xltxe_j_linetable)
-xmap_default__getRead_Mappingaa8cb8947ec11d54_09__Common_Partition0.xmap_default__getRead_Mappingaa8cb8947ec11d54_09_$24$$24$function$24$__xquery_result_fun__$2d$3(com_ibm_xmlns_prod_xltxe_j_linetable:16)
-xmap_default__getRead_Mappingaa8cb8947ec11d54_09_.evaluate(xmap_default__getRead_Mappingaa8cb8947ec11d54_09_.java)
-com.ibm.xltxe.rnm1.xtq.xquery.drivers.XQueryExecutable.execute(XQueryExecutable.java:220)
-com.ibm.xltxe.rnm1.xtq.xquery.drivers.XQueryExecutable.execute(XQueryExecutable.java:97)
-com.ibm.broker.map.MbMapExecutable.execute(MbMapExecutable.java:462)
-com.ibm.broker.ct.mapping.MappingNode.evaluate(MappingNode.java:466)
-com.ibm.broker.plugin.MbNode.evaluate(MbNode.java:2138)] 
-2024-02-21 06:48:09.719370Z: [Thread 46462] (Msg 1/1) BIP1989I: Integration server is terminating due to a shutdown event. 
-2024-02-21 06:48:19.735452Z: [Thread 46462] (Msg 1/1) BIP2155I: About to 'Stop' the deployed resource 'CRUD_REST_TRAINING' of type 'RestAPI'. 
-2024-02-21 06:48:23.842124Z: [Thread 46462] (Msg 1/1) BIP2271I: Deployed resource 'gen.CRUD_REST_TRAINING' (uuid='gen.CRUD_REST_TRAINING',type='MessageFlow') successfully stopped. 
-2024-02-21 06:48:28.474274Z: [Thread 46462] (Msg 1/1) BIP2155I: About to 'TearDown' the deployed resource 'CRUD_REST_TRAINING' of type 'RestAPI'. 
-2024-02-21 06:48:28.490678Z: [Thread 46462] (Msg 1/1) BIP3133I: The HTTP Listener has stopped listening on port '7800' for 'http' connections. 
-2024-02-21 06:48:29.631578Z: [Thread 46462] (Msg 1/1) BIP1992I: Integration server 'TEST_SERVER' stopped. 
+2024-02-23 08:27:43.490816Z: [Thread 18193] (Msg 1/1) BIP1990I: Integration server 'TEST_SERVER' starting initialization; version '11.0.0.23' (64-bit) 
+2024-02-23 08:27:49.249572Z: [Thread 18193] (Msg 1/1) BIP2155I: About to 'Initialize' the deployed resource 'CRUD_REST_TRAINING' of type 'RestAPI'. 
+2024-02-23 08:27:56.312900Z: [Thread 18193] (Msg 1/1) BIP2155I: About to 'Start' the deployed resource 'CRUD_REST_TRAINING' of type 'RestAPI'. 
+2024-02-23 08:27:56.328952Z: [Thread 18193] (Msg 1/1) BIP3132I: The HTTP Listener has started listening on port '7800' for 'http' connections. 
+2024-02-23 08:27:56.329024Z: [Thread 18193] (Msg 1/1) BIP1996I: Listening on HTTP URL '/crud_rest_training/v1*'. 
+2024-02-23 08:27:56.329304Z: [Thread 18193] (Msg 1/1) BIP2269I: Deployed resource 'gen.CRUD_REST_TRAINING' (uuid='gen.CRUD_REST_TRAINING',type='MessageFlow') started successfully. 
+2024-02-23 08:27:57.902940Z: [Thread 18272] (Msg 1/1) BIP2866I: IBM App Connect Enterprise administration security is inactive. 
+2024-02-23 08:27:57.931508Z: [Thread 18272] (Msg 1/1) BIP3132I: The HTTP Listener has started listening on port '7600' for 'RestAdmin http' connections. 
+2024-02-23 08:27:57.934548Z: [Thread 18193] (Msg 1/1) BIP1991I: Integration server has finished initialization. 
+2024-02-23 08:28:24.973580Z: [Thread 18205] (Msg 1/1) BIP2152I: Configuration message received. 
+2024-02-23 08:28:24.996384Z: [Thread 18205] (Msg 1/1) BIP2155I: About to 'Initialize' the deployed resource 'crud' of type 'Application'. 
+2024-02-23 08:28:28.077120Z: [Thread 18205] (Msg 1/1) BIP3316W: File node 'File Output' in message flow 'TransferFiles' has no valid filename specified as property ''. 
+2024-02-23 08:28:31.073082Z: [Thread 18205] (Msg 1/1) BIP9342I: Created compiled 'XMLNSC' schema file 'crud/$mqsiApplication.bir'. 
+2024-02-23 08:28:33.986696Z: [Thread 18205] (Msg 1/1) BIP9341I: Created compiled 'DFDL' schema file 'crud/$mqsiApplication.dpif'. 
+2024-02-23 08:28:34.171072Z: [Thread 18205] (Msg 1/1) BIP2155I: About to 'Start' the deployed resource 'crud' of type 'Application'. 
+2024-02-23 08:28:34.171388Z: [Thread 18205] (Msg 1/1) BIP2269I: Deployed resource 'GetFileInsertData' (uuid='GetFileInsertData',type='MessageFlow') started successfully. 
+2024-02-23 08:28:34.171664Z: [Thread 18205] (Msg 1/1) BIP2269I: Deployed resource 'TransferFiles' (uuid='TransferFiles',type='MessageFlow') started successfully. 
+2024-02-23 08:28:34.172504Z: [Thread 18205] (Msg 1/1) BIP3132I: The HTTP Listener has started listening on port '7800' for 'http' connections. 
+2024-02-23 08:28:34.172576Z: [Thread 18205] (Msg 1/1) BIP1996I: Listening on HTTP URL '/addkafka'. 
+2024-02-23 08:28:34.173176Z: [Thread 18205] (Msg 1/1) BIP2269I: Deployed resource 'kafka' (uuid='kafka',type='MessageFlow') started successfully. 
+2024-02-23 08:28:34.173468Z: [Thread 18205] (Msg 1/1) BIP2269I: Deployed resource 'kafkaconsum' (uuid='kafkaconsum',type='MessageFlow') started successfully. 
+2024-02-23 08:28:34.173544Z: [Thread 18205] (Msg 1/1) BIP9332I: Application 'crud' has been created successfully. 
+2024-02-23 08:28:34.173596Z: [Thread 18205] (Msg 1/1) BIP9326I: The source 'crudproject.TestMode.bar' has been successfully deployed. 
+2024-02-23 08:28:34.173904Z: [Thread 18205] (Msg 1/1) BIP2154I: Integration server finished with Configuration message. 
+2024-02-23 08:28:34.610276Z: [Thread 18441] (Msg 1/1) BIP4362E: Java node error: [BIPmsgs:3890]BIP3890E: Failed to initialise Kafka input connector for client '1'. Reason 'Failed to construct kafka consumer'. 
+
+Initialising the Kafka input connector failed with reason 'Failed to construct kafka consumer'. Possible causes are:  
+ 1) None of the Kafka servers defined in 'Bootstrap Servers' property can be contacted.  
+ 2) If using an SSL connection, the SSL configuration is incorrect.  
+ 3) The Kafka client could not be loaded. 
+
+Verify the Kafka servers are available at tha addresses specified in the 'Bootstrap Servers' property. If connecting to Kafka using an SSL connection, verify the SSL configuration properties match those required by the Kafka server. If connecting to Kafka using an SSL connection and have configured a SSL truststore, verify the truststore contains certificates which can validate those provided by the Kafka server. Further information on the cause of the failure may be available by enabling more detailed logging from the Kafka client in the log4j properties file. : writeSystemLogError. 
+2024-02-23 08:28:35.584424Z: [Thread 18438] (Msg 1/1) BIP3380E: File node 'File Input' in message flow 'TransferFiles' could not connect to remote 'FTP' server '192.168.100.17'. Reason: 'timeout(0): Connection refused (Connection refused).' 
+2024-02-23 08:29:35.332512Z: [Thread 18441] (Msg 1/1) BIP4362E: Java node error: [BIPmsgs:3890]BIP3890E: Failed to initialise Kafka input connector for client '1'. Reason 'Failed to construct kafka consumer'. 
+
+Initialising the Kafka input connector failed with reason 'Failed to construct kafka consumer'. Possible causes are:  
+ 1) None of the Kafka servers defined in 'Bootstrap Servers' property can be contacted.  
+ 2) If using an SSL connection, the SSL configuration is incorrect.  
+ 3) The Kafka client could not be loaded. 
+
+Verify the Kafka servers are available at tha addresses specified in the 'Bootstrap Servers' property. If connecting to Kafka using an SSL connection, verify the SSL configuration properties match those required by the Kafka server. If connecting to Kafka using an SSL connection and have configured a SSL truststore, verify the truststore contains certificates which can validate those provided by the Kafka server. Further information on the cause of the failure may be available by enabling more detailed logging from the Kafka client in the log4j properties file. : writeSystemLogError. 
+2024-02-23 08:29:35.662784Z: [Thread 18438] (Msg 1/1) BIP3380E: File node 'File Input' in message flow 'TransferFiles' could not connect to remote 'FTP' server '192.168.100.17'. Reason: 'timeout(0): Connection refused (Connection refused).' 
+2024-02-23 08:30:35.711528Z: [Thread 18438] (Msg 1/1) BIP3380E: File node 'File Input' in message flow 'TransferFiles' could not connect to remote 'FTP' server '192.168.100.17'. Reason: 'timeout(0): Connection refused (Connection refused).' 
+2024-02-23 08:31:25.814186Z: [Thread 18208] (Msg 1/1) BIP2152I: Configuration message received. 
+2024-02-23 08:31:25.831758Z: [Thread 18208] (Msg 1/1) BIP2155I: About to 'Stop' the deployed resource 'crud' of type 'Application'. 
+2024-02-23 08:31:30.205596Z: [Thread 18208] (Msg 1/1) BIP2271I: Deployed resource 'GetFileInsertData' (uuid='GetFileInsertData',type='MessageFlow') successfully stopped. 
+2024-02-23 08:31:30.756590Z: [Thread 18208] (Msg 1/1) BIP2271I: Deployed resource 'TransferFiles' (uuid='TransferFiles',type='MessageFlow') successfully stopped. 
+2024-02-23 08:31:30.756772Z: [Thread 18208] (Msg 1/1) BIP2271I: Deployed resource 'kafka' (uuid='kafka',type='MessageFlow') successfully stopped. 
+2024-02-23 08:31:30.757076Z: [Thread 18208] (Msg 1/1) BIP2271I: Deployed resource 'kafkaconsum' (uuid='kafkaconsum',type='MessageFlow') successfully stopped. 
+2024-02-23 08:31:30.757172Z: [Thread 18208] (Msg 1/1) BIP2155I: About to 'TearDown' the deployed resource 'crud' of type 'Application'. 
+2024-02-23 08:31:30.863570Z: [Thread 18208] (Msg 1/1) BIP2155I: About to 'Initialize' the deployed resource 'crud' of type 'Application'. 
+2024-02-23 08:31:31.080358Z: [Thread 18208] (Msg 1/1) BIP3316W: File node 'File Output' in message flow 'TransferFiles' has no valid filename specified as property ''. 
+2024-02-23 08:31:33.034694Z: [Thread 18208] (Msg 1/1) BIP9342I: Created compiled 'XMLNSC' schema file 'crud/$mqsiApplication.bir'. 
+2024-02-23 08:31:33.301194Z: [Thread 18208] (Msg 1/1) BIP9341I: Created compiled 'DFDL' schema file 'crud/$mqsiApplication.dpif'. 
+2024-02-23 08:31:33.572176Z: [Thread 18208] (Msg 1/1) BIP2155I: About to 'Start' the deployed resource 'crud' of type 'Application'. 
+2024-02-23 08:31:33.580136Z: [Thread 18208] (Msg 1/1) BIP2269I: Deployed resource 'GetFileInsertData' (uuid='GetFileInsertData',type='MessageFlow') started successfully. 
+2024-02-23 08:31:33.580384Z: [Thread 18208] (Msg 1/1) BIP2269I: Deployed resource 'TransferFiles' (uuid='TransferFiles',type='MessageFlow') started successfully. 
+2024-02-23 08:31:33.580828Z: [Thread 18208] (Msg 1/1) BIP3132I: The HTTP Listener has started listening on port '7800' for 'http' connections. 
+2024-02-23 08:31:33.580904Z: [Thread 18208] (Msg 1/1) BIP1996I: Listening on HTTP URL '/addkafka'. 
+2024-02-23 08:31:33.581312Z: [Thread 18208] (Msg 1/1) BIP2269I: Deployed resource 'kafka' (uuid='kafka',type='MessageFlow') started successfully. 
+2024-02-23 08:31:33.581552Z: [Thread 18208] (Msg 1/1) BIP2269I: Deployed resource 'kafkaconsum' (uuid='kafkaconsum',type='MessageFlow') started successfully. 
+2024-02-23 08:31:33.581628Z: [Thread 18208] (Msg 1/1) BIP9332I: Application 'crud' has been changed successfully. 
+2024-02-23 08:31:33.581668Z: [Thread 18208] (Msg 1/1) BIP9326I: The source 'crudproject.TestMode.bar' has been successfully deployed. 
+2024-02-23 08:31:33.581840Z: [Thread 18208] (Msg 1/1) BIP2154I: Integration server finished with Configuration message. 
+2024-02-23 08:31:33.629048Z: [Thread 19355] (Msg 1/1) BIP4362E: Java node error: [BIPmsgs:3890]BIP3890E: Failed to initialise Kafka input connector for client '1'. Reason 'Failed to construct kafka consumer'. 
+
+Initialising the Kafka input connector failed with reason 'Failed to construct kafka consumer'. Possible causes are:  
+ 1) None of the Kafka servers defined in 'Bootstrap Servers' property can be contacted.  
+ 2) If using an SSL connection, the SSL configuration is incorrect.  
+ 3) The Kafka client could not be loaded. 
+
+Verify the Kafka servers are available at tha addresses specified in the 'Bootstrap Servers' property. If connecting to Kafka using an SSL connection, verify the SSL configuration properties match those required by the Kafka server. If connecting to Kafka using an SSL connection and have configured a SSL truststore, verify the truststore contains certificates which can validate those provided by the Kafka server. Further information on the cause of the failure may be available by enabling more detailed logging from the Kafka client in the log4j properties file. : writeSystemLogError. 
+2024-02-23 08:31:34.630880Z: [Thread 19353] (Msg 1/1) BIP3380E: File node 'File Input' in message flow 'TransferFiles' could not connect to remote 'FTP' server '192.168.100.17'. Reason: 'timeout(0): Connection refused (Connection refused).' 
+2024-02-23 08:32:34.665096Z: [Thread 19355] (Msg 1/1) BIP4362E: Java node error: [BIPmsgs:3890]BIP3890E: Failed to initialise Kafka input connector for client '1'. Reason 'Failed to construct kafka consumer'. 
+
+Initialising the Kafka input connector failed with reason 'Failed to construct kafka consumer'. Possible causes are:  
+ 1) None of the Kafka servers defined in 'Bootstrap Servers' property can be contacted.  
+ 2) If using an SSL connection, the SSL configuration is incorrect.  
+ 3) The Kafka client could not be loaded. 
+
+Verify the Kafka servers are available at tha addresses specified in the 'Bootstrap Servers' property. If connecting to Kafka using an SSL connection, verify the SSL configuration properties match those required by the Kafka server. If connecting to Kafka using an SSL connection and have configured a SSL truststore, verify the truststore contains certificates which can validate those provided by the Kafka server. Further information on the cause of the failure may be available by enabling more detailed logging from the Kafka client in the log4j properties file. : writeSystemLogError. 
+2024-02-23 08:32:34.670308Z: [Thread 19353] (Msg 1/1) BIP3380E: File node 'File Input' in message flow 'TransferFiles' could not connect to remote 'FTP' server '192.168.100.17'. Reason: 'timeout(0): Connection refused (Connection refused).' 
+2024-02-23 08:32:45.939124Z: [Thread 19354] (Msg 1/1) BIP4362E: Java node error: [BIPmsgs:3895]BIP3895E: Failed to initialise Kafka output connector. Reason 'Failed to construct kafka producer'. 
+
+Initialising the Kafka output connector failed with reason 'Failed to construct kafka producer'. Possible causes are:  
+ 1) None of the Kafka servers defined in 'Bootstrap Servers' property can be contacted.  
+ 2) If using an SSL connection, the SSL configuration is incorrect.  
+ 3) If using SASL authentication, the credentials are incorrectly configured.  
+ 4) The Kafka client could not be loaded. 
+
+Verify the Kafka servers are available at tha addresses specified in the 'Bootstrap Servers' property. If connecting to Kafka using an SSL connection, verify the SSL configuration properties match those required by the Kafka server. If connecting to Kafka using an SSL connection and have configured a SSL truststore, verify the truststore contains certificates which can validate those provided by the Kafka server. Further information on the cause of the failure may be available by enabling more detailed logging from the Kafka client in the log4j properties file. : writeSystemLogError. 
+2024-02-23 08:33:34.730576Z: [Thread 19353] (Msg 1/1) BIP3380E: File node 'File Input' in message flow 'TransferFiles' could not connect to remote 'FTP' server '192.168.100.17'. Reason: 'timeout(0): Connection refused (Connection refused).' 
+2024-02-23 08:34:03.257420Z: [Thread 18206] (Msg 1/1) BIP2152I: Configuration message received. 
+2024-02-23 08:34:03.276130Z: [Thread 18206] (Msg 1/1) BIP2155I: About to 'Stop' the deployed resource 'crud' of type 'Application'. 
+2024-02-23 08:34:04.616510Z: [Thread 18206] (Msg 1/1) BIP2271I: Deployed resource 'GetFileInsertData' (uuid='GetFileInsertData',type='MessageFlow') successfully stopped. 
+2024-02-23 08:34:04.752681Z: [Thread 18206] (Msg 1/1) BIP2271I: Deployed resource 'TransferFiles' (uuid='TransferFiles',type='MessageFlow') successfully stopped. 
+2024-02-23 08:34:06.114711Z: [Thread 18206] (Msg 1/1) BIP2271I: Deployed resource 'kafka' (uuid='kafka',type='MessageFlow') successfully stopped. 
+2024-02-23 08:34:06.115023Z: [Thread 18206] (Msg 1/1) BIP2271I: Deployed resource 'kafkaconsum' (uuid='kafkaconsum',type='MessageFlow') successfully stopped. 
+2024-02-23 08:34:06.115082Z: [Thread 18206] (Msg 1/1) BIP2155I: About to 'TearDown' the deployed resource 'crud' of type 'Application'. 
+2024-02-23 08:34:06.175280Z: [Thread 18206] (Msg 1/1) BIP2155I: About to 'Initialize' the deployed resource 'crud' of type 'Application'. 
+2024-02-23 08:34:06.291081Z: [Thread 18206] (Msg 1/1) BIP3316W: File node 'File Output' in message flow 'TransferFiles' has no valid filename specified as property ''. 
+2024-02-23 08:34:08.036371Z: [Thread 18206] (Msg 1/1) BIP9342I: Created compiled 'XMLNSC' schema file 'crud/$mqsiApplication.bir'. 
+2024-02-23 08:34:08.203480Z: [Thread 18206] (Msg 1/1) BIP9341I: Created compiled 'DFDL' schema file 'crud/$mqsiApplication.dpif'. 
+2024-02-23 08:34:08.439701Z: [Thread 18206] (Msg 1/1) BIP2155I: About to 'Start' the deployed resource 'crud' of type 'Application'. 
+2024-02-23 08:34:08.440024Z: [Thread 18206] (Msg 1/1) BIP2269I: Deployed resource 'GetFileInsertData' (uuid='GetFileInsertData',type='MessageFlow') started successfully. 
+2024-02-23 08:34:08.440206Z: [Thread 18206] (Msg 1/1) BIP2269I: Deployed resource 'TransferFiles' (uuid='TransferFiles',type='MessageFlow') started successfully. 
+2024-02-23 08:34:08.440684Z: [Thread 18206] (Msg 1/1) BIP3132I: The HTTP Listener has started listening on port '7800' for 'http' connections. 
+2024-02-23 08:34:08.440740Z: [Thread 18206] (Msg 1/1) BIP1996I: Listening on HTTP URL '/addkafka'. 
+2024-02-23 08:34:08.440954Z: [Thread 18206] (Msg 1/1) BIP2269I: Deployed resource 'kafka' (uuid='kafka',type='MessageFlow') started successfully. 
+2024-02-23 08:34:08.441151Z: [Thread 18206] (Msg 1/1) BIP2269I: Deployed resource 'kafkaconsum' (uuid='kafkaconsum',type='MessageFlow') started successfully. 
+2024-02-23 08:34:08.441209Z: [Thread 18206] (Msg 1/1) BIP9332I: Application 'crud' has been changed successfully. 
+2024-02-23 08:34:08.441253Z: [Thread 18206] (Msg 1/1) BIP9326I: The source 'crudproject.TestMode.bar' has been successfully deployed. 
+2024-02-23 08:34:08.441428Z: [Thread 18206] (Msg 1/1) BIP2154I: Integration server finished with Configuration message. 
+2024-02-23 08:34:08.483412Z: [Thread 19656] (Msg 1/1) BIP4362E: Java node error: [BIPmsgs:3890]BIP3890E: Failed to initialise Kafka input connector for client '1'. Reason 'Failed to construct kafka consumer'. 
+
+Initialising the Kafka input connector failed with reason 'Failed to construct kafka consumer'. Possible causes are:  
+ 1) None of the Kafka servers defined in 'Bootstrap Servers' property can be contacted.  
+ 2) If using an SSL connection, the SSL configuration is incorrect.  
+ 3) The Kafka client could not be loaded. 
+
+Verify the Kafka servers are available at tha addresses specified in the 'Bootstrap Servers' property. If connecting to Kafka using an SSL connection, verify the SSL configuration properties match those required by the Kafka server. If connecting to Kafka using an SSL connection and have configured a SSL truststore, verify the truststore contains certificates which can validate those provided by the Kafka server. Further information on the cause of the failure may be available by enabling more detailed logging from the Kafka client in the log4j properties file. : writeSystemLogError. 
+2024-02-23 08:34:09.483834Z: [Thread 19654] (Msg 1/1) BIP3380E: File node 'File Input' in message flow 'TransferFiles' could not connect to remote 'FTP' server '192.168.100.17'. Reason: 'timeout(0): Connection refused (Connection refused).' 
+2024-02-23 08:34:34.075712Z: [Thread 19655] (Msg 1/1) BIP4362E: Java node error: [BIPmsgs:3895]BIP3895E: Failed to initialise Kafka output connector. Reason 'Failed to construct kafka producer'. 
+
+Initialising the Kafka output connector failed with reason 'Failed to construct kafka producer'. Possible causes are:  
+ 1) None of the Kafka servers defined in 'Bootstrap Servers' property can be contacted.  
+ 2) If using an SSL connection, the SSL configuration is incorrect.  
+ 3) If using SASL authentication, the credentials are incorrectly configured.  
+ 4) The Kafka client could not be loaded. 
+
+Verify the Kafka servers are available at tha addresses specified in the 'Bootstrap Servers' property. If connecting to Kafka using an SSL connection, verify the SSL configuration properties match those required by the Kafka server. If connecting to Kafka using an SSL connection and have configured a SSL truststore, verify the truststore contains certificates which can validate those provided by the Kafka server. Further information on the cause of the failure may be available by enabling more detailed logging from the Kafka client in the log4j properties file. : writeSystemLogError. 
+2024-02-23 08:35:09.517390Z: [Thread 19656] (Msg 1/1) BIP4362E: Java node error: [BIPmsgs:3890]BIP3890E: Failed to initialise Kafka input connector for client '1'. Reason 'Failed to construct kafka consumer'. 
+
+Initialising the Kafka input connector failed with reason 'Failed to construct kafka consumer'. Possible causes are:  
+ 1) None of the Kafka servers defined in 'Bootstrap Servers' property can be contacted.  
+ 2) If using an SSL connection, the SSL configuration is incorrect.  
+ 3) The Kafka client could not be loaded. 
+
+Verify the Kafka servers are available at tha addresses specified in the 'Bootstrap Servers' property. If connecting to Kafka using an SSL connection, verify the SSL configuration properties match those required by the Kafka server. If connecting to Kafka using an SSL connection and have configured a SSL truststore, verify the truststore contains certificates which can validate those provided by the Kafka server. Further information on the cause of the failure may be available by enabling more detailed logging from the Kafka client in the log4j properties file. : writeSystemLogError. 
+2024-02-23 08:35:09.547825Z: [Thread 19654] (Msg 1/1) BIP3380E: File node 'File Input' in message flow 'TransferFiles' could not connect to remote 'FTP' server '192.168.100.17'. Reason: 'timeout(0): Connection refused (Connection refused).' 
+2024-02-23 08:36:09.607031Z: [Thread 19654] (Msg 1/1) BIP3380E: File node 'File Input' in message flow 'TransferFiles' could not connect to remote 'FTP' server '192.168.100.17'. Reason: 'timeout(0): Connection refused (Connection refused).' 
+2024-02-23 08:37:09.666020Z: [Thread 19654] (Msg 1/1) BIP3380E: File node 'File Input' in message flow 'TransferFiles' could not connect to remote 'FTP' server '192.168.100.17'. Reason: 'timeout(0): Connection refused (Connection refused).' 
+2024-02-23 08:38:09.725280Z: [Thread 19654] (Msg 1/1) BIP3380E: File node 'File Input' in message flow 'TransferFiles' could not connect to remote 'FTP' server '192.168.100.17'. Reason: 'timeout(0): Connection refused (Connection refused).' 
+2024-02-23 08:39:09.789691Z: [Thread 19654] (Msg 1/1) BIP3380E: File node 'File Input' in message flow 'TransferFiles' could not connect to remote 'FTP' server '192.168.100.17'. Reason: 'timeout(0): Connection refused (Connection refused).' 
+2024-02-23 08:40:09.799303Z: [Thread 19656] (Msg 1/1) BIP4362E: Java node error: [BIPmsgs:3890]BIP3890E: Failed to initialise Kafka input connector for client '1'. Reason 'Failed to construct kafka consumer'. 
+
+Initialising the Kafka input connector failed with reason 'Failed to construct kafka consumer'. Possible causes are:  
+ 1) None of the Kafka servers defined in 'Bootstrap Servers' property can be contacted.  
+ 2) If using an SSL connection, the SSL configuration is incorrect.  
+ 3) The Kafka client could not be loaded. 
+
+Verify the Kafka servers are available at tha addresses specified in the 'Bootstrap Servers' property. If connecting to Kafka using an SSL connection, verify the SSL configuration properties match those required by the Kafka server. If connecting to Kafka using an SSL connection and have configured a SSL truststore, verify the truststore contains certificates which can validate those provided by the Kafka server. Further information on the cause of the failure may be available by enabling more detailed logging from the Kafka client in the log4j properties file. : writeSystemLogError. 
+2024-02-23 08:40:09.852833Z: [Thread 19654] (Msg 1/1) BIP3380E: File node 'File Input' in message flow 'TransferFiles' could not connect to remote 'FTP' server '192.168.100.17'. Reason: 'timeout(0): Connection refused (Connection refused).' 
+2024-02-23 08:41:09.917297Z: [Thread 19654] (Msg 1/1) BIP3380E: File node 'File Input' in message flow 'TransferFiles' could not connect to remote 'FTP' server '192.168.100.17'. Reason: 'timeout(0): Connection refused (Connection refused).' 
+2024-02-23 08:42:09.942205Z: [Thread 19654] (Msg 1/1) BIP3380E: File node 'File Input' in message flow 'TransferFiles' could not connect to remote 'FTP' server '192.168.100.17'. Reason: 'timeout(0): Connection refused (Connection refused).' 
+2024-02-23 08:43:10.016959Z: [Thread 19654] (Msg 1/1) BIP3380E: File node 'File Input' in message flow 'TransferFiles' could not connect to remote 'FTP' server '192.168.100.17'. Reason: 'timeout(0): Connection refused (Connection refused).' 
+2024-02-23 08:44:10.136856Z: [Thread 19654] (Msg 1/1) BIP3380E: File node 'File Input' in message flow 'TransferFiles' could not connect to remote 'FTP' server '192.168.100.17'. Reason: 'timeout(0): Connection refused (Connection refused).' 
+2024-02-23 08:45:10.221505Z: [Thread 19654] (Msg 1/1) BIP3380E: File node 'File Input' in message flow 'TransferFiles' could not connect to remote 'FTP' server '192.168.100.17'. Reason: 'timeout(0): Connection refused (Connection refused).' 
+2024-02-23 08:46:10.294369Z: [Thread 19654] (Msg 1/1) BIP3380E: File node 'File Input' in message flow 'TransferFiles' could not connect to remote 'FTP' server '192.168.100.17'. Reason: 'timeout(0): Connection refused (Connection refused).' 
+2024-02-23 08:47:10.356997Z: [Thread 19654] (Msg 1/1) BIP3380E: File node 'File Input' in message flow 'TransferFiles' could not connect to remote 'FTP' server '192.168.100.17'. Reason: 'timeout(0): Connection refused (Connection refused).' 
+2024-02-23 08:48:10.410470Z: [Thread 19654] (Msg 1/1) BIP3380E: File node 'File Input' in message flow 'TransferFiles' could not connect to remote 'FTP' server '192.168.100.17'. Reason: 'timeout(0): Connection refused (Connection refused).' 
+2024-02-23 08:49:10.490749Z: [Thread 19654] (Msg 1/1) BIP3380E: File node 'File Input' in message flow 'TransferFiles' could not connect to remote 'FTP' server '192.168.100.17'. Reason: 'timeout(0): Connection refused (Connection refused).' 
+2024-02-23 08:50:10.553001Z: [Thread 19654] (Msg 1/1) BIP3380E: File node 'File Input' in message flow 'TransferFiles' could not connect to remote 'FTP' server '192.168.100.17'. Reason: 'timeout(0): Connection refused (Connection refused).' 
+2024-02-23 08:50:46.559116Z: [Thread 19655] (Msg 1/1) BIP4362E: Java node error: [BIPmsgs:3895]BIP3895E: Failed to initialise Kafka output connector. Reason 'Failed to construct kafka producer'. 
+
+Initialising the Kafka output connector failed with reason 'Failed to construct kafka producer'. Possible causes are:  
+ 1) None of the Kafka servers defined in 'Bootstrap Servers' property can be contacted.  
+ 2) If using an SSL connection, the SSL configuration is incorrect.  
+ 3) If using SASL authentication, the credentials are incorrectly configured.  
+ 4) The Kafka client could not be loaded. 
+
+Verify the Kafka servers are available at tha addresses specified in the 'Bootstrap Servers' property. If connecting to Kafka using an SSL connection, verify the SSL configuration properties match those required by the Kafka server. If connecting to Kafka using an SSL connection and have configured a SSL truststore, verify the truststore contains certificates which can validate those provided by the Kafka server. Further information on the cause of the failure may be available by enabling more detailed logging from the Kafka client in the log4j properties file. : writeSystemLogError. 
+2024-02-23 08:51:10.624062Z: [Thread 19654] (Msg 1/1) BIP3380E: File node 'File Input' in message flow 'TransferFiles' could not connect to remote 'FTP' server '192.168.100.17'. Reason: 'timeout(0): Connection refused (Connection refused).' 
+2024-02-23 08:52:10.696884Z: [Thread 19654] (Msg 1/1) BIP3380E: File node 'File Input' in message flow 'TransferFiles' could not connect to remote 'FTP' server '192.168.100.17'. Reason: 'timeout(0): Connection refused (Connection refused).' 
+2024-02-23 08:53:10.744757Z: [Thread 19654] (Msg 1/1) BIP3380E: File node 'File Input' in message flow 'TransferFiles' could not connect to remote 'FTP' server '192.168.100.17'. Reason: 'timeout(0): Connection refused (Connection refused).' 
+2024-02-23 08:54:10.808537Z: [Thread 19654] (Msg 1/1) BIP3380E: File node 'File Input' in message flow 'TransferFiles' could not connect to remote 'FTP' server '192.168.100.17'. Reason: 'timeout(0): Connection refused (Connection refused).' 
+2024-02-23 08:55:10.869397Z: [Thread 19654] (Msg 1/1) BIP3380E: File node 'File Input' in message flow 'TransferFiles' could not connect to remote 'FTP' server '192.168.100.17'. Reason: 'timeout(0): Connection refused (Connection refused).' 
+2024-02-23 08:56:10.920533Z: [Thread 19654] (Msg 1/1) BIP3380E: File node 'File Input' in message flow 'TransferFiles' could not connect to remote 'FTP' server '192.168.100.17'. Reason: 'timeout(0): Connection refused (Connection refused).' 
+2024-02-23 08:57:10.981344Z: [Thread 19654] (Msg 1/1) BIP3380E: File node 'File Input' in message flow 'TransferFiles' could not connect to remote 'FTP' server '192.168.100.17'. Reason: 'timeout(0): Connection refused (Connection refused).' 
+2024-02-23 08:58:11.042166Z: [Thread 19654] (Msg 1/1) BIP3380E: File node 'File Input' in message flow 'TransferFiles' could not connect to remote 'FTP' server '192.168.100.17'. Reason: 'timeout(0): Connection refused (Connection refused).' 
+2024-02-23 08:59:11.062989Z: [Thread 19654] (Msg 1/1) BIP3380E: File node 'File Input' in message flow 'TransferFiles' could not connect to remote 'FTP' server '192.168.100.17'. Reason: 'timeout(0): Connection refused (Connection refused).' 
+2024-02-23 09:00:11.133399Z: [Thread 19654] (Msg 1/1) BIP3380E: File node 'File Input' in message flow 'TransferFiles' could not connect to remote 'FTP' server '192.168.100.17'. Reason: 'timeout(0): Connection refused (Connection refused).' 
+2024-02-23 09:01:11.194179Z: [Thread 19654] (Msg 1/1) BIP3380E: File node 'File Input' in message flow 'TransferFiles' could not connect to remote 'FTP' server '192.168.100.17'. Reason: 'timeout(0): Connection refused (Connection refused).' 
+2024-02-23 09:02:11.238743Z: [Thread 19654] (Msg 1/1) BIP3380E: File node 'File Input' in message flow 'TransferFiles' could not connect to remote 'FTP' server '192.168.100.17'. Reason: 'timeout(0): Connection refused (Connection refused).' 
+2024-02-23 09:03:11.295374Z: [Thread 19654] (Msg 1/1) BIP3380E: File node 'File Input' in message flow 'TransferFiles' could not connect to remote 'FTP' server '192.168.100.17'. Reason: 'timeout(0): Connection refused (Connection refused).' 
+2024-02-23 09:04:11.375821Z: [Thread 19654] (Msg 1/1) BIP3380E: File node 'File Input' in message flow 'TransferFiles' could not connect to remote 'FTP' server '192.168.100.17'. Reason: 'timeout(0): Connection refused (Connection refused).' 
+2024-02-23 09:05:11.456190Z: [Thread 19654] (Msg 1/1) BIP3380E: File node 'File Input' in message flow 'TransferFiles' could not connect to remote 'FTP' server '192.168.100.17'. Reason: 'timeout(0): Connection refused (Connection refused).' 
+2024-02-23 09:06:11.536701Z: [Thread 19654] (Msg 1/1) BIP3380E: File node 'File Input' in message flow 'TransferFiles' could not connect to remote 'FTP' server '192.168.100.17'. Reason: 'timeout(0): Connection refused (Connection refused).' 
+2024-02-23 09:07:11.596920Z: [Thread 19654] (Msg 1/1) BIP3380E: File node 'File Input' in message flow 'TransferFiles' could not connect to remote 'FTP' server '192.168.100.17'. Reason: 'timeout(0): Connection refused (Connection refused).' 
+2024-02-23 09:08:11.657436Z: [Thread 19654] (Msg 1/1) BIP3380E: File node 'File Input' in message flow 'TransferFiles' could not connect to remote 'FTP' server '192.168.100.17'. Reason: 'timeout(0): Connection refused (Connection refused).' 
+2024-02-23 09:09:11.717605Z: [Thread 19654] (Msg 1/1) BIP3380E: File node 'File Input' in message flow 'TransferFiles' could not connect to remote 'FTP' server '192.168.100.17'. Reason: 'timeout(0): Connection refused (Connection refused).' 
+2024-02-23 09:10:11.527029Z: [Thread 19656] (Msg 1/1) BIP4362E: Java node error: [BIPmsgs:3890]BIP3890E: Failed to initialise Kafka input connector for client '1'. Reason 'Failed to construct kafka consumer'. 
+
+Initialising the Kafka input connector failed with reason 'Failed to construct kafka consumer'. Possible causes are:  
+ 1) None of the Kafka servers defined in 'Bootstrap Servers' property can be contacted.  
+ 2) If using an SSL connection, the SSL configuration is incorrect.  
+ 3) The Kafka client could not be loaded. 
+
+Verify the Kafka servers are available at tha addresses specified in the 'Bootstrap Servers' property. If connecting to Kafka using an SSL connection, verify the SSL configuration properties match those required by the Kafka server. If connecting to Kafka using an SSL connection and have configured a SSL truststore, verify the truststore contains certificates which can validate those provided by the Kafka server. Further information on the cause of the failure may be available by enabling more detailed logging from the Kafka client in the log4j properties file. : writeSystemLogError. 
+2024-02-23 09:10:11.767943Z: [Thread 19654] (Msg 1/1) BIP3380E: File node 'File Input' in message flow 'TransferFiles' could not connect to remote 'FTP' server '192.168.100.17'. Reason: 'timeout(0): Connection refused (Connection refused).' 
+2024-02-23 09:11:11.827923Z: [Thread 19654] (Msg 1/1) BIP3380E: File node 'File Input' in message flow 'TransferFiles' could not connect to remote 'FTP' server '192.168.100.17'. Reason: 'timeout(0): Connection refused (Connection refused).' 
+2024-02-23 09:12:11.888531Z: [Thread 19654] (Msg 1/1) BIP3380E: File node 'File Input' in message flow 'TransferFiles' could not connect to remote 'FTP' server '192.168.100.17'. Reason: 'timeout(0): Connection refused (Connection refused).' 
+2024-02-23 09:13:11.966970Z: [Thread 19654] (Msg 1/1) BIP3380E: File node 'File Input' in message flow 'TransferFiles' could not connect to remote 'FTP' server '192.168.100.17'. Reason: 'timeout(0): Connection refused (Connection refused).' 
+2024-02-23 09:14:12.025370Z: [Thread 19654] (Msg 1/1) BIP3380E: File node 'File Input' in message flow 'TransferFiles' could not connect to remote 'FTP' server '192.168.100.17'. Reason: 'timeout(0): Connection refused (Connection refused).' 
+2024-02-23 09:15:12.090750Z: [Thread 19654] (Msg 1/1) BIP3380E: File node 'File Input' in message flow 'TransferFiles' could not connect to remote 'FTP' server '192.168.100.17'. Reason: 'timeout(0): Connection refused (Connection refused).' 
+2024-02-23 09:16:12.147721Z: [Thread 19654] (Msg 1/1) BIP3380E: File node 'File Input' in message flow 'TransferFiles' could not connect to remote 'FTP' server '192.168.100.17'. Reason: 'timeout(0): Connection refused (Connection refused).' 
+2024-02-23 09:17:12.185234Z: [Thread 19654] (Msg 1/1) BIP3380E: File node 'File Input' in message flow 'TransferFiles' could not connect to remote 'FTP' server '192.168.100.17'. Reason: 'timeout(0): Connection refused (Connection refused).' 
+2024-02-23 09:18:12.254307Z: [Thread 19654] (Msg 1/1) BIP3380E: File node 'File Input' in message flow 'TransferFiles' could not connect to remote 'FTP' server '192.168.100.17'. Reason: 'timeout(0): Connection refused (Connection refused).' 
+2024-02-23 09:19:12.330775Z: [Thread 19654] (Msg 1/1) BIP3380E: File node 'File Input' in message flow 'TransferFiles' could not connect to remote 'FTP' server '192.168.100.17'. Reason: 'timeout(0): Connection refused (Connection refused).' 
+2024-02-23 09:20:12.409018Z: [Thread 19654] (Msg 1/1) BIP3380E: File node 'File Input' in message flow 'TransferFiles' could not connect to remote 'FTP' server '192.168.100.17'. Reason: 'timeout(0): Connection refused (Connection refused).' 
+2024-02-23 09:21:12.487434Z: [Thread 19654] (Msg 1/1) BIP3380E: File node 'File Input' in message flow 'TransferFiles' could not connect to remote 'FTP' server '192.168.100.17'. Reason: 'timeout(0): Connection refused (Connection refused).' 
+2024-02-23 09:22:12.545566Z: [Thread 19654] (Msg 1/1) BIP3380E: File node 'File Input' in message flow 'TransferFiles' could not connect to remote 'FTP' server '192.168.100.17'. Reason: 'timeout(0): Connection refused (Connection refused).' 
+2024-02-23 09:23:12.604727Z: [Thread 19654] (Msg 1/1) BIP3380E: File node 'File Input' in message flow 'TransferFiles' could not connect to remote 'FTP' server '192.168.100.17'. Reason: 'timeout(0): Connection refused (Connection refused).' 
+2024-02-23 09:24:12.633274Z: [Thread 19654] (Msg 1/1) BIP3380E: File node 'File Input' in message flow 'TransferFiles' could not connect to remote 'FTP' server '192.168.100.17'. Reason: 'timeout(0): Connection refused (Connection refused).' 
+2024-02-23 09:25:12.692007Z: [Thread 19654] (Msg 1/1) BIP3380E: File node 'File Input' in message flow 'TransferFiles' could not connect to remote 'FTP' server '192.168.100.17'. Reason: 'timeout(0): Connection refused (Connection refused).' 
+2024-02-23 09:26:12.760864Z: [Thread 19654] (Msg 1/1) BIP3380E: File node 'File Input' in message flow 'TransferFiles' could not connect to remote 'FTP' server '192.168.100.17'. Reason: 'timeout(0): Connection refused (Connection refused).' 
+2024-02-23 09:27:12.839869Z: [Thread 19654] (Msg 1/1) BIP3380E: File node 'File Input' in message flow 'TransferFiles' could not connect to remote 'FTP' server '192.168.100.17'. Reason: 'timeout(0): Connection refused (Connection refused).' 
+2024-02-23 09:28:12.898892Z: [Thread 19654] (Msg 1/1) BIP3380E: File node 'File Input' in message flow 'TransferFiles' could not connect to remote 'FTP' server '192.168.100.17'. Reason: 'timeout(0): Connection refused (Connection refused).' 
+2024-02-23 09:29:12.958356Z: [Thread 19654] (Msg 1/1) BIP3380E: File node 'File Input' in message flow 'TransferFiles' could not connect to remote 'FTP' server '192.168.100.17'. Reason: 'timeout(0): Connection refused (Connection refused).' 
+2024-02-23 09:30:13.017373Z: [Thread 19654] (Msg 1/1) BIP3380E: File node 'File Input' in message flow 'TransferFiles' could not connect to remote 'FTP' server '192.168.100.17'. Reason: 'timeout(0): Connection refused (Connection refused).' 

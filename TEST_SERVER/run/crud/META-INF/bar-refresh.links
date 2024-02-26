@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy:Deploy xmlns:deploy="http://www.ibm.com/xmlns/prod/wmb/deploy/6.0.0" overrideConfigurableProperties="false" includeESQL="false">
+  <deployables>
+    <deployable deployed="true" barResourceTimeStamp="1708434103833" workspaceResource="/crud/GetFileInsertData.msgflow">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file crud/GetFileInsertData.msgflow.&#xA;Successfully added file crud/GetFileInsertData.msgflow to BAR file.&#xA;" severity="0"/>
+      <barEntry name="GetFileInsertData.msgflow"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1708437677916" workspaceResource="/crud/GetFileInsertData_Mapping_and_insert_db.map">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file crud/GetFileInsertData_Mapping_and_insert_db.map.&#xA;Successfully added file crud/GetFileInsertData_Mapping_and_insert_db.map to BAR file.&#xA;" severity="0"/>
+      <barEntry name="GetFileInsertData_Mapping_and_insert_db.map"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1708353110620" workspaceResource="/crud/IBMdefined/CommaSeparatedFormat.xsd">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file crud/IBMdefined/CommaSeparatedFormat.xsd.&#xA;Successfully added file crud/IBMdefined/CommaSeparatedFormat.xsd to BAR file.&#xA;" severity="0"/>
+      <barEntry name="IBMdefined/CommaSeparatedFormat.xsd"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1708437168330" workspaceResource="/crud/TestData.xsd">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file crud/TestData.xsd.&#xA;Successfully added file crud/TestData.xsd to BAR file.&#xA;" severity="0"/>
+      <barEntry name="TestData.xsd"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1708356707123" workspaceResource="/crud/TransferFiles.msgflow">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file crud/TransferFiles.msgflow.&#xA;Successfully added file crud/TransferFiles.msgflow to BAR file.&#xA;" severity="0"/>
+      <barEntry name="TransferFiles.msgflow"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1708353823612" workspaceResource="/crud/TransferFiles_Compute.esql">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file crud/TransferFiles_Compute.esql.&#xA;Successfully added file crud/TransferFiles_Compute.esql to BAR file.&#xA;" severity="0"/>
+      <barEntry name="TransferFiles_Compute.esql"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1708352951045" workspaceResource="/crud/application.descriptor">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file crud/application.descriptor.&#xA;Successfully added file crud/application.descriptor to BAR file.&#xA;Elapsed time: 0 second(s).&#xA;&#xA;Successfully added file crud/application.descriptor to BAR file.&#xA;" severity="0"/>
+      <barEntry name="application.descriptor"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1708672319042" workspaceResource="/crud/kafka.msgflow">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file crud/kafka.msgflow.&#xA;Successfully added file crud/kafka.msgflow to BAR file.&#xA;" severity="0"/>
+      <barEntry name="kafka.msgflow"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1708673573963" workspaceResource="/crud/kafka_Mapping.map">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file crud/kafka_Mapping.map.&#xA;Successfully added file crud/kafka_Mapping.map to BAR file.&#xA;" severity="0"/>
+      <barEntry name="kafka_Mapping.map"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1708673687217" workspaceResource="/crud/kafka_Mapping1.map">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file crud/kafka_Mapping1.map.&#xA;Successfully added file crud/kafka_Mapping1.map to BAR file.&#xA;" severity="0"/>
+      <barEntry name="kafka_Mapping1.map"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1708677165389" workspaceResource="/crud/kafka_inputMessage.xml">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file crud/kafka_inputMessage.xml.&#xA;Successfully added file crud/kafka_inputMessage.xml to BAR file.&#xA;" severity="0"/>
+      <barEntry name="kafka_inputMessage.xml"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1708965524759" workspaceResource="/crud/kafkaconsum.msgflow">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file crud/kafkaconsum.msgflow.&#xA;Successfully added file crud/kafkaconsum.msgflow to BAR file.&#xA;" severity="0"/>
+      <barEntry name="kafkaconsum.msgflow"/>
+    </deployable>
+    <deployable deployed="true" barResourceTimeStamp="1708967412133" workspaceResource="/crud/kafkaconsum_Mapping.map">
+      <deployableStatus code="0" key="DEPLOYABLE_LAST_COMPILE_STATUS" message="&#xA;Processing file crud/kafkaconsum_Mapping.map.&#xA;Successfully added file crud/kafkaconsum_Mapping.map to BAR file.&#xA;" severity="0"/>
+      <barEntry name="kafkaconsum_Mapping.map"/>
+    </deployable>
+  </deployables>
+</deploy:Deploy>

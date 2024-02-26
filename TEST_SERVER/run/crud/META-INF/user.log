@@ -1,0 +1,104 @@
+
+==============================================
+
+!Tue Feb 27 00:25:28 WIB 2024
+
+Processing file crud/kafkaconsum.msgflow.
+Successfully added file crud/kafkaconsum.msgflow to BAR file.
+
+==============================================
+
+!Tue Feb 27 00:25:29 WIB 2024
+
+Processing file crud/kafka.msgflow.
+Successfully added file crud/kafka.msgflow to BAR file.
+
+==============================================
+
+!Tue Feb 27 00:25:29 WIB 2024
+
+Processing file crud/TransferFiles.msgflow.
+Successfully added file crud/TransferFiles.msgflow to BAR file.
+
+==============================================
+
+!Tue Feb 27 00:25:29 WIB 2024
+
+Processing file crud/GetFileInsertData.msgflow.
+Successfully added file crud/GetFileInsertData.msgflow to BAR file.
+
+==============================================
+
+!Tue Feb 27 00:25:29 WIB 2024
+
+Processing file crud/GetFileInsertData_Mapping_and_insert_db.map.
+Successfully added file crud/GetFileInsertData_Mapping_and_insert_db.map to BAR file.
+
+==============================================
+
+!Tue Feb 27 00:25:29 WIB 2024
+
+Processing file crud/IBMdefined/CommaSeparatedFormat.xsd.
+Successfully added file crud/IBMdefined/CommaSeparatedFormat.xsd to BAR file.
+
+==============================================
+
+!Tue Feb 27 00:25:29 WIB 2024
+
+Processing file crud/TestData.xsd.
+Successfully added file crud/TestData.xsd to BAR file.
+
+==============================================
+
+!Tue Feb 27 00:25:29 WIB 2024
+
+Processing file crud/TransferFiles_Compute.esql.
+Successfully added file crud/TransferFiles_Compute.esql to BAR file.
+
+==============================================
+
+!Tue Feb 27 00:25:29 WIB 2024
+
+Processing file crud/application.descriptor.
+Successfully added file crud/application.descriptor to BAR file.
+Elapsed time: 0 second(s).
+
+Successfully added file crud/application.descriptor to BAR file.
+
+==============================================
+
+!Tue Feb 27 00:25:29 WIB 2024
+
+Processing file crud/application.descriptor.
+Successfully added file crud/application.descriptor to BAR file.
+Elapsed time: 0 second(s).
+
+Successfully added file crud/application.descriptor to BAR file.
+
+==============================================
+
+!Tue Feb 27 00:25:29 WIB 2024
+
+Processing file crud/kafka_Mapping.map.
+Successfully added file crud/kafka_Mapping.map to BAR file.
+
+==============================================
+
+!Tue Feb 27 00:25:29 WIB 2024
+
+Processing file crud/kafka_Mapping1.map.
+Successfully added file crud/kafka_Mapping1.map to BAR file.
+
+==============================================
+
+!Tue Feb 27 00:25:29 WIB 2024
+
+Processing file crud/kafka_inputMessage.xml.
+Successfully added file crud/kafka_inputMessage.xml to BAR file.
+
+==============================================
+
+!Tue Feb 27 00:25:29 WIB 2024
+
+Processing file crud/kafkaconsum_Mapping.map.
+Successfully added file crud/kafkaconsum_Mapping.map to BAR file.

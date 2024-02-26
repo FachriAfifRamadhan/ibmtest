@@ -1,31 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--xtools2_universal_type_manager-->
 <xmi:XMI xmlns:datamodelversion="http://www.ibm.com/com.ibm.datatools.core/model/data/1.9.0.0" xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SQLConstraints="http:///org/eclipse/datatools/modelbase/sql/constraints.ecore" xmlns:SQLDataTypes="http:///org/eclipse/datatools/modelbase/sql/datatypes.ecore" xmlns:SQLSchema="http:///org/eclipse/datatools/modelbase/sql/schema.ecore" xmlns:SQLTables="http:///org/eclipse/datatools/modelbase/sql/tables.ecore">
-  <SQLSchema:Database xmi:id="_CVL4AMwmEe6Iwsako566mw" name="crud" vendor="MySql" version="5.0" schemas="_CjTMgMwmEe6Iwsako566mw">
-    <eAnnotations xmi:id="_CVL4AcwmEe6Iwsako566mw" source="ConnectionURI">
-      <details xmi:id="_CVL4AswmEe6Iwsako566mw" key="ConnectionKey" value="crud1"/>
+  <SQLSchema:Database xmi:id="_-sJzwNIjEe6_wPYHULUjqg" name="crud" vendor="MySql" version="5.0" schemas="_-tnMUNIjEe6_wPYHULUjqg">
+    <eAnnotations xmi:id="_-sJzwdIjEe6_wPYHULUjqg" source="ConnectionURI">
+      <details xmi:id="_-sJzwtIjEe6_wPYHULUjqg" key="ConnectionKey" value="crud1"/>
     </eAnnotations>
   </SQLSchema:Database>
-  <SQLSchema:Schema xmi:id="_CjTMgMwmEe6Iwsako566mw" name="crud" tables="_CosC0MwmEe6Iwsako566mw" database="_CVL4AMwmEe6Iwsako566mw"/>
-  <SQLTables:PersistentTable xmi:id="_CosC0MwmEe6Iwsako566mw" name="users" schema="_CjTMgMwmEe6Iwsako566mw">
-    <columns xmi:id="_CosC0cwmEe6Iwsako566mw" name="id" description="" nullable="false">
-      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_CosC0swmEe6Iwsako566mw" name="INT" primitiveType="INTEGER"/>
+  <SQLSchema:Schema xmi:id="_-tnMUNIjEe6_wPYHULUjqg" name="crud" tables="_-tnMUdIjEe6_wPYHULUjqg _-tnzYdIjEe6_wPYHULUjqg _-toacNIjEe6_wPYHULUjqg" database="_-sJzwNIjEe6_wPYHULUjqg"/>
+  <SQLTables:PersistentTable xmi:id="_-tnMUdIjEe6_wPYHULUjqg" name="test" schema="_-tnMUNIjEe6_wPYHULUjqg">
+    <columns xmi:id="_-tnMUtIjEe6_wPYHULUjqg" name="id" description="" nullable="false">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_-tnMU9IjEe6_wPYHULUjqg" name="INT" primitiveType="INTEGER"/>
     </columns>
-    <columns xmi:id="_CosC08wmEe6Iwsako566mw" name="nama" description="" nullable="false">
-      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_CosC1MwmEe6Iwsako566mw" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="200"/>
+    <columns xmi:id="_-tnMVNIjEe6_wPYHULUjqg" name="name" description="" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_-tnMVdIjEe6_wPYHULUjqg" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="128"/>
     </columns>
-    <columns xmi:id="_CosC1cwmEe6Iwsako566mw" name="tempat_lahir" description="" nullable="false">
-      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_CosC1swmEe6Iwsako566mw" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="200"/>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" xmi:id="_-tnzYNIjEe6_wPYHULUjqg" name="PRIMARY" members="_-tnMUtIjEe6_wPYHULUjqg"/>
+  </SQLTables:PersistentTable>
+  <SQLTables:PersistentTable xmi:id="_-tnzYdIjEe6_wPYHULUjqg" name="testdata" schema="_-tnMUNIjEe6_wPYHULUjqg">
+    <columns xmi:id="_-tnzYtIjEe6_wPYHULUjqg" name="id" description="" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_-tnzY9IjEe6_wPYHULUjqg" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="11"/>
     </columns>
-    <columns xmi:id="_CosC18wmEe6Iwsako566mw" name="jenis_kelamin" description="" nullable="false">
-      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_CosC2MwmEe6Iwsako566mw" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="15"/>
+    <columns xmi:id="_-tnzZNIjEe6_wPYHULUjqg" name="name" description="" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_-tnzZdIjEe6_wPYHULUjqg" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="128"/>
     </columns>
-    <columns xmi:id="_CosC2cwmEe6Iwsako566mw" name="tempat_tinggal" description="" nullable="false">
-      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_CosC2swmEe6Iwsako566mw" name="VARCHAR" primitiveType="CHARACTER_VARYING"/>
+    <columns xmi:id="_-tnzZtIjEe6_wPYHULUjqg" name="type" description="" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_-tnzZ9IjEe6_wPYHULUjqg" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="15"/>
     </columns>
-    <columns xmi:id="_CosC28wmEe6Iwsako566mw" name="tanggal_lahir" description="" nullable="false">
-      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_CosC3MwmEe6Iwsako566mw" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="15"/>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" xmi:id="_-tnzaNIjEe6_wPYHULUjqg" name="PRIMARY" members="_-tnzYtIjEe6_wPYHULUjqg"/>
+  </SQLTables:PersistentTable>
+  <SQLTables:PersistentTable xmi:id="_-toacNIjEe6_wPYHULUjqg" name="users" schema="_-tnMUNIjEe6_wPYHULUjqg">
+    <columns xmi:id="_-toacdIjEe6_wPYHULUjqg" name="id" description="" nullable="false">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_-toactIjEe6_wPYHULUjqg" name="INT" primitiveType="INTEGER"/>
     </columns>
-    <constraints xsi:type="SQLConstraints:PrimaryKey" xmi:id="_CosC3cwmEe6Iwsako566mw" name="PRIMARY" members="_CosC0cwmEe6Iwsako566mw"/>
+    <columns xmi:id="_-toac9IjEe6_wPYHULUjqg" name="nama" description="" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_-toadNIjEe6_wPYHULUjqg" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="200"/>
+    </columns>
+    <columns xmi:id="_-toaddIjEe6_wPYHULUjqg" name="tempat_lahir" description="" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_-toadtIjEe6_wPYHULUjqg" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="200"/>
+    </columns>
+    <columns xmi:id="_-toad9IjEe6_wPYHULUjqg" name="jenis_kelamin" description="" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_-toaeNIjEe6_wPYHULUjqg" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="15"/>
+    </columns>
+    <columns xmi:id="_-toaedIjEe6_wPYHULUjqg" name="tempat_tinggal" description="" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_-toaetIjEe6_wPYHULUjqg" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="15"/>
+    </columns>
+    <columns xmi:id="_-toae9IjEe6_wPYHULUjqg" name="tanggal_lahir" description="" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_-toafNIjEe6_wPYHULUjqg" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="15"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" xmi:id="_-toafdIjEe6_wPYHULUjqg" name="PRIMARY" members="_-toacdIjEe6_wPYHULUjqg"/>
   </SQLTables:PersistentTable>
 </xmi:XMI>

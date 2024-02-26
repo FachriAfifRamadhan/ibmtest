@@ -3,6 +3,7 @@
 	<name>crud</name>
 	<comment></comment>
 	<projects>
+		<project>crud_training</project>
 		<project>testdata</project>
 	</projects>
 	<buildSpec>

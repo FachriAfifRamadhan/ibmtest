@@ -1,0 +1,36 @@
+
+==============================================
+
+!Tue Feb 27 00:25:29 WIB 2024
+
+Successfully added file crud/kafkaconsum.msgflow to BAR file.
+
+Successfully added file crud/kafka.msgflow to BAR file.
+
+Successfully added file crud/TransferFiles.msgflow to BAR file.
+
+Successfully added file crud/GetFileInsertData.msgflow to BAR file.
+
+Successfully added file crud/GetFileInsertData_Mapping_and_insert_db.map to BAR file.
+
+Successfully added file crud/IBMdefined/CommaSeparatedFormat.xsd to BAR file.
+
+Successfully added file crud/TestData.xsd to BAR file.
+
+Successfully added file crud/TransferFiles_Compute.esql to BAR file.
+
+Successfully added file crud/application.descriptor to BAR file.
+
+Successfully added file crud/application.descriptor to BAR file.
+
+Successfully added file crud/application.descriptor to BAR file.
+
+Successfully added file crud/application.descriptor to BAR file.
+
+Successfully added file crud/kafka_Mapping.map to BAR file.
+
+Successfully added file crud/kafka_Mapping1.map to BAR file.
+
+Successfully added file crud/kafka_inputMessage.xml to BAR file.
+
+Successfully added file crud/kafkaconsum_Mapping.map to BAR file.

@@ -14,11 +14,11 @@
     <connectionUrlFormatAttr5></connectionUrlFormatAttr5>
     <serverName>localhost</serverName>
     <portNumber>3306</portNumber>
-    <jarsURL>/home/fachri/Downloads/jar_files/mysql-connector-java-5.1.49.jar</jarsURL>
+    <jarsURL>home/fachri/Downloads/mysql-connector-java-5.1.49/mysql-connector-java-5.1.49.jar</jarsURL>
     <databaseSchemaNames>useProvidedSchemaNames</databaseSchemaNames>
     <description></description>
     <maxConnectionPoolSize>10</maxConnectionPoolSize>
-    <securityIdentity>default_User@default_Server</securityIdentity>
+    <securityIdentity>crud</securityIdentity>
     <environmentParms></environmentParms>
     <jdbcProviderXASupport>true</jdbcProviderXASupport>
     <useDeployedJars>false</useDeployedJars>

@@ -87,3 +87,219 @@ BIP9326I<<The source 'DefaultPoliciesproject.generated.bar' has been successfull
 CRUD_REST_TRAINING3.bar>>>>TEST_SERVER>>SUCCESS>>1708458858121
 BIP9332I<<RestAPI 'CRUD_REST_TRAINING' has been created successfully. <<1708458858121
 BIP9326I<<The source 'CRUD_REST_TRAINING3.bar' has been successfully deployed. <<1708458858121
+DefaultPolicies>>>>TEST_SERVER>>ERROR>>1708626892999
+BIP9328E<<The policy project 'DefaultPolicies' cannot be redeployed as the non-dynamic policy 'crud' differs or has been deleted from the policy project being deployed. <<1708626892999
+BIP9325E<<The source 'DefaultPoliciesproject.generated.bar' could not be deployed as it contains errors. No changes have been made to the integration server. <<1708626892999
+DefaultPolicies>>>>TEST_SERVER>>SUCCESS>>1708626913810
+BIP9332I<<PolicyProject 'DefaultPolicies' has been created successfully. <<1708626913810
+BIP9326I<<The source 'DefaultPoliciesproject.generated.bar' has been successfully deployed. <<1708626913810
+CRUD_REST_TRAINING3.bar>>>>TEST_SERVER>>SUCCESS>>1708626919053
+BIP9332I<<RestAPI 'CRUD_REST_TRAINING' has been created successfully. <<1708626919053
+BIP9326I<<The source 'CRUD_REST_TRAINING3.bar' has been successfully deployed. <<1708626919053
+DefaultPolicies>>>>TEST_SERVER>>SUCCESS>>1708627065989
+BIP9332I<<PolicyProject 'DefaultPolicies' has been created successfully. <<1708627065989
+BIP9326I<<The source 'DefaultPoliciesproject.generated.bar' has been successfully deployed. <<1708627065989
+CRUD_REST_TRAINING3.bar>>>>TEST_SERVER>>SUCCESS>>1708627071795
+BIP9332I<<RestAPI 'CRUD_REST_TRAINING' has been created successfully. <<1708627071795
+BIP9326I<<The source 'CRUD_REST_TRAINING3.bar' has been successfully deployed. <<1708627071795
+DefaultPolicies>>>>TEST_SERVER>>ERROR>>1708627217246
+BIP9328E<<The policy project 'DefaultPolicies' cannot be redeployed as the non-dynamic policy 'crud' differs or has been deleted from the policy project being deployed. <<1708627217246
+BIP9325E<<The source 'DefaultPoliciesproject.generated.bar' could not be deployed as it contains errors. No changes have been made to the integration server. <<1708627217246
+DefaultPolicies>>>>TEST_SERVER>>SUCCESS>>1708627238134
+BIP9332I<<PolicyProject 'DefaultPolicies' has been created successfully. <<1708627238134
+BIP9326I<<The source 'DefaultPoliciesproject.generated.bar' has been successfully deployed. <<1708627238134
+CRUD_REST_TRAINING3.bar>>>>TEST_SERVER>>SUCCESS>>1708627245565
+BIP9332I<<RestAPI 'CRUD_REST_TRAINING' has been created successfully. <<1708627245565
+BIP9326I<<The source 'CRUD_REST_TRAINING3.bar' has been successfully deployed. <<1708627245565
+DefaultPolicies>>>>TEST_SERVER>>SUCCESS>>1708627687317
+BIP9332I<<PolicyProject 'DefaultPolicies' has been created successfully. <<1708627687317
+BIP9326I<<The source 'DefaultPoliciesproject.generated.bar' has been successfully deployed. <<1708627687317
+CRUD_REST_TRAINING3.bar>>>>TEST_SERVER>>SUCCESS>>1708627694051
+BIP9332I<<RestAPI 'CRUD_REST_TRAINING' has been created successfully. <<1708627694051
+BIP9326I<<The source 'CRUD_REST_TRAINING3.bar' has been successfully deployed. <<1708627694051
+DefaultPolicies>>>>TEST_SERVER>>SUCCESS>>1708627760112
+BIP9332I<<PolicyProject 'DefaultPolicies' has been created successfully. <<1708627760112
+BIP9326I<<The source 'DefaultPoliciesproject.generated.bar' has been successfully deployed. <<1708627760112
+CRUD_REST_TRAINING3.bar>>>>TEST_SERVER>>SUCCESS>>1708627764394
+BIP9332I<<RestAPI 'CRUD_REST_TRAINING' has been created successfully. <<1708627764394
+BIP9326I<<The source 'CRUD_REST_TRAINING3.bar' has been successfully deployed. <<1708627764394
+DefaultPolicies>>>>TEST_SERVER>>SUCCESS>>1708627934750
+BIP9332I<<PolicyProject 'DefaultPolicies' has been created successfully. <<1708627934750
+BIP9326I<<The source 'DefaultPoliciesproject.generated.bar' has been successfully deployed. <<1708627934750
+CRUD_REST_TRAINING3.bar>>>>TEST_SERVER>>SUCCESS>>1708627940019
+BIP9332I<<RestAPI 'CRUD_REST_TRAINING' has been created successfully. <<1708627940019
+BIP9326I<<The source 'CRUD_REST_TRAINING3.bar' has been successfully deployed. <<1708627940019
+DefaultPolicies>>>>TEST_SERVER>>SUCCESS>>1708628061475
+BIP9332I<<PolicyProject 'DefaultPolicies' has been created successfully. <<1708628061475
+BIP9326I<<The source 'DefaultPoliciesproject.generated.bar' has been successfully deployed. <<1708628061475
+CRUD_REST_TRAINING3.bar>>>>TEST_SERVER>>SUCCESS>>1708628066021
+BIP9332I<<RestAPI 'CRUD_REST_TRAINING' has been created successfully. <<1708628066021
+BIP9326I<<The source 'CRUD_REST_TRAINING3.bar' has been successfully deployed. <<1708628066021
+DefaultPolicies>>>>TEST_SERVER>>SUCCESS>>1708628328426
+BIP9332I<<PolicyProject 'DefaultPolicies' has been created successfully. <<1708628328426
+BIP9326I<<The source 'DefaultPoliciesproject.generated.bar' has been successfully deployed. <<1708628328426
+CRUD_REST_TRAINING3.bar>>>>TEST_SERVER>>SUCCESS>>1708628339569
+BIP9332I<<RestAPI 'CRUD_REST_TRAINING' has been created successfully. <<1708628339569
+BIP9326I<<The source 'CRUD_REST_TRAINING3.bar' has been successfully deployed. <<1708628339569
+DefaultPolicies>>>>TEST_SERVER>>SUCCESS>>1708628442119
+BIP9332I<<PolicyProject 'DefaultPolicies' has been created successfully. <<1708628442119
+BIP9326I<<The source 'DefaultPoliciesproject.generated.bar' has been successfully deployed. <<1708628442119
+CRUD_REST_TRAINING3.bar>>>>TEST_SERVER>>SUCCESS>>1708628447998
+BIP9332I<<RestAPI 'CRUD_REST_TRAINING' has been created successfully. <<1708628447998
+BIP9326I<<The source 'CRUD_REST_TRAINING3.bar' has been successfully deployed. <<1708628447998
+DefaultPolicies>>>>TEST_SERVER>>SUCCESS>>1708628525327
+BIP9332I<<PolicyProject 'DefaultPolicies' has been created successfully. <<1708628525327
+BIP9326I<<The source 'DefaultPoliciesproject.generated.bar' has been successfully deployed. <<1708628525327
+CRUD_REST_TRAINING3.bar>>>>TEST_SERVER>>SUCCESS>>1708628533026
+BIP9332I<<RestAPI 'CRUD_REST_TRAINING' has been created successfully. <<1708628533026
+BIP9326I<<The source 'CRUD_REST_TRAINING3.bar' has been successfully deployed. <<1708628533026
+DefaultPolicies>>>>TEST_SERVER>>SUCCESS>>1708630061090
+BIP9332I<<PolicyProject 'DefaultPolicies' has been created successfully. <<1708630061090
+BIP9326I<<The source 'DefaultPoliciesproject.generated.bar' has been successfully deployed. <<1708630061090
+CRUD_REST_TRAINING3.bar>>>>TEST_SERVER>>SUCCESS>>1708630065079
+BIP9332I<<RestAPI 'CRUD_REST_TRAINING' has been created successfully. <<1708630065079
+BIP9326I<<The source 'CRUD_REST_TRAINING3.bar' has been successfully deployed. <<1708630065079
+DefaultPolicies>>>>TEST_SERVER>>SUCCESS>>1708630245836
+BIP9332I<<PolicyProject 'DefaultPolicies' has been created successfully. <<1708630245836
+BIP9326I<<The source 'DefaultPoliciesproject.generated.bar' has been successfully deployed. <<1708630245836
+CRUD_REST_TRAINING3.bar>>>>TEST_SERVER>>SUCCESS>>1708630252575
+BIP9332I<<RestAPI 'CRUD_REST_TRAINING' has been created successfully. <<1708630252575
+BIP9326I<<The source 'CRUD_REST_TRAINING3.bar' has been successfully deployed. <<1708630252575
+DefaultPolicies>>>>TEST_SERVER>>SUCCESS>>1708630359072
+BIP9332I<<PolicyProject 'DefaultPolicies' has been created successfully. <<1708630359072
+BIP9326I<<The source 'DefaultPoliciesproject.generated.bar' has been successfully deployed. <<1708630359072
+CRUD_REST_TRAINING3.bar>>>>TEST_SERVER>>SUCCESS>>1708630362909
+BIP9332I<<RestAPI 'CRUD_REST_TRAINING' has been created successfully. <<1708630362909
+BIP9326I<<The source 'CRUD_REST_TRAINING3.bar' has been successfully deployed. <<1708630362909
+CRUD_REST_TRAINING3.bar>>>>TEST_SERVER>>SUCCESS>>1708630912695
+BIP9332I<<RestAPI 'CRUD_REST_TRAINING' has been created successfully. <<1708630912695
+BIP9326I<<The source 'CRUD_REST_TRAINING3.bar' has been successfully deployed. <<1708630912695
+DefaultPolicies>>>>TEST_SERVER>>SUCCESS>>1708630921805
+BIP9332I<<PolicyProject 'DefaultPolicies' has been created successfully. <<1708630921805
+BIP9326I<<The source 'DefaultPoliciesproject.generated.bar' has been successfully deployed. <<1708630921805
+DefaultPolicies>>>>TEST_SERVER>>SUCCESS>>1708631259152
+BIP9332I<<PolicyProject 'DefaultPolicies' has been created successfully. <<1708631259152
+BIP9326I<<The source 'DefaultPoliciesproject.generated.bar' has been successfully deployed. <<1708631259152
+CRUD_REST_TRAINING3.bar>>>>TEST_SERVER>>SUCCESS>>1708631265274
+BIP9332I<<RestAPI 'CRUD_REST_TRAINING' has been created successfully. <<1708631265274
+BIP9326I<<The source 'CRUD_REST_TRAINING3.bar' has been successfully deployed. <<1708631265274
+DefaultPolicies>>>>TEST_SERVER>>SUCCESS>>1708631575215
+BIP9332I<<PolicyProject 'DefaultPolicies' has been created successfully. <<1708631575215
+BIP9326I<<The source 'DefaultPoliciesproject.generated.bar' has been successfully deployed. <<1708631575215
+CRUD_REST_TRAINING3.bar>>>>TEST_SERVER>>SUCCESS>>1708631587049
+BIP9332I<<RestAPI 'CRUD_REST_TRAINING' has been created successfully. <<1708631587049
+BIP9326I<<The source 'CRUD_REST_TRAINING3.bar' has been successfully deployed. <<1708631587049
+DefaultPolicies>>>>TEST_SERVER>>SUCCESS>>1708632154156
+BIP9332I<<PolicyProject 'DefaultPolicies' has been created successfully. <<1708632154156
+BIP9326I<<The source 'DefaultPoliciesproject.generated.bar' has been successfully deployed. <<1708632154156
+CRUD_REST_TRAINING3.bar>>>>TEST_SERVER>>SUCCESS>>1708632163631
+BIP9332I<<RestAPI 'CRUD_REST_TRAINING' has been created successfully. <<1708632163631
+BIP9326I<<The source 'CRUD_REST_TRAINING3.bar' has been successfully deployed. <<1708632163631
+DefaultPolicies>>>>TEST_SERVER>>SUCCESS>>1708632699066
+BIP9332I<<PolicyProject 'DefaultPolicies' has been created successfully. <<1708632699066
+BIP9326I<<The source 'DefaultPoliciesproject.generated.bar' has been successfully deployed. <<1708632699066
+CRUD_REST_TRAINING3.bar>>>>TEST_SERVER>>SUCCESS>>1708632704762
+BIP9332I<<RestAPI 'CRUD_REST_TRAINING' has been created successfully. <<1708632704762
+BIP9326I<<The source 'CRUD_REST_TRAINING3.bar' has been successfully deployed. <<1708632704762
+DefaultPolicies>>>>TEST_SERVER>>SUCCESS>>1708634277980
+BIP9332I<<PolicyProject 'DefaultPolicies' has been created successfully. <<1708634277980
+BIP9326I<<The source 'DefaultPoliciesproject.generated.bar' has been successfully deployed. <<1708634277980
+CRUD_REST_TRAINING3.bar>>>>TEST_SERVER>>SUCCESS>>1708634282100
+BIP9332I<<RestAPI 'CRUD_REST_TRAINING' has been created successfully. <<1708634282100
+BIP9326I<<The source 'CRUD_REST_TRAINING3.bar' has been successfully deployed. <<1708634282100
+DefaultPolicies>>>>TEST_SERVER>>SUCCESS>>1708635555483
+BIP9332I<<PolicyProject 'DefaultPolicies' has been created successfully. <<1708635555483
+BIP9326I<<The source 'DefaultPoliciesproject.generated.bar' has been successfully deployed. <<1708635555483
+CRUD_REST_TRAINING3.bar>>>>TEST_SERVER>>SUCCESS>>1708635561563
+BIP9332I<<RestAPI 'CRUD_REST_TRAINING' has been created successfully. <<1708635561563
+BIP9326I<<The source 'CRUD_REST_TRAINING3.bar' has been successfully deployed. <<1708635561563
+DefaultPolicies>>>>TEST_SERVER>>SUCCESS>>1708636350160
+BIP9332I<<PolicyProject 'DefaultPolicies' has been created successfully. <<1708636350160
+BIP9326I<<The source 'DefaultPoliciesproject.generated.bar' has been successfully deployed. <<1708636350160
+CRUD_REST_TRAINING3.bar>>>>TEST_SERVER>>SUCCESS>>1708636356011
+BIP9332I<<RestAPI 'CRUD_REST_TRAINING' has been created successfully. <<1708636356011
+BIP9326I<<The source 'CRUD_REST_TRAINING3.bar' has been successfully deployed. <<1708636356011
+DefaultPolicies>>>>TEST_SERVER>>ERROR>>1708636398552
+BIP9328E<<The policy project 'DefaultPolicies' cannot be redeployed as the non-dynamic policy 'crud' differs or has been deleted from the policy project being deployed. <<1708636398552
+BIP9325E<<The source 'DefaultPoliciesproject.generated.bar' could not be deployed as it contains errors. No changes have been made to the integration server. <<1708636398552
+DefaultPolicies>>>>TEST_SERVER>>SUCCESS>>1708667929102
+BIP9332I<<PolicyProject 'DefaultPolicies' has been created successfully. <<1708667929102
+BIP9326I<<The source 'DefaultPoliciesproject.generated.bar' has been successfully deployed. <<1708667929102
+CRUD_REST_TRAINING3.bar>>>>TEST_SERVER>>SUCCESS>>1708667937294
+BIP9332I<<RestAPI 'CRUD_REST_TRAINING' has been created successfully. <<1708667937294
+BIP9326I<<The source 'CRUD_REST_TRAINING3.bar' has been successfully deployed. <<1708667937294
+DefaultPolicies>>>>TEST_SERVER>>SUCCESS>>1708668154298
+BIP9332I<<PolicyProject 'DefaultPolicies' has been created successfully. <<1708668154298
+BIP9326I<<The source 'DefaultPoliciesproject.generated.bar' has been successfully deployed. <<1708668154298
+CRUD_REST_TRAINING3.bar>>>>TEST_SERVER>>SUCCESS>>1708668162816
+BIP9332I<<RestAPI 'CRUD_REST_TRAINING' has been created successfully. <<1708668162816
+BIP9326I<<The source 'CRUD_REST_TRAINING3.bar' has been successfully deployed. <<1708668162816
+DefaultPolicies>>>>TEST_SERVER>>ERROR>>1708671483036
+BIP9328E<<The policy project 'DefaultPolicies' cannot be redeployed as the non-dynamic policy 'crud' differs or has been deleted from the policy project being deployed. <<1708671483036
+BIP9325E<<The source 'DefaultPoliciesproject.generated.bar' could not be deployed as it contains errors. No changes have been made to the integration server. <<1708671483036
+DefaultPolicies>>>>TEST_SERVER>>SUCCESS>>1708671504455
+BIP9332I<<PolicyProject 'DefaultPolicies' has been created successfully. <<1708671504455
+BIP9326I<<The source 'DefaultPoliciesproject.generated.bar' has been successfully deployed. <<1708671504455
+CRUD_REST_TRAINING3.bar>>>>TEST_SERVER>>SUCCESS>>1708671511465
+BIP9332I<<RestAPI 'CRUD_REST_TRAINING' has been created successfully. <<1708671511465
+BIP9326I<<The source 'CRUD_REST_TRAINING3.bar' has been successfully deployed. <<1708671511465
+crud>>>>TEST_SERVER>>SUCCESS>>1708676904970
+BIP9332I<<Application 'crud' has been created successfully. <<1708676904970
+BIP9326I<<The source 'crudproject.TestMode.bar' has been successfully deployed. <<1708676904970
+crud>>>>TEST_SERVER>>SUCCESS>>1708677085810
+BIP9332I<<Application 'crud' has been changed successfully. <<1708677085810
+BIP9326I<<The source 'crudproject.TestMode.bar' has been successfully deployed. <<1708677085810
+crud>>>>TEST_SERVER>>SUCCESS>>1708677243237
+BIP9332I<<Application 'crud' has been changed successfully. <<1708677243237
+BIP9326I<<The source 'crudproject.TestMode.bar' has been successfully deployed. <<1708677243237
+crud>>>>TEST_SERVER>>SUCCESS>>1708964260389
+BIP9332I<<Application 'crud' has been changed successfully. <<1708964260389
+BIP9326I<<The source 'crudproject.TestMode.bar' has been successfully deployed. <<1708964260389
+crud>>>>TEST_SERVER>>SUCCESS>>1708964342286
+BIP9332I<<Application 'crud' has been changed successfully. <<1708964342286
+BIP9326I<<The source 'crudproject.TestMode.bar' has been successfully deployed. <<1708964342286
+crud>>>>TEST_SERVER>>SUCCESS>>1708964416104
+BIP9332I<<Application 'crud' has been changed successfully. <<1708964416104
+BIP9326I<<The source 'crudproject.TestMode.bar' has been successfully deployed. <<1708964416104
+crud>>>>TEST_SERVER>>SUCCESS>>1708965582603
+BIP9332I<<Application 'crud' has been changed successfully. <<1708965582603
+BIP9326I<<The source 'crudproject.TestMode.bar' has been successfully deployed. <<1708965582603
+crud>>>>TEST_SERVER>>SUCCESS>>1708965595312
+BIP9332I<<Application 'crud' has been changed successfully. <<1708965595312
+BIP9326I<<The source 'crudproject.TestMode.bar' has been successfully deployed. <<1708965595312
+crud>>>>TEST_SERVER>>SUCCESS>>1708965959151
+BIP9332I<<Application 'crud' has been changed successfully. <<1708965959151
+BIP9326I<<The source 'crudproject.TestMode.bar' has been successfully deployed. <<1708965959151
+crud>>>>TEST_SERVER>>SUCCESS>>1708965969468
+BIP9332I<<Application 'crud' has been changed successfully. <<1708965969468
+BIP9326I<<The source 'crudproject.TestMode.bar' has been successfully deployed. <<1708965969468
+crud>>>>TEST_SERVER>>SUCCESS>>1708966232939
+BIP9332I<<Application 'crud' has been created successfully. <<1708966232939
+BIP9326I<<The source 'crudproject.TestMode.bar' has been successfully deployed. <<1708966232939
+crud>>>>TEST_SERVER>>SUCCESS>>1708966349855
+BIP9332I<<Application 'crud' has been changed successfully. <<1708966349855
+BIP9326I<<The source 'crudproject.TestMode.bar' has been successfully deployed. <<1708966349855
+crud>>>>TEST_SERVER>>SUCCESS>>1708966381950
+BIP9332I<<Application 'crud' has been changed successfully. <<1708966381950
+BIP9326I<<The source 'crudproject.TestMode.bar' has been successfully deployed. <<1708966381950
+crud>>>>TEST_SERVER>>SUCCESS>>1708967120591
+BIP9332I<<Application 'crud' has been changed successfully. <<1708967120591
+BIP9326I<<The source 'crudproject.TestMode.bar' has been successfully deployed. <<1708967120591
+crud>>>>TEST_SERVER>>SUCCESS>>1708967136983
+BIP9332I<<Application 'crud' has been changed successfully. <<1708967136983
+BIP9326I<<The source 'crudproject.TestMode.bar' has been successfully deployed. <<1708967136983
+crud>>>>TEST_SERVER>>SUCCESS>>1708968049393
+BIP9332I<<Application 'crud' has been created successfully. <<1708968049393
+BIP9326I<<The source 'crudproject.TestMode.bar' has been successfully deployed. <<1708968049393
+crud>>>>TEST_SERVER>>SUCCESS>>1708968059596
+BIP9332I<<Application 'crud' has been changed successfully. <<1708968059596
+BIP9326I<<The source 'crudproject.TestMode.bar' has been successfully deployed. <<1708968059596
+crud>>>>TEST_SERVER>>SUCCESS>>1708968195693
+BIP9332I<<Application 'crud' has been changed successfully. <<1708968195693
+BIP9326I<<The source 'crudproject.TestMode.bar' has been successfully deployed. <<1708968195693
+crud>>>>TEST_SERVER>>SUCCESS>>1708968329185
+BIP9332I<<Application 'crud' has been changed successfully. <<1708968329185
+BIP9326I<<The source 'crudproject.TestMode.bar' has been successfully deployed. <<1708968329185
+crud>>>>TEST_SERVER>>SUCCESS>>1708968347571
+BIP9332I<<Application 'crud' has been changed successfully. <<1708968347571
+BIP9326I<<The source 'crudproject.TestMode.bar' has been successfully deployed. <<1708968347571
